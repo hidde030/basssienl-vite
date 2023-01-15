@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef, useEffect }  from 'react';
 import user from "../data/user.json";
 import steam from "../img/steam.svg";
 export default function GridCards() {
+
   return (
     <div className="container mx-auto lg:pt-20 pb-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -28,11 +29,19 @@ export default function GridCards() {
 }
 
 export function Card(props) {
+    // scroll into view with anchor tag in url
+    const ref = useRef(null);
+    useEffect(() => {
+      const hash = window.location.hash;
+      if (hash === `#${props.name}`) {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+          
+      }
+    }, []);  
   return (
-    <div className={`${props.role}`}>
+    <a ref={ref} href={`#${props.name}`} className={`${props.role}`}>
       <div className={`card-item sbg-white rounded-lg shadow-lg  `}>
         <div className="image-bg relative pb-48 overflow-hidden bg-card_purple rounded-t-sm">
-          {/* if rating  */}
           <span className="rating">{props.rating}</span>
           <img
             className="absolute inset-0  w-full h-full  scale-[0.8]  card-img"
@@ -77,6 +86,6 @@ export function Card(props) {
           </ul>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
