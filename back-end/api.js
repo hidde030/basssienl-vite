@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "dist")));
 
-const file = "data/user.json";
+const file = "./data/user.json";
 app.get("/api", (req, res) => {
   let jsonData = require(file);
   res.status(200).send(jsonData);
