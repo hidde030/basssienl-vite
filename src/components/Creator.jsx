@@ -31,7 +31,7 @@ const admins = [
 
 export default function Creator() {
   return (
-    <div className="container mx-auto px-64  lg:pt-10 pb-6">
+    <div className="container mx-auto md:px-64  lg:pt-10 pb-6">
       <h1 className="text-center text-4xl font-bold text-white mb-24">
         This project has been made possible by:
       </h1>
@@ -61,7 +61,7 @@ export default function Creator() {
 export function Card(props) {
   return (
     <div className={`${props.role}`}>
-      <div className={`card-item sbg-white rounded-lg shadow-lg  `}>
+      <div className={`card-item rounded-lg shadow-lg  `}>
         <div className="image-bg relative pb-48 overflow-hidden bg-card_purple rounded-t-sm">
           {/* if rating  */}
           <span className="rating">{props.rating}</span>
