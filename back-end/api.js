@@ -1,9 +1,12 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 const fs = require("fs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const file = "../src/data/user.json";
+app.use(express.static(path.join(__dirname, "dist")));
+
+const file = "data/user.json";
 app.get("/", (req, res) => {
   let jsonData = require(file);
   res.status(200).send(jsonData);
