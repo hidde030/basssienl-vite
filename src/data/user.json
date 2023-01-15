@@ -462,6 +462,19 @@
             "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
             "rating": "1",
             "role": "subscriber",
+            "name": "Venten",
+            "rank": "Global Elite",
+            "faceit": "3",
+            "quality": "Geen Idee",
+            "weakness": "Geen Idee",
+            "img": "https://bassienl.hostmajority.com/images/Venten.png",
+            "steam_url": "https://steamcommunity.com/id/6_66/"
+
+        },
+        {
+            "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+            "rating": "1",
+            "role": "subscriber",
             "name": "Yerne",
             "rank": "Master Guardian Elite",
             "faceit": "2",
