@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "dist")));
 
 const file = "data/user.json";
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   let jsonData = require(file);
   res.status(200).send(jsonData);
 });
@@ -16,7 +16,7 @@ app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
-app.post("/add", (req, res) => {
+app.post("/api/add", (req, res) => {
   let jsonData = require(file);
   jsonData.data.push(req.body);
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
@@ -27,7 +27,7 @@ app.post("/add", (req, res) => {
     res.status(200).send("JSON file has been updated.");
   });
 });
-app.get("/sort", (req, res) => {
+app.get("/api/sort", (req, res) => {
   let jsonData = require(file);
   // sort json file by catergory
 
@@ -42,7 +42,7 @@ app.get("/sort", (req, res) => {
   });
   res.status(200).send(jsonData);
 });
-app.put("/update", (req, res) => {
+app.put("/api/update", (req, res) => {
   // Read the JSON file
   let jsonData = require(file);
   //   get object by name
