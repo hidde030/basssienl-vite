@@ -446,19 +446,6 @@
 
         },
         {
-            "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
-            "rating": "1",
-            "role": "subscriber",
-            "name": "VroGD",
-            "rank": "Master Guardian 2",
-            "faceit": "3",
-            "quality": "Weird Frags",
-            "weakness": "Skins Flexer",
-            "img": "https://bassienl.hostmajority.com/images/Vrogd.png",
-            "steam_url": "https://steamcommunity.com/id/VroGD"
-
-        },
-        {
             "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
             "rating": "1",
             "role": "subscriber",
@@ -471,6 +458,20 @@
             "steam_url": "https://steamcommunity.com/id/6_66/"
 
         },
+        {
+            "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
+            "rating": "1",
+            "role": "subscriber",
+            "name": "VroGD",
+            "rank": "Master Guardian 2",
+            "faceit": "3",
+            "quality": "Weird Frags",
+            "weakness": "Skins Flexer",
+            "img": "https://bassienl.hostmajority.com/images/Vrogd.png",
+            "steam_url": "https://steamcommunity.com/id/VroGD"
+
+        },
+
         {
             "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
             "rating": "1",
