@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   let jsonData = require(file);
   res.status(200).send(jsonData);
 });
+// Handle client routing, return all requests to the app
+app.get("*", (_req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
 
 app.post("/add", (req, res) => {
   let jsonData = require(file);
