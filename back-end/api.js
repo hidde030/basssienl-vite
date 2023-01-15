@@ -12,13 +12,13 @@ app.get("/", (req, res) => {
 app.post("/add", (req, res) => {
   let jsonData = require(file);
   jsonData.data.push(req.body);
-    fs.writeFile(file, JSON.stringify(jsonData), (err) => {
-        if (err) {
-            res.status(500).send(err);
-            return;
-        }
-        res.status(200).send("JSON file has been updated.");
-        
+  fs.writeFile(file, JSON.stringify(jsonData), (err) => {
+    if (err) {
+      res.status(500).send(err);
+      return;
+    }
+    res.status(200).send("JSON file has been updated.");
+  });
 });
 
 app.put("/update", (req, res) => {
