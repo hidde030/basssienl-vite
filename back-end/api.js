@@ -20,7 +20,21 @@ app.post("/add", (req, res) => {
     res.status(200).send("JSON file has been updated.");
   });
 });
+app.get("/sort", (req, res) => {
+  let jsonData = require(file);
+  // sort json file by catergory
 
+  jsonData.data.sort((a, b) => {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  });
+  res.status(200).send(jsonData);
+});
 app.put("/update", (req, res) => {
   // Read the JSON file
   let jsonData = require(file);
