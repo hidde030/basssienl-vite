@@ -42,8 +42,8 @@ function OverOns() {
                 hosting company with website development experience. We host games like,
                 Minecraft, ARK Survival Evolved and most famous Counter Strike Global
                 Offensive. If you have any questions about the website feel free to reach
-                out to Bart or go to our website:
-                <a href="https://hostmajority.com/" className="">
+                out to Bart or go to our website:{' '}
+                <a href="https://hostmajority.com/" className="underline">
                   https://hostmajority.com/
                 </a>
               </p>
