@@ -1,60 +1,69 @@
 import React, { useState } from 'react';
-const admin = () => {
-  
+
+function Admin(props) {
+  const [formData, setFormData] = useState({});
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  }
+
+  const handleSave = () => {
+    // send formData to API endpoint here
+    console.log(formData);
+  }
   return (
-    <div>
-      <form>
-        <label>
-          Name:
-          <input type="text" name="name" value={response.name} onChange={handleChange} />
-        </label>
-        <label>
-        nationality:
-          <input type="text" name="name" value={response.nationality} onChange={handleChange} />
-        </label>
-        <br />
-        <label>
-        Rating:
-          <input type="text" name="rating" value={response.name} onChange={handleChange} />
-        </label>
-        <br />
-      
-        <label>
-        rank:
-          <input type="text" name="rank" value={response.rank} onChange={handleChange} />
-        </label>
-        <br />
-        <label>
-        faceit:
-          <input type="text" name="faceit" value={response.faceit} onChange={handleChange} />
-        </label>
-        <br />
+    <div className='fixed inset-0 grid text-center'>
+    <form key={props.name}>
+      <label>
+        Name:
+        <input type="text" name="name" value={props.name} onChange={handleChange} />
+      </label>
+      <label>
+      nationality:
+        <input type="text" name="nationality" value={props.nationality} onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+      Rating:
+        <input type="text" name="rating" value={props.rating} onChange={handleChange} />
+      </label>
+      <br />
+    
+      <label>
+      rank:
+        <input type="text" name="rank" value={props.rank} onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+      faceit:
+        <input type="text" name="faceit" value={props.faceit} onChange={handleChange} />
+      </label>
+      <br />
 
-        <label>
-        quality:
-          <input type="text" name="quality" value={response.quality} onChange={handleChange} />
-        </label>
-        <br />
+      <label>
+      quality:
+        <input type="text" name="quality" value={props.quality} onChange={handleChange} />
+      </label>
+      <br />
 
-        <label>
-        quality:
-          <input type="text" name="weakness" value={response.weakness} onChange={handleChange} />
-        </label>
-        <br />
-        <label>
-        img:
-          <input type="text" name="img" value={response.img} onChange={handleChange} />
-        </label>
-        <br />
-        <label>
-        steam_url:
-          <input type="text" name="steam_url" value={response.steam_url} onChange={handleChange} />
-        </label>
-        <br />
-        <button onClick={handleSave}>Save</button>
-      </form>
+      <label>
+      quality:
+        <input type="text" name="weakness" value={props.weakness} onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+      img:
+        <input type="text" name="img" value={props.img} onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+      steam_url:
+        <input type="text" name="steam_url" value={props.steam_url} onChange={handleChange} />
+      </label>
+      <br />
+      <button onClick={handleSave}>Save</button>
+    </form>
     </div>
   )
 }
 
-export default admin;
+export default Admin;

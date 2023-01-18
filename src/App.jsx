@@ -4,9 +4,9 @@ import { OverOns } from "./pages/OverOns";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Thanks from "./pages/Thanks";
-import Admin from "./admin/Admin";
 import Info from "./pages/Info";
 import "./styles/style.scss";
+import UserList from "./admin/UserList";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/overons" element={<OverOns />} />
         <Route path="/thanks" element={<Thanks />} />
         <Route path="/info" element={<Info />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin" element={<UserList />} />
 
         <Route path="*" element={<h1>404: Not Found</h1>} />
         
