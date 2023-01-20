@@ -34,7 +34,7 @@ function Admin({ selectedUser, setShowModal }) {
   return (
     <div className="fixed inset-0 top-12 grid text-center bg-card_bg ">
       <div className=" mx-auto container">
-      <form className=" flex flex-col" onSubmit={handleSave}>
+      <form className="flex flex-col" onSubmit={handleSave}>
         <div class="relative mb-2">
           <label className="text-white"  for="name">Name:</label>
           <input
