@@ -53,7 +53,7 @@ app.put("/api/update", (req, res) => {
   // Read the JSON file
   let jsonData = require(file);
   //   get object by name
-  let obj = jsonData.data.find((o) => o.name === req.body.name);
+  let obj = jsonData.data?.find((o) => o.name === req.body.name);
   console.log(obj);
   obj.rating = req.body.rating;
   obj.nationality = req.body.nationality;
