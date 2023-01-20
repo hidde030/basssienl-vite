@@ -29,6 +29,7 @@ $vip: radial-gradient(
 $subscriber: #1f8645;
 $member: #2372f3;
 $shadow: rgba(0, 0, 0, 0.1);
+
 body {
   background-color: rgba(0, 0, 0, 0.7);
   font-family: "Roboto", sans-serif;
@@ -262,4 +263,26 @@ body {
     padding: 0.5rem;
     width: 4rem;
   }
+}
+
+.text-member {
+  color: $member;
+}
+.text-owner {
+  color: $owner;
+}
+.text-admin {
+  color: $admin;
+}
+.text-moderator {
+  color: $moderator;
+}
+.text-vip {
+  color: $gold;
+}
+.text-subscriber {
+  color: $subscriber;
+}
+.text-member {
+  color: $member;
 }

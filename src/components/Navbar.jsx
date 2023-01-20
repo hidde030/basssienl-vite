@@ -18,8 +18,8 @@ function Navbar() {
           <a href="/" className="text-white mr-4 hover:text-card_purple">
             cards
           </a>
-          <a href="/overons" className="text-white mr-4 hover:text-card_purple">
-            over ons
+          <a href="/about" className="text-white mr-4 hover:text-card_purple">
+            About us
           </a>
           <a href="/info" className="text-white mr-4 hover:text-card_purple">
             cards info

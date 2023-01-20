@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/overons" element={<OverOns />} />
+        <Route path="/about" element={<OverOns />} />
         <Route path="/thanks" element={<Thanks />} />
         <Route path="/info" element={<Info />} />
         <Route path="/admin" element={<UserList />} />
