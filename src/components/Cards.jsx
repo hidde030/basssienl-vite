@@ -1,8 +1,13 @@
-import React, { useRef, useEffect }  from 'react';
+import React, { useRef, useEffect,useState }  from 'react';
 import user from "../data/user.json";
 import steam from "../img/steam.svg";
 export default function GridCards() {
-
+  // const [response , setResponse] = useState({});
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/api')
+  //     .then(response => response.json())
+  //     .then(json => setResponse(json));
+  // }, []);
   return (
     <div className="container mx-auto lg:pt-20 pb-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
