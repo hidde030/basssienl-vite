@@ -2,31 +2,30 @@ import React from "react";
 import steam from "../img/steam.svg";
 const admins = [
   {
-    nationality:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-    rating: "1",
-    role: "creator",
-    name: "Bart",
-    rank: "Global Elite",
-    faceit: "10",
-    quality: "God Aim",
-    weakness: "Full Monkey",
-    img: "https://bassienl.hostmajority.com/images/Bart.png",
-    steam_url: "https://steamcommunity.com/id/BartiBlyat/",
-  },
-  {
-    nationality:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-    rating: "1",
-    role: "creator",
-    name: "Hidde",
-    rank: "Global Elite",
-    faceit: "7",
-    quality: "Monkey Peek",
-    weakness: "Communication",
-    img: "https://bassienl.hostmajority.com/images/Hidde.png",
-    steam_url: "https://steamcommunity.com/id/hiddebackup1234",
-  },
+    "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+    "rating": "94",
+    "role": "creator",
+    "name": "Bart",
+    "rank": "Global Elite",
+    "faceit": "10",
+    "quality": "God Aim",
+    "weakness": "Full Monkey",
+    "img": "https://bassienl.nl/images/Bart.png",
+    "steam_url": "https://steamcommunity.com/id/BartiBlyat/"
+},
+{
+  "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+  "rating": "90",
+  "role": "creator",
+  "name": "Hidde",
+  "rank": "Global Elite",
+  "faceit": "7",
+  "quality": "Monkey Peek",
+  "weakness": "Communication",
+  "img": "https://bassienl.nl/images/Hidde.png",
+  "steam_url": "https://steamcommunity.com/id/hiddebackup1234"
+
+}
 ];
 
 export default function Creator() {
@@ -35,7 +34,7 @@ export default function Creator() {
       <h1 className="text-center text-4xl font-bold text-white mb-24">
         This project has been made possible by:
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2   place-items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-2   place-items-center ">
         {admins.map(function (object, i) {
           return (
             <Card
@@ -60,7 +59,7 @@ export default function Creator() {
 
 export function Card(props) {
   return (
-    <div className={`${props.role}`}>
+    <div className={`${props.role} mb-6`}>
       <div className={`card-item rounded-lg shadow-lg  `}>
         <div className="image-bg relative pb-48 overflow-hidden bg-card_purple rounded-t-sm">
           {/* if rating  */}
