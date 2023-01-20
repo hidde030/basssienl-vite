@@ -7,7 +7,7 @@ function Admin({ selectedUser, setShowModal }) {
   };
   const handleSave = async (event) => {
     try {
-      const response = await fetch("http://localhost:3000/api/update", {
+      const response = await fetch("https://bassienl.nl/api/update", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
