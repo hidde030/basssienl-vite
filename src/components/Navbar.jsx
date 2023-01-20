@@ -14,14 +14,14 @@ function Navbar() {
           />
           <span className="ml-3 text-xl">BassieNL Community</span>
         </Link>
-        <div className="uppercase">
-          <a href="/" className="text-white mr-4 hover:text-card_purple">
+        <div className="uppercase flex ">
+          <a href="/" className="text-white mr-3 hover:text-card_purple">
             cards
           </a>
-          <a href="/about" className="text-white mr-4 hover:text-card_purple">
+          <a href="/about" className="text-white mr-3 hover:text-card_purple">
             About us
           </a>
-          <a href="/info" className="text-white mr-4 hover:text-card_purple">
+          <a href="/info" className="text-white mr-3 hover:text-card_purple">
             cards info
           </a>
           <a href="/thanks" className="text-white hover:text-card_purple">
