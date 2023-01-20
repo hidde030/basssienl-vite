@@ -22,7 +22,19 @@ app.get("/api", (req, res) => {
 app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
-
+app.get("/api/sort", (req, res) => {
+  let jsonData = require(file);
+  jsonData.data.sort((a, b) => {
+    console.log(a.name, b.name);
+    console.log(a.rank, b.rank);
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    if (a.rank < b.rank) return -1;
+    if (a.rank > b.rank) return 1;
+    return 0;
+  });
+  res.status(200).send(jsonData);
+});
 app.post("/api/add", (req, res) => {
   let jsonData = require(file);
   jsonData.data.push(req.body);
@@ -31,24 +43,10 @@ app.post("/api/add", (req, res) => {
       res.status(500).send(err);
       return;
     }
-    res.status(200).send("JSON file has been updated.");
+    res.status(200).send("JSON ADDED.");
   });
 });
-app.get("/api/sort", (req, res) => {
-  let jsonData = require(file);
-  // sort json file by catergory
 
-  jsonData.data.sort((a, b) => {
-    if (a.name < b.name) {
-      return -1;
-    }
-    if (a.name > b.name) {
-      return 1;
-    }
-    return 0;
-  });
-  res.status(200).send(jsonData);
-});
 app.put("/api/update", (req, res) => {
   // Read the JSON file
   let jsonData = require(file);

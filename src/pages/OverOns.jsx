@@ -70,6 +70,29 @@ function OverOns() {
                   https://hostmajority.com/
                 </a>
               </p>
+
+              <p className="mb-3">
+                Bart keeps an eye out for any content missing or by mistake placed on the
+                website. Most of the time he's busy with the Front-end, if needed he can
+                help out at any department. He's a guy that likes to have everything
+                perfect, exactly the way he wants it. He isn't finished unless it's
+                perfect to the last minute detail. He will always be available to pick up
+                a ticket, so come through with the questions!
+              </p>
+              <p className="mb-3">
+                Lars takes care of the Back-end systems running in our company. If no one
+                knows the answer to a question our last hope is Lars, he always has the
+                correct answer ready or he'll know how to find the correct one. He is very
+                eager to learn so if there are any new features all of the sudden he most
+                likely learned something new.
+              </p>
+              <p className="mb-3">
+                Stan is the guy behind our marketing department. So if you see something
+                pass by on Instagram, TikTok or YouTube it will be most likely because of
+                him. Most of the tickets that you the customer create will be taken care
+                of by Stan. If Stan doesn't know the correct answer the ticket will be
+                send to the rest of the HostMajority team.
+              </p>
               <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"></div>
               <a class="inline-flex items-center">
                 <img
