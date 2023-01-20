@@ -59,7 +59,7 @@ export function Card(props) {
         <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-lg relative card-body">
           <div className="flex items-center justify-between absolute">
             <a href={props.steam_url} rel="noreferrer">
-              <img src={steam} alt="logo steam" className="h-10 cursor-pointer" />
+              <img       src={steam} alt="logo steam" className="h-10 cursor-pointer logosteam" />
             </a>
           </div>
           <h3 className="text-center text-xl text-white font-medium leading-8">
