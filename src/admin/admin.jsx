@@ -32,10 +32,11 @@ function Admin({ selectedUser, setShowModal }) {
   };
 
   return (
-    <div className="fixed inset-0 top-12 grid text-center text-whte">
-      <form className="bg-white flex flex-col" onSubmit={handleSave}>
+    <div className="fixed inset-0 top-12 grid text-center bg-card_bg ">
+      <div className=" mx-auto container">
+      <form className=" flex flex-col" onSubmit={handleSave}>
         <div class="relative mb-2">
-          <label for="name">Name:</label>
+          <label className="text-white"  for="name">Name:</label>
           <input
           disabled
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -46,7 +47,7 @@ function Admin({ selectedUser, setShowModal }) {
           />
         </div>
         <div class="relative mb-2">
-          <label for="nationality">nationality:</label>
+          <label className="text-white"  for="nationality">nationality:</label>
 
           <input
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -57,7 +58,7 @@ function Admin({ selectedUser, setShowModal }) {
           />
         </div>
         <div class="relative mb-2">
-          <label for="rating">Rating:</label>
+          <label className="text-white" for="rating">Rating:</label>
 
           <input
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -68,7 +69,7 @@ function Admin({ selectedUser, setShowModal }) {
           />
         </div>
         <div class="relative mb-2">
-          <label for="rank">rank:</label>
+          <label className="text-white"  for="rank">rank:</label>
           <input
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             type="text"
@@ -78,7 +79,7 @@ function Admin({ selectedUser, setShowModal }) {
           />
         </div>
         <div class="relative mb-2">
-          <label for="faceit">faceit:</label>
+          <label className="text-white"  for="faceit">faceit:</label>
           <input
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             type="text"
@@ -88,7 +89,7 @@ function Admin({ selectedUser, setShowModal }) {
           />
         </div>
         <div class="relative mb-2">
-          <label for="quality">quality:</label>
+          <label className="text-white"  for="quality">quality:</label>
           <input
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             type="text"
@@ -99,7 +100,7 @@ function Admin({ selectedUser, setShowModal }) {
         </div>
 
         <div class="relative mb-2">
-          <label for="img">img:</label>
+          <label className="text-white"  for="img">img:</label>
 
           <input
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -110,7 +111,7 @@ function Admin({ selectedUser, setShowModal }) {
           />
         </div>
         <div class="relative mb-2">
-          <label for="steam_url">steam_url:</label>
+          <label className="text-white"  for="steam_url">steam_url:</label>
 
           <input
             class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -125,6 +126,7 @@ function Admin({ selectedUser, setShowModal }) {
         <button                                      class="bg-admin hover:bg-green-700 text-white font-bold py-2 px-6 rounded my-6 max-w-sm mx-auto"
 onClick={() => setShowModal(false)}>Close</button>
       </form>
+      </div>
     </div>
   );
 }
