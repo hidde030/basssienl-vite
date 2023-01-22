@@ -8,7 +8,7 @@ const corsOptions = {
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
-
+const roleOrder = ["vip", "subscriber", "member"];
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "dist")));
@@ -18,23 +18,30 @@ app.get("/api", (req, res) => {
   let jsonData = require(file);
   res.status(200).send(jsonData);
 });
+app.get("/api/sort", (req, res) => {
+  let jsonData = require(file);
+  jsonData.data.sort((a, b) => {
+    let roleA = roleOrder.indexOf(a.role);
+    let roleB = roleOrder.indexOf(b.role);
+    if (roleA !== roleB) {
+      return roleA - roleB;
+    }
+    return a.name.localeCompare(b.name);
+  });
+
+  fs.writeFile(file, JSON.stringify(jsonData), (err) => {
+    if (err) {
+      res.status(500).send(err);
+      return;
+    }
+    res.status(200).send("JSON SORTED.");
+  });
+});
 // Handle client routing, return all requests to the app
 app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
-app.get("/api/sort", (req, res) => {
-  let jsonData = require(file);
-  jsonData.data.sort((a, b) => {
-    console.log(a.name, b.name);
-    console.log(a.rank, b.rank);
-    if (a.name < b.name) return -1;
-    if (a.name > b.name) return 1;
-    if (a.rank < b.rank) return -1;
-    if (a.rank > b.rank) return 1;
-    return 0;
-  });
-  res.status(200).send(jsonData);
-});
+
 app.post("/api/add", (req, res) => {
   let jsonData = require(file);
   jsonData.data.push(req.body);
