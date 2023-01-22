@@ -37,7 +37,7 @@ function UserList() {
   const sortCards = () => {
     const auth = sessionStorage.getItem("login");
     if (!auth) {
-      history.push("/login");
+      navigateTo("/login");
     }
     fetch("https://bassienl.nl/api/sort", {
       method: "GET",
@@ -53,10 +53,13 @@ function UserList() {
   const deleteCard = (name) => {
     const auth = sessionStorage.getItem("login");
     if (!auth) {
-      history.push("/login");
+      navigateTo("/login");
     }
     fetch(`https://bassienl.nl/api/delete/${name}`, {
       method: "DELETE",
+      headers: {
+        Authorization: sessionStorage.getItem("auth"),
+      },
     })
       .then((response) => response.json())
       .then((data) => {

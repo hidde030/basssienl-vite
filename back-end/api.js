@@ -83,7 +83,7 @@ app.post("/api/add", auth, (req, res) => {
       res.status(500).send(err);
       return;
     }
-    res.status(200).send("JSON ADDED.");
+    res.status(200).send("JSON file has been updated.");
   });
 });
 
