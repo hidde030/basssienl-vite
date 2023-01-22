@@ -52,7 +52,8 @@ app.get("/api/sort", auth, (req, res) => {
       res.status(500).send(err);
       return;
     }
-    res.status(200).send("JSON SORTED.");
+    //send json file
+    res.status(200).send(jsonData).sendmessage("JSON file has been sorted.");
   });
 });
 //delete route
@@ -66,7 +67,7 @@ app.delete("/api/delete/:name", auth, (req, res) => {
       res.status(500).send(err);
       return;
     }
-    res.status(200).send("JSON DELETED.");
+    res.status(200).send(jsonData).sendmessage("JSON file has been deleted.");
   });
 });
 
@@ -83,7 +84,7 @@ app.post("/api/add", auth, (req, res) => {
       res.status(500).send(err);
       return;
     }
-    res.status(200).send("JSON file has been updated.");
+    res.status(200).send(jsonData).sendmessage("JSON file has been added.");
   });
 });
 
@@ -110,7 +111,7 @@ app.put("/api/update", auth, (req, res) => {
       return;
     }
 
-    res.status(200).send("JSON file has been updated.");
+    res.status(200).send(jsonData).sendmessage("JSON file has been updated.");
   });
 });
 
