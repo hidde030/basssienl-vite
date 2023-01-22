@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-export default function Add() {
+export default function Add({ setShowAdd }) {
   const [newUser, setNewUser] = useState({
     role: "vip",
     nationality:
@@ -21,6 +21,8 @@ export default function Add() {
       console.log(data);
       if (res.ok) {
         setNewUser(newUser);
+        setShowAdd(false); // this will close the form after submitting the data
+
         console.log("Data added successfully");
       } else {
         console.log("Error in adding data");
