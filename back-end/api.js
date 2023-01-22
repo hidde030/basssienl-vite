@@ -37,6 +37,21 @@ app.get("/api/sort", (req, res) => {
     res.status(200).send("JSON SORTED.");
   });
 });
+//delete route
+app.delete("/api/delete/:name", (req, res) => {
+  let jsonData = require(file);
+  let obj = jsonData.data?.find((o) => o.name === req.params.name);
+  let index = jsonData.data.indexOf(obj);
+  jsonData.data.splice(index, 1);
+  fs.writeFile(file, JSON.stringify(jsonData), (err) => {
+    if (err) {
+      res.status(500).send(err);
+      return;
+    }
+    res.status(200).send("JSON DELETED.");
+  });
+});
+
 // Handle client routing, return all requests to the app
 app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));

@@ -31,6 +31,15 @@ function UserList() {
         setResponse(data);
       });
   };
+  const deleteCard = (name) => {
+    fetch(`https://bassienl.nl/api/delete/${name}`, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setResponse(data);
+      });
+  };
 
   return (
     <div className="container mx-auto bg-admin bg-opacity-10">
@@ -51,23 +60,33 @@ function UserList() {
 
       <ul>
         {response.data?.map((user) => (
-          <li
-            className="px-6 py-2 border-b border-gray w-full text-white"
-            key={user.name}
-            onClick={() => handleSelect(user)}>
-            {/* username and image */}
-            <div className="flex items-center">
-              <img
-                className="w-10 h-10 rounded-full mr-
+          <div className="flex">
+            <li
+              className="px-6 py-2 border-b border-gray w-full text-white"
+              key={user.name}
+              onClick={() => handleSelect(user)}>
+              {/* username and image */}
+              <div className="flex items-center">
+                <img
+                  className="w-10 h-10 rounded-full mr-
                 4"
-                src={user.img}
-                alt="image"
-              />
-              <div className="text-sm text-center">
-                <p className="text-white leading-none text-center">{user.name}</p>
+                  src={user.img}
+                  alt="image"
+                />
+                <div className="text-sm text-center">
+                  <p className="text-white leading-none text-center font-bold">
+                    {user.name}
+                  </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
+            {/* red hexa color */}
+            <button
+              className="bg-[#FF0000] text-white font-bold py-2 px-4 my-2  rounded "
+              onClick={() => deleteCard(user.name)}>
+              Delete
+            </button>
+          </div>
         ))}
       </ul>
       {showModal && <Admin selectedUser={selectedUser} setShowModal={setShowModal} />}
