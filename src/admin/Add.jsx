@@ -21,7 +21,6 @@ export default function Add({ setShowAdd }) {
       console.log(data);
       if (res.ok) {
         setNewUser(newUser);
-        setShowAdd(false); // this will close the form after submitting the data
 
         console.log("Data added successfully");
       } else {
@@ -30,6 +29,7 @@ export default function Add({ setShowAdd }) {
     } catch (error) {
       console.log(error);
     }
+    setShowAdd(false);
   };
   return (
     <form onSubmit={handleAdd} className="bg-white p-6 rounded-lg">
@@ -154,9 +154,7 @@ export default function Add({ setShowAdd }) {
       </div>
 
       <div className="text-center">
-        <button
-          className="bg-admin hover:bg-green-700 text-white font-bold py-2 px-6 rounded my-6 max-w-sm mx-auto"
-          onClick={() => setShowAdd(false)}>
+        <button className="bg-admin hover:bg-green-700 text-white font-bold py-2 px-6 rounded my-6 max-w-sm mx-auto">
           Add new player
         </button>
       </div>
