@@ -34,108 +34,132 @@ function Admin({ selectedUser, setShowModal }) {
   return (
     <div className="fixed inset-0 top-12 grid text-center bg-card_bg ">
       <div className=" mx-auto container">
-      <form className="flex flex-col" onSubmit={handleSave}>
-        <div class="relative mb-2">
-          <label className="text-white"  for="name">Name:</label>
-          <input
-          disabled
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="relative mb-2">
-          <label className="text-white"  for="nationality">nationality:</label>
+        <form className="flex flex-col" onSubmit={handleSave}>
+          <div class="relative mb-2">
+            <label className="text-white" for="name">
+              Name:
+            </label>
+            <input
+              disabled
+              class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="relative mb-2">
+            <label className="text-white" for="nationality">
+              nationality:
+            </label>
 
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="nationality"
-            value={formData.nationality}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="relative mb-2">
-          <label className="text-white" for="rating">Rating:</label>
+            <input
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="nationality"
+              value={formData.nationality}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="relative mb-2">
+            <label className="text-white" for="rating">
+              Rating:
+            </label>
 
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="rating"
-            value={formData.rating}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="relative mb-2">
-          <label className="text-white"  for="rank">rank:</label>
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="rank"
-            value={formData.rank}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="relative mb-2">
-          <label className="text-white"  for="faceit">faceit:</label>
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="faceit"
-            value={formData.faceit}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="relative mb-2">
-          <label className="text-white"  for="quality">quality:</label>
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="quality"
-            value={formData.quality}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="relative mb-2">
-          <label className="text-white"  for="weakness">weakness:</label>
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="weakness"
-            value={formData.weakness}
-            onChange={handleChange}
-          />
-        </div>
+            <input
+              class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="rating"
+              value={formData.rating}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="relative mb-2">
+            <label className="text-white" for="rank">
+              rank:
+            </label>
+            <input
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="rank"
+              value={formData.rank}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="relative mb-2">
+            <label className="text-white" for="faceit">
+              faceit:
+            </label>
+            <input
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="faceit"
+              value={formData.faceit}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="relative mb-2">
+            <label className="text-white" for="quality">
+              quality:
+            </label>
+            <input
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="quality"
+              value={formData.quality}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="relative mb-2">
+            <label className="text-white" for="weakness">
+              weakness:
+            </label>
+            <input
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="weakness"
+              value={formData.weakness}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div class="relative mb-2">
-          <label className="text-white"  for="img">img:</label>
+          <div className="relative mb-2">
+            <label className="text-white" for="img">
+              img:
+            </label>
 
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="img"
-            value={formData.img}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="relative mb-2">
-          <label className="text-white"  for="steam_url">steam_url:</label>
+            <input
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="img"
+              value={formData.img}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="relative mb-2">
+            <label className="text-white" for="steam_url">
+              steam_url:
+            </label>
 
-          <input
-            class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            type="text"
-            name="steam_url"
-            value={formData.steam_url}
-            onChange={handleChange}
-          />
-        </div>
-        <button                                    class="bg-admin hover:bg-green-700 text-white font-bold py-2 px-6 rounded my-6 max-w-sm mx-auto"
- onClick={handleSave}>Save</button>
-        <button                                      class="bg-admin hover:bg-green-700 text-white font-bold py-2 px-6 rounded my-6 max-w-sm mx-auto"
-onClick={() => setShowModal(false)}>Close</button>
-      </form>
+            <input
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              type="text"
+              name="steam_url"
+              value={formData.steam_url}
+              onChange={handleChange}
+            />
+          </div>
+          <button
+            className="bg-admin hover:bg-green-700 text-white font-bold py-2 px-6 rounded my-6 max-w-sm mx-auto"
+            onClick={handleSave}>
+            Save
+          </button>
+          <button
+            className="bg-admin hover:bg-green-700 text-white font-bold py-2 px-6 rounded my-6 max-w-sm mx-auto"
+            onClick={() => setShowModal(false)}>
+            Close
+          </button>
+        </form>
       </div>
     </div>
   );
