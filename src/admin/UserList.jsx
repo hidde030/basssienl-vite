@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from "react";
 import Add from "./Add";
 import Admin from "./Admin";
+import { useNavigate } from "react-router-dom";
 
 function UserList() {
+  const navigateTo = useNavigate();
   const [response, setResponse] = useState({});
   const [selectedUser, setSelectedUser] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [showAdd, setShowAdd] = useState(false);
 
   useEffect(() => {
-    fetch("https://bassienl.nl/api")
+    const auth = sessionStorage.getItem("login");
+    if (!auth) {
+      navigateTo("/login");
+    }
+    fetch("https://bassienl.nl/api", {
+      method: "GET",
+      headers: {
+        Authorization: sessionStorage.getItem("auth"),
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
         setResponse(data);
@@ -21,17 +32,29 @@ function UserList() {
   }, []);
   const handleSelect = (user) => {
     setSelectedUser(user);
-
     setShowModal(true);
   };
   const sortCards = () => {
-    fetch("https://bassienl.nl/api/sort")
+    const auth = sessionStorage.getItem("login");
+    if (!auth) {
+      history.push("/login");
+    }
+    fetch("https://bassienl.nl/api/sort", {
+      method: "GET",
+      headers: {
+        Authorization: sessionStorage.getItem("auth"),
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
         setResponse(data);
       });
   };
   const deleteCard = (name) => {
+    const auth = sessionStorage.getItem("login");
+    if (!auth) {
+      history.push("/login");
+    }
     fetch(`https://bassienl.nl/api/delete/${name}`, {
       method: "DELETE",
     })

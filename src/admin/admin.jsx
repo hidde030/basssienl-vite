@@ -1,16 +1,24 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Admin({ selectedUser, setShowModal }) {
+  const navigateTo = useNavigate();
+
   const [formData, setFormData] = useState({ ...selectedUser });
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
   const handleSave = async (event) => {
+    const auth = sessionStorage.getItem("login");
+    if (!auth) {
+      navigateTo("/login");
+    }
     try {
       const response = await fetch("https://bassienl.nl/api/update", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          Authorization: sessionStorage.getItem("auth"),
         },
 
         body: JSON.stringify(formData),

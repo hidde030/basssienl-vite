@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Add({ setShowAdd }) {
+  const navigateTo = useNavigate();
+
   const [newUser, setNewUser] = useState({
     role: "vip",
     nationality:
@@ -9,11 +12,16 @@ export default function Add({ setShowAdd }) {
 
   const handleAdd = async (event) => {
     event.preventDefault();
+    const auth = sessionStorage.getItem("login");
+    if (!auth) {
+      navigateTo("/login");
+    }
     try {
       const res = await fetch("https://bassienl.nl/api/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Authorization: sessionStorage.getItem("auth"),
         },
         body: JSON.stringify(newUser),
       });
