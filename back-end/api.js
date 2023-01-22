@@ -3,6 +3,8 @@ const path = require("path");
 const app = express();
 const fs = require("fs");
 const cors = require("cors");
+const basicAuth = require("basic-auth");
+
 const corsOptions = {
   origin: "*",
   credentials: true, //access-control-allow-credentials:true
@@ -12,13 +14,29 @@ const roleOrder = ["vip", "subscriber", "member"];
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "dist")));
+const username = "admin";
+const password = "admin";
 
+const auth = (req, res, next) => {
+  const user = basicAuth(req);
+  if (!user || user.name !== "admin" || user.pass !== "admin") {
+    res.set("WWW-Authenticate", 'Basic realm="example"');
+    res.sendStatus(401);
+  } else {
+    next();
+  }
+};
+app.post("/api/auth", auth, (req, res) => {
+  res.status(200).send("AUTHENTICATED");
+  // redirect to the main page
+  res.redirect("/admin");
+});
 const file = "./data/user.json";
 app.get("/api", (req, res) => {
   let jsonData = require(file);
   res.status(200).send(jsonData);
 });
-app.get("/api/sort", (req, res) => {
+app.get("/api/sort", auth, (req, res) => {
   let jsonData = require(file);
   jsonData.data.sort((a, b) => {
     let roleA = roleOrder.indexOf(a.role);
@@ -38,7 +56,7 @@ app.get("/api/sort", (req, res) => {
   });
 });
 //delete route
-app.delete("/api/delete/:name", (req, res) => {
+app.delete("/api/delete/:name", auth, (req, res) => {
   let jsonData = require(file);
   let obj = jsonData.data?.find((o) => o.name === req.params.name);
   let index = jsonData.data.indexOf(obj);
@@ -57,7 +75,7 @@ app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
-app.post("/api/add", (req, res) => {
+app.post("/api/add", auth, (req, res) => {
   let jsonData = require(file);
   jsonData.data.push(req.body);
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
@@ -69,7 +87,7 @@ app.post("/api/add", (req, res) => {
   });
 });
 
-app.put("/api/update", (req, res) => {
+app.put("/api/update", auth, (req, res) => {
   // Read the JSON file
   let jsonData = require(file);
   //   get object by name
