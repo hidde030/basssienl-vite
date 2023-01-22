@@ -36,7 +36,7 @@ function Admin({ selectedUser, setShowModal }) {
       <div className=" mx-auto container">
         <form className="flex flex-col" onSubmit={handleSave}>
           <div class="relative mb-2">
-            <label className="text-white" for="name">
+            <label className="text-white" htmlFor="name">
               Name:
             </label>
             <input
@@ -49,7 +49,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className="relative mb-2">
-            <label className="text-white" for="nationality">
+            <label className="text-white" htmlFor="nationality">
               nationality:
             </label>
 
@@ -62,7 +62,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className="relative mb-2">
-            <label className="text-white" for="rating">
+            <label className="text-white" htmlFor="rating">
               Rating:
             </label>
 
@@ -75,7 +75,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className="relative mb-2">
-            <label className="text-white" for="rank">
+            <label className="text-white" htmlFor="rank">
               rank:
             </label>
             <input
@@ -87,7 +87,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className="relative mb-2">
-            <label className="text-white" for="faceit">
+            <label className="text-white" htmlFor="faceit">
               faceit:
             </label>
             <input
@@ -99,7 +99,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className="relative mb-2">
-            <label className="text-white" for="quality">
+            <label className="text-white" htmlFor="quality">
               quality:
             </label>
             <input
@@ -111,7 +111,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className="relative mb-2">
-            <label className="text-white" for="weakness">
+            <label className="text-white" htmlFor="weakness">
               weakness:
             </label>
             <input
@@ -124,7 +124,7 @@ function Admin({ selectedUser, setShowModal }) {
           </div>
 
           <div className="relative mb-2">
-            <label className="text-white" for="img">
+            <label className="text-white" htmlFor="img">
               img:
             </label>
 
@@ -137,7 +137,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className="relative mb-2">
-            <label className="text-white" for="steam_url">
+            <label className="text-white" htmlFor="steam_url">
               steam_url:
             </label>
 
