@@ -10,7 +10,7 @@ export default function Add({ setShowAdd }) {
   const handleAdd = async (event) => {
     event.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/api/add", {
+      const res = await fetch("https://bassienl.nl/api/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
