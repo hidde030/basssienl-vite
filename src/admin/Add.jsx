@@ -68,7 +68,9 @@ export default function Add({ setShowAdd }) {
         <label className="block text-gray-700 font-medium mb-2">Rating:</label>
         <input
           className="border border-gray-400 p-2 rounded-lg w-full"
-          type="text"
+          type="number"
+          min={0}
+          max={10}
           name="rating"
           value={newUser.rating}
           onChange={(e) => setNewUser({ ...newUser, rating: e.target.value })}

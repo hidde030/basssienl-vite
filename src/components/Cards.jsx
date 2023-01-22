@@ -1,11 +1,11 @@
-import React, { useRef, useEffect,useState }  from 'react';
+import React, { useRef, useEffect, useState } from "react";
 import steam from "../img/steam.svg";
 export default function GridCards() {
-  const [response , setResponse] = useState({});
+  const [response, setResponse] = useState({});
   useEffect(() => {
-    fetch('http://localhost:3000/api')
-      .then(res => res.json())
-      .then(data => {
+    fetch("https://bassienl.nl/api")
+      .then((res) => res.json())
+      .then((data) => {
         setResponse(data);
       });
   }, []);
@@ -35,15 +35,14 @@ export default function GridCards() {
 }
 
 export function Card(props) {
-    // scroll into view with anchor tag in url
-    const ref = useRef(null);
-    useEffect(() => {
-      const hash = window.location.hash;
-      if (hash === `#${props.name}`) {
-        ref.current.scrollIntoView({ behavior: "smooth" });
-          
-      }
-    }, []);  
+  // scroll into view with anchor tag in url
+  const ref = useRef(null);
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === `#${props.name}`) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
     <a ref={ref} href={`#${props.name}`} className={`${props.role}`}>
       <div className={`card-item sbg-white rounded-lg shadow-lg  `}>
@@ -59,7 +58,11 @@ export function Card(props) {
         <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-lg relative card-body">
           <div className="flex items-center justify-between absolute">
             <a href={props.steam_url} rel="noreferrer">
-              <img       src={steam} alt="logo steam" className="h-10 cursor-pointer logosteam" />
+              <img
+                src={steam}
+                alt="logo steam"
+                className="h-10 cursor-pointer logosteam"
+              />
             </a>
           </div>
           <h3 className="text-center text-xl text-white font-medium leading-8">

@@ -9,7 +9,7 @@ function UserList() {
   const [showAdd, setShowAdd] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api")
+    fetch("https://bassienl.nl/api")
       .then((response) => response.json())
       .then((data) => {
         setResponse(data);
@@ -25,7 +25,7 @@ function UserList() {
     setShowModal(true);
   };
   const sortCards = () => {
-    fetch("http://localhost:3000/api/sort")
+    fetch("https://bassienl.nl/api/sort")
       .then((response) => response.json())
       .then((data) => {
         setResponse(data);
