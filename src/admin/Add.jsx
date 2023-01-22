@@ -69,8 +69,8 @@ export default function Add({ setShowAdd }) {
         <input
           className="border border-gray-400 p-2 rounded-lg w-full"
           type="number"
-          min={0}
-          max={10}
+          min={1}
+          max={100}
           name="rating"
           value={newUser.rating}
           onChange={(e) => setNewUser({ ...newUser, rating: e.target.value })}
@@ -107,8 +107,10 @@ export default function Add({ setShowAdd }) {
         <label className="block text-gray-700 font-medium mb-2">Faceit:</label>
         <input
           className="border border-gray-400 p-2 rounded-lg w-full"
-          type="text"
+          type="number"
           name="faceit"
+          min={1}
+          max={10}
           value={newUser.faceit}
           onChange={(e) => setNewUser({ ...newUser, faceit: e.target.value })}
         />
