@@ -58,7 +58,7 @@ function Admin({ selectedUser, setShowModal }) {
           </div>
           <div className="relative mb-2">
             <label className="text-white" htmlFor="nationality">
-              nationality:
+              Nationality:
             </label>
 
             <input
@@ -84,7 +84,7 @@ function Admin({ selectedUser, setShowModal }) {
           </div>
           <div className="relative mb-2">
             <label className="text-white" htmlFor="rank">
-              rank:
+              Rank:
             </label>
             <input
               className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -96,7 +96,7 @@ function Admin({ selectedUser, setShowModal }) {
           </div>
           <div className="relative mb-2">
             <label className="text-white" htmlFor="faceit">
-              faceit:
+              Faceit:
             </label>
             <input
               className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -108,7 +108,7 @@ function Admin({ selectedUser, setShowModal }) {
           </div>
           <div className="relative mb-2">
             <label className="text-white" htmlFor="quality">
-              quality:
+              Quality:
             </label>
             <input
               className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -120,7 +120,7 @@ function Admin({ selectedUser, setShowModal }) {
           </div>
           <div className="relative mb-2">
             <label className="text-white" htmlFor="weakness">
-              weakness:
+              Weakness:
             </label>
             <input
               className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -133,7 +133,7 @@ function Admin({ selectedUser, setShowModal }) {
 
           <div className="relative mb-2">
             <label className="text-white" htmlFor="img">
-              img:
+              Image:
             </label>
 
             <input
@@ -146,7 +146,7 @@ function Admin({ selectedUser, setShowModal }) {
           </div>
           <div className="relative mb-2">
             <label className="text-white" htmlFor="steam_url">
-              steam_url:
+              Steam URL:
             </label>
 
             <input

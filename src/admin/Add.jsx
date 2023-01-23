@@ -61,13 +61,13 @@ export default function Add({ setShowAdd }) {
           value={newUser.nationality}
           onChange={(e) => setNewUser({ ...newUser, nationality: e.target.value })}>
           <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png">
-            nederlands
+            Nederlands
           </option>
           <option value="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg">
-            engels
+            Engels
           </option>
           <option value="https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png">
-            belgie
+            Belgie
           </option>
         </select>
       </div>
