@@ -1,6 +1,5 @@
 {
   "data": [
-
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "94",
@@ -132,18 +131,6 @@
       "weakness": "Ansel",
       "img": "https://bassienl.nl/images/Aniek.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198144680147"
-    },
-    {
-      "role": "vip",
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "name": "nienke stiksma",
-      "rating": "100",
-      "rank": "Gold Nova 1",
-      "faceit": "1",
-      "quality": "quality",
-      "weakness": "Full dawd Monkey",
-      "img": "https://images.indianexpress.com/2022/04/GettyImages-men-health-1200.jpg",
-      "steam": "steam profile"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -360,6 +347,18 @@
       "weakness": "Inconcistent",
       "img": "https://bassienl.nl/images/iParanormal.png",
       "steam_url": "https://steamcommunity.com/id/IPaRaNoMaL"
+    },
+    {
+      "role": "subscriber",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Joris",
+      "rating": "60",
+      "steam": "https://steamcommunity.com/id/TheyCallMeNotSiroj",
+      "faceit": "1",
+      "quality": "Map Positioning",
+      "rank": "Master Guardian",
+      "img": "https://bassienl.nl/images/Joris.png",
+      "weakness": "Dikke jonko tijd"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",

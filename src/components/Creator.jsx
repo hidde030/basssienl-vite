@@ -2,30 +2,31 @@ import React from "react";
 import steam from "../img/steam.svg";
 const admins = [
   {
-    "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-    "rating": "94",
-    "role": "creator",
-    "name": "Bart",
-    "rank": "Global Elite",
-    "faceit": "10",
-    "quality": "God Aim",
-    "weakness": "Full Monkey",
-    "img": "https://bassienl.nl/images/Bart.png",
-    "steam_url": "https://steamcommunity.com/id/BartiBlyat/"
-},
-{
-  "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-  "rating": "90",
-  "role": "creator",
-  "name": "Hidde",
-  "rank": "Global Elite",
-  "faceit": "7",
-  "quality": "Monkey Peek",
-  "weakness": "Communication",
-  "img": "https://bassienl.nl/images/Hidde.png",
-  "steam_url": "https://steamcommunity.com/id/hiddebackup1234"
-
-}
+    nationality:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+    rating: "94",
+    role: "creator",
+    name: "Bart",
+    rank: "Global Elite",
+    faceit: "10",
+    quality: "God Aim",
+    weakness: "Full Monkey",
+    img: "https://bassienl.nl/images/Bart.png",
+    steam_url: "https://steamcommunity.com/id/BartiBlyat/",
+  },
+  {
+    nationality:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+    rating: "90",
+    role: "creator",
+    name: "Hidde",
+    rank: "Global Elite",
+    faceit: "7",
+    quality: "Monkey Peek",
+    weakness: "Communication",
+    img: "https://bassienl.nl/images/Hidde.png",
+    steam_url: "https://steamcommunity.com/id/hiddebackup1234",
+  },
 ];
 
 export default function Creator() {
@@ -71,7 +72,7 @@ export function Card(props) {
           />
           <img className="absolute card-flag" src={props.nationality} alt="flag" />
         </div>
-        <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-lg relative card-body">
+        <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-sm relative card-body">
           <div className="flex items-center justify-between absolute">
             <a href={props.steam_url} rel="noreferrer">
               <img src={steam} alt="logo steam" className="h-10 cursor-pointer" />

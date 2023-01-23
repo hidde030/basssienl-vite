@@ -55,9 +55,12 @@ export function Card(props) {
           />
           <img className="absolute card-flag" src={props.nationality} alt="flag" />
         </div>
-        <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-lg relative card-body">
+        <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-sm relative card-body">
           <div className="flex items-center justify-between absolute">
-            <a href={props.steam_url} rel="noreferrer">
+            <a
+              href={props.steam_url}
+              rel="noreferrer"
+              className="transition delay-150 duration-100 hover:scale-125 ease-in-out">
               <img
                 src={steam}
                 alt="logo steam"

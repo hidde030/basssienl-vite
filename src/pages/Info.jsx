@@ -3,8 +3,8 @@ import React from "react";
 function Info() {
   return (
     <div className="bg-gray-200 p-4 text-white bg-gray bg-opacity-30 ">
-      <div className="container mx-auto md:pr-28 lg:pr-52">
-        <h1 className="text-xl font-bold">How to obtain a card?</h1>
+      <div className="container mx-auto md:pr-28 lg:pr-52 px-10">
+        <h1 className="text-xl font-bold text-admin">How to obtain a card?</h1>
         <p className="my-2">
           You obtain a card by playing CS:GO games with the streamer BassieNL! Come to his
           streams, be active in chat, be kind to the others and earn a card! You deserve a
