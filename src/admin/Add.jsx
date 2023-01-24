@@ -17,7 +17,7 @@ export default function Add({ setShowAdd }) {
       navigateTo("/login");
     }
     try {
-      const res = await fetch("https://bassienl.nl/api/add", {
+      const res = await fetch("http://localhost:3000/api/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -148,10 +148,10 @@ export default function Add({ setShowAdd }) {
         <label className="block text-gray-700 font-medium mb-2">Image:</label>
         <input
           className="border border-gray-400 p-2 rounded-lg w-full"
-          type="text"
+          type="file"
           name="img"
           value={newUser.img}
-          onChange={(e) => setNewUser({ ...newUser, img: e.target.value })}
+          onChange={(e) => setNewUser({ ...newUser, img: e.target.files[0] })}
         />
       </div>
       <div className="mb-4">

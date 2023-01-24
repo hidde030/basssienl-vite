@@ -3,7 +3,7 @@ import steam from "../img/steam.svg";
 export default function GridCards() {
   const [response, setResponse] = useState({});
   useEffect(() => {
-    fetch("https://bassienl.nl/api")
+    fetch("http://localhost:3000/api")
       .then((res) => res.json())
       .then((data) => {
         setResponse(data);

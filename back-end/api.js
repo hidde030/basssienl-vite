@@ -4,7 +4,8 @@ const app = express();
 const fs = require("fs");
 const cors = require("cors");
 const basicAuth = require("basic-auth");
-
+const multer = require("multer");
+const port = process.env.PORT || 3000;
 const corsOptions = {
   origin: "*",
   credentials: true, //access-control-allow-credentials:true
@@ -35,6 +36,28 @@ const file = "./data/user.json";
 app.get("/api", (req, res) => {
   let jsonData = require(file);
   res.status(200).send(jsonData);
+});
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "./uploads/");
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + "-" + Date.now());
+  },
+});
+
+const upload = multer({ storage: storage }).single("image");
+
+app.post("/upload", function (req, res) {
+  upload(req, res, function (err) {
+    if (err instanceof multer.MulterError) {
+      return res.status(500).json(err);
+    } else if (err) {
+      return res.status(500).json(err);
+    }
+    return res.status(200).send(req.file);
+  });
 });
 app.get("/api/sort", auth, (req, res) => {
   let jsonData = require(file);
@@ -115,6 +138,6 @@ app.put("/api/update", auth, (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server is running on port 3000");
 });
