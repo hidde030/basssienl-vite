@@ -15,7 +15,7 @@ function UserList() {
     if (!auth) {
       navigateTo("/login");
     }
-    fetch("http://localhost:3000/api", {
+    fetch("https://bassienl.nl/api", {
       method: "GET",
       headers: {
         Authorization: sessionStorage.getItem("auth"),
@@ -39,7 +39,7 @@ function UserList() {
     if (!auth) {
       navigateTo("/login");
     }
-    fetch("http://localhost:3000/api/sort", {
+    fetch("https://bassienl.nl/api/sort", {
       method: "GET",
       headers: {
         Authorization: sessionStorage.getItem("auth"),
@@ -55,7 +55,7 @@ function UserList() {
     if (!auth) {
       navigateTo("/login");
     }
-    fetch(`http://localhost:3000/api/delete/${name}`, {
+    fetch(`https://bassienl.nl/api/delete/${name}`, {
       method: "DELETE",
       headers: {
         Authorization: sessionStorage.getItem("auth"),

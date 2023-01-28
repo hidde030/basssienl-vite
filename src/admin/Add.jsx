@@ -17,7 +17,7 @@ export default function Add({ setShowAdd }) {
       navigateTo("/login");
     }
     try {
-      const res = await fetch("http://localhost:3000/api/add", {
+      const res = await fetch("https://bassienl.nl/api/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
