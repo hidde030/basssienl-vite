@@ -11,6 +11,7 @@ module.exports = {
       gray: "#8E9297",
       faceit: "#FFA500",
       admin: "#FF0000",
+      discord: "#7289DA",
     },
     screens: {
       sm: "640px",

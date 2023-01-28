@@ -8,6 +8,7 @@ import Info from "./pages/Info";
 import Login from "./pages/Login";
 import "./styles/style.scss";
 import UserList from "./admin/UserList";
+import Discord from "./pages/Discord";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<OverOns />} />
         <Route path="/thanks" element={<Thanks />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/discord" element={<Discord />} />
         <Route path="/admin" element={<UserList />} />
         <Route path="*" element={<h1>404: Not Found</h1>} />
       </Routes>

@@ -100,7 +100,7 @@ function UserList() {
                   alt="image"
                 />
                 <div className="text-sm text-center">
-                  <p className="text-white leading-none text-center font-bold">
+                  <p className="text-white leading-none text-center font-bold pl-4">
                     {user.name}
                   </p>
                 </div>
