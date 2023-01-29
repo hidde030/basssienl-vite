@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const DiscordInvite = () => {
   const inviteLink = "https://discord.gg/8btdhb8S9v";

@@ -56,6 +56,22 @@ function Admin({ selectedUser, setShowModal }) {
               onChange={handleChange}
             />
           </div>
+          <div className=" relative mb-4">
+            <label htmlFor="role" className="block text-gray-700 font-medium mb-2">
+              Role:
+            </label>
+            <select
+              className="border border-gray-400 p-2 rounded-lg w-full"
+              name="role"
+              value={formData.role}
+              onChange={handleChange}>
+              <option selected value="vip">
+                vip
+              </option>
+              <option value="subscriber">subscriber</option>
+              <option value="member">member</option>
+            </select>
+          </div>
           <div className="relative mb-2">
             <label className="text-white" htmlFor="nationality">
               Nationality:
