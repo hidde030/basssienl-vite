@@ -43,8 +43,7 @@ export default function GridCards() {
       </form>
 
       <div className="grid grid-cols-1 :grid-cols-2 lg:grid-cols-4 gap-6">
-        {response.data &&
-          sortBy(response.data, sortCriteria) &&
+        {sortBy(response.data, sortCriteria) &&
           response.data?.map(function (object, i) {
             return (
               <Card
