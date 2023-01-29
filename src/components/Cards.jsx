@@ -2,6 +2,22 @@ import React, { useRef, useEffect, useState } from "react";
 import steam from "../img/steam.svg";
 export default function GridCards() {
   const [response, setResponse] = useState({});
+  const [sortCriteria, setSortCriteria] = useState("");
+
+  const sortBy = (data, sortCriteria) => {
+    switch (sortCriteria) {
+      case "name":
+        return data.sort((a, b) => a.name.localeCompare(b.name));
+      case "faceit":
+        return data.sort((a, b) => b.faceit - a.faceit);
+      case "rating":
+        return data.sort((a, b) => b.rating - a.rating);
+      case "nationality":
+        return data.sort((a, b) => a.nationality.localeCompare(b.nationality));
+      default:
+        return data;
+    }
+  };
   useEffect(() => {
     fetch("https://bassienl.nl/api")
       .then((res) => res.json())
@@ -11,24 +27,41 @@ export default function GridCards() {
   }, []);
   return (
     <div className="container mx-auto lg:pt-20 pb-6">
+      <form className=" flex justify-end py-2">
+        <label htmlFor="sort" className="text-white mr-3">
+          Sort by:
+        </label>
+        <select
+          id="sort"
+          value={sortCriteria}
+          onChange={(e) => setSortCriteria(e.target.value)}>
+          <option value="name">Name</option>
+          <option value="faceit">Faceit</option>
+          <option value="rating">Rating</option>
+          <option value="nationality">Nationality</option>
+        </select>
+      </form>
+
       <div className="grid grid-cols-1 :grid-cols-2 lg:grid-cols-4 gap-6">
-        {response.data?.map(function (object, i) {
-          return (
-            <Card
-              nationality={object.nationality}
-              rating={object.rating}
-              role={object.role}
-              name={object.name}
-              rank={object.rank}
-              faceit={object.faceit}
-              quality={object.quality}
-              weakness={object.weakness}
-              img={object.img}
-              steam_url={object.steam_url}
-              key={i}
-            />
-          );
-        })}
+        {response.data &&
+          sortBy(response.data, sortCriteria) &&
+          response.data?.map(function (object, i) {
+            return (
+              <Card
+                nationality={object.nationality}
+                rating={object.rating}
+                role={object.role}
+                name={object.name}
+                rank={object.rank}
+                faceit={object.faceit}
+                quality={object.quality}
+                weakness={object.weakness}
+                img={object.img}
+                steam_url={object.steam_url}
+                key={i}
+              />
+            );
+          })}
       </div>
     </div>
   );
