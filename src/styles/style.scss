@@ -46,6 +46,10 @@ body {
 }
 .is-login {
   background: url("https://bassienl.nl/images/login.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .card-item {
   position: relative;
