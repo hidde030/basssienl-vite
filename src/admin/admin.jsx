@@ -57,7 +57,7 @@ function Admin({ selectedUser, setShowModal }) {
             />
           </div>
           <div className=" relative mb-4">
-            <label htmlFor="role" className="block text-gray-700 font-medium mb-2">
+            <label htmlFor="role" className="block text-white font-medium mb-2">
               Role:
             </label>
             <select
