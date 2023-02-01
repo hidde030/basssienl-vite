@@ -10,7 +10,6 @@ const storage = multer.diskStorage({
     cb(null, "uploads/");
   },
   filename: function (req, file, cb) {
-    console.log("filename hadhashdhadh" + file.originalname);
     cb(null, `${file.originalname}`);
   },
 });
@@ -51,9 +50,6 @@ app.get("/api", (req, res) => {
 
 // app.use('/images', express.static('images'))
 app.get("/images/:imageName", (req, res) => {
-  // do a bunch of if statements to make sure the user is
-  // authorized to view this image, then
-
   const imageName = req.params.imageName;
   const readStream = fs.createReadStream(`images/${imageName}`);
   readStream.pipe(res);
@@ -144,6 +140,7 @@ app.put("/api/update", auth, (req, res) => {
   });
 });
 
+//what can express do?
 app.listen(port, () => {
   console.log("Server is running on port 3000");
 });

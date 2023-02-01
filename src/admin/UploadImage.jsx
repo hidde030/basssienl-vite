@@ -16,7 +16,7 @@ export default function UploadImage({ setShowImage }) {
     // const result = await axios.post("/api/images", formData, {
     //   headers: { "Content-Type": "multipart/form-data" },
     // });
-    const result = await fetch("http://localhost:3000/api/images", {
+    const result = await fetch("https://bassienl.nl/api/images", {
       method: "POST",
       body: formData,
     });
