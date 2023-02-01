@@ -5,6 +5,17 @@ const fs = require("fs");
 const cors = require("cors");
 const basicAuth = require("basic-auth");
 const multer = require("multer");
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "uploads/");
+  },
+  filename: function (req, file, cb) {
+    console.log("filename hadhashdhadh" + file.originalname);
+    cb(null, `${file.originalname}`);
+  },
+});
+
+const upload = multer({ storage: storage });
 const port = process.env.PORT || 3000;
 const corsOptions = {
   origin: "*",
@@ -38,27 +49,22 @@ app.get("/api", (req, res) => {
   res.status(200).send(jsonData);
 });
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "./uploads/");
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.fieldname + "-" + Date.now());
-  },
+// app.use('/images', express.static('images'))
+app.get("/images/:imageName", (req, res) => {
+  // do a bunch of if statements to make sure the user is
+  // authorized to view this image, then
+
+  const imageName = req.params.imageName;
+  const readStream = fs.createReadStream(`images/${imageName}`);
+  readStream.pipe(res);
 });
 
-const upload = multer({ storage: storage }).single("image");
+app.post("/api/images", upload.single("image"), (req, res) => {
+  console.log(req.file);
 
-app.post("/upload", function (req, res) {
-  upload(req, res, function (err) {
-    if (err instanceof multer.MulterError) {
-      return res.status(500).json(err);
-    } else if (err) {
-      return res.status(500).json(err);
-    }
-    return res.status(200).send(req.file);
-  });
+  res.send("Image uploaded successfully.");
 });
+
 app.get("/api/sort", auth, (req, res) => {
   let jsonData = require(file);
   jsonData.data.sort((a, b) => {

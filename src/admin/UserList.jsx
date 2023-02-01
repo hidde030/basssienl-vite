@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Add from "./Add";
 import Admin from "./Admin";
+import UploadImage from "./UploadImage";
 import { useNavigate } from "react-router-dom";
 
 function UserList() {
@@ -9,6 +10,7 @@ function UserList() {
   const [selectedUser, setSelectedUser] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [showAdd, setShowAdd] = useState(false);
+  const [showImage, setShowImage] = useState(false);
 
   useEffect(() => {
     const auth = sessionStorage.getItem("login");
@@ -80,8 +82,13 @@ function UserList() {
           onClick={() => sortCards()}>
           Sort the cards
         </button>
+        <button
+          className="bg-card_purple text-white font-bold py-2 px-4 rounded ml-4"
+          onClick={() => setShowImage(true)}>
+          Upload image
+        </button>
       </div>
-
+      {showImage && <UploadImage setShowImage={setShowImage} />}
       {showAdd && <Add setShowAdd={setShowAdd} />}
 
       <ul>
