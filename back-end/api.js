@@ -25,12 +25,12 @@ const roleOrder = ["vip", "subscriber", "member"];
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "dist")));
-const username = "admin";
-const password = "admin";
+// const username = "bassienl";
+// const password = "B@ssi3NL";
 
 const auth = (req, res, next) => {
   const user = basicAuth(req);
-  if (!user || user.name !== "admin" || user.pass !== "admin") {
+  if (!user || user.name !== "bassienl" || user.pass !== "B@ssi3NL") {
     res.set("WWW-Authenticate", 'Basic realm="example"');
     res.sendStatus(401);
   } else {
