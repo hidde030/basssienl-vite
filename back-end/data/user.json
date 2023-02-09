@@ -14,6 +14,18 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "69",
+      "role": "vip",
+      "name": "Bartmen",
+      "rank": "Master Guardian 2",
+      "faceit": "3",
+      "quality": "Consistent",
+      "weakness": "Quiet",
+      "img": "https://bassienl.nl/images/Bartmen.png",
+      "steam_url": "https://steamcommunity.com/id/bartmen20"
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "68",
       "role": "vip",
       "name": "BassieNL",
@@ -21,7 +33,7 @@
       "faceit": "3",
       "quality": "Wallbanger",
       "weakness": "Timings",
-      "img": "https://bassienl.nl/uploads/Bassie.gif",
+      "img": "https://bassienl.nl/images/Bassie.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198051804263"
     },
     {
@@ -95,18 +107,6 @@
       "weakness": "Foot Shooter",
       "img": "https://bassienl.nl/images/JDGames.png",
       "steam_url": "https://steamcommunity.com/id/Jdgamezzznl/"
-    },
-    {
-      "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
-      "rating": "87",
-      "role": "vip",
-      "name": "Jon",
-      "rank": "Global Elite",
-      "faceit": "6",
-      "quality": "Outplayer",
-      "weakness": "Mutes Fast",
-      "img": "https://bassienl.nl/images/Jon.png",
-      "steam_url": "https://steamcommunity.com/id/uytgvollnh775443/"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -229,30 +229,6 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198320044318"
     },
     {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "80",
-      "role": "subscriber",
-      "name": "Ansel",
-      "rank": "Supreme Master First Class",
-      "faceit": "6",
-      "quality": "Trade Fragger",
-      "weakness": "Salty / Baiter",
-      "img": "https://bassienl.nl/images/Ansel.png",
-      "steam_url": "https://steamcommunity.com/id/TwitchTVAnsel"
-    },
-    {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "69",
-      "role": "subscriber",
-      "name": "Bartmen",
-      "rank": "Master Guardian 2",
-      "faceit": "3",
-      "quality": "Consistent",
-      "weakness": "Quiet",
-      "img": "https://bassienl.nl/images/Bartmen.png",
-      "steam_url": "https://steamcommunity.com/id/bartmen20"
-    },
-    {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "rating": "46",
       "role": "subscriber",
@@ -349,6 +325,18 @@
       "steam_url": "https://steamcommunity.com/id/IPaRaNoMaL"
     },
     {
+      "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
+      "rating": "87",
+      "role": "subscriber",
+      "name": "Jon",
+      "rank": "Global Elite",
+      "faceit": "6",
+      "quality": "Outplayer",
+      "weakness": "Mutes Fast",
+      "img": "https://bassienl.nl/images/Jon.png",
+      "steam_url": "https://steamcommunity.com/id/uytgvollnh775443/"
+    },
+    {
       "role": "subscriber",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Joris",
@@ -358,7 +346,7 @@
       "quality": "Map Positioning",
       "rank": "Master Guardian",
       "img": "https://avatars.akamai.steamstatic.com/91f58d12cca637d16c96a40082eee695210c2529_full.jpg",
-      "weakness": "Dikke jonko tijd"
+      "weakness": "Audio Issue"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -433,6 +421,19 @@
       "steam_url": "https://steamcommunity.com/id/6_66/"
     },
     {
+      "role": "subscriber",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "VlamLars",
+      "rating": "59",
+      "rank": "Gold Nova 1",
+      "faceit": "3",
+      "quality": "Sexy Skins",
+      "weakness": "Hit Or Miss",
+      "steam": "https://steamcommunity.com/profiles/76561198142800150",
+      "img": "https://bassienl.nl/images/VlamLars.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198142800150"
+    },
+    {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "rating": "72",
       "role": "subscriber",
@@ -455,6 +456,18 @@
       "weakness": "Clicking Fishy Links",
       "img": "https://bassienl.nl/images/Yerne.png",
       "steam_url": "https://steamcommunity.com/profiles/76561199377967000"
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "80",
+      "role": "member",
+      "name": "Ansel",
+      "rank": "Supreme Master First Class",
+      "faceit": "6",
+      "quality": "Trade Fragger",
+      "weakness": "Salty Motherfucker ",
+      "img": "https://bassienl.nl/images/Ansel.png",
+      "steam_url": "https://steamcommunity.com/id/TwitchTVAnsel"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
