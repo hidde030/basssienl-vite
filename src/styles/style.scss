@@ -29,9 +29,11 @@ $vip: radial-gradient(
 $subscriber: #1f8645;
 $member: #2372f3;
 $shadow: rgba(0, 0, 0, 0.1);
+
 body {
   background-color: rgba(0, 0, 0, 0.7);
   font-family: "Roboto", sans-serif;
+  cursor: crosshair;
 }
 // body as image background
 body {
@@ -42,7 +44,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-
+.is-login {
+  background: url("https://bassienl.nl/images/login.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .card-item {
   position: relative;
   border-radius: 5px;
@@ -262,4 +270,30 @@ body {
     padding: 0.5rem;
     width: 4rem;
   }
+}
+
+.text-member {
+  color: $member;
+}
+.text-owner {
+  color: $owner;
+}
+.text-admin {
+  color: $admin;
+}
+.text-moderator {
+  color: $moderator;
+}
+.text-vip {
+  color: $gold;
+}
+.text-subscriber {
+  color: $subscriber;
+}
+.text-member {
+  color: $member;
+}
+
+.logosteam:hover {
+  filter: brightness(0.5);
 }
