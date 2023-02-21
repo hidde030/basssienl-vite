@@ -33,7 +33,7 @@
       "faceit": "3",
       "quality": "Wallbanger",
       "weakness": "Timings",
-      "img": "https://media.giphy.com/media/eFtoqnVywR5jdSk7fm/giphy.gif",
+      "img": "https://bassienl.nl/images/Bassie.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198051804263"
     },
     {
@@ -344,10 +344,23 @@
       "name": "Floz",
       "rank": "Global Elite",
       "faceit": "9",
-      "quality": "16:10 GOAT",
+      "quality": "Dogshit Player",
       "weakness": "Tilts",
       "img": "https://bassienl.nl/images/Floz.png",
       "steam_url": "https://steamcommunity.com/id/floz15"
+    },
+    {
+      "role": "subscriber",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Ghost",
+      "rating": "65",
+      "rank": "Master Guardian 2",
+      "faceit": "3",
+      "weakness": "Keeps Talking",
+      "quality": "Tips And Tricks",
+      "steam": "https://steamcommunity.com/id/ghostgaming_of",
+      "img": "https://bassienl.nl/images/Ghost.png",
+      "steam_url": "https://steamcommunity.com/id/ghostgaming_of"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -434,6 +447,19 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198858973202"
     },
     {
+      "role": "subscriber",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Visje In Het Water",
+      "rating": "72",
+      "rank": "Legendary Eagle",
+      "faceit": "5",
+      "quality": "Friendly",
+      "weakness": "Quiet",
+      "steam": "https://steamcommunity.com/profiles/76561198283160779",
+      "img": "https://bassienl.nl/images/Visje.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198283160779"
+    },
+    {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "rating": "72",
       "role": "subscriber",
@@ -492,6 +518,18 @@
       "weakness": "Too many",
       "img": "https://bassienl.nl/images/NSK.png",
       "steam_url": "https://steamcommunity.com/id/ThebestNSK"
+    },
+    {
+      "role": "member",
+      "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
+      "name": "Peekske",
+      "rating": "44",
+      "rank": "Silver Elite Master",
+      "faceit": "3",
+      "quality": "Clutching Versus Bad Players",
+      "weakness": "Inaudible",
+      "img": "https://bassienl.nl/images/Peekske.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561199197976294"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
