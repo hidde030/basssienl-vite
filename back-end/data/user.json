@@ -14,10 +14,10 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "69",
+      "rating": "72",
       "role": "vip",
       "name": "Bartmen",
-      "rank": "Master Guardian 2",
+      "rank": "Legendary Eagle",
       "faceit": "3",
       "quality": "Consistent",
       "weakness": "Quiet",
@@ -109,6 +109,18 @@
       "steam_url": "https://steamcommunity.com/id/Jdgamezzznl/"
     },
     {
+      "role": "vip",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Joris",
+      "rating": "60",
+      "steam": "https://steamcommunity.com/id/TheyCallMeNotSiroj",
+      "faceit": "1",
+      "quality": "Map Positioning",
+      "rank": "Master Guardian",
+      "img": "https://avatars.akamai.steamstatic.com/91f58d12cca637d16c96a40082eee695210c2529_full.jpg",
+      "weakness": "Audio Issue"
+    },
+    {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "70",
       "role": "vip",
@@ -122,13 +134,25 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "62",
+      "role": "vip",
+      "name": "Mr. Wutru",
+      "rank": "Master Guardian Elite",
+      "faceit": "2",
+      "quality": "Funny Guy",
+      "weakness": "Panic Player",
+      "img": "https://bassienl.nl/images/Wutru.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198294277766"
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "51",
       "role": "vip",
       "name": "Niekje",
       "rank": "Gold Nova 2",
       "faceit": "3",
       "quality": "Team Player",
-      "weakness": "Ansel",
+      "weakness": "Pink Skin Lover",
       "img": "https://bassienl.nl/images/Aniek.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198144680147"
     },
@@ -143,18 +167,6 @@
       "weakness": "Slow player",
       "img": "https://bassienl.nl/images/Omweg.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198872159853"
-    },
-    {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "99",
-      "role": "vip",
-      "name": "PokéBeard",
-      "rank": "Master Guardian 2",
-      "faceit": "2",
-      "quality": "Lurker",
-      "weakness": "Foot Shooter",
-      "img": "https://bassienl.nl/images/Pokebeard.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198052742880"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -227,6 +239,31 @@
       "weakness": "Inaudible",
       "img": "https://bassienl.nl/images/Untz.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198320044318"
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "40",
+      "role": "vip",
+      "name": "Venten",
+      "rank": "Silver IV",
+      "faceit": "1",
+      "quality": "Team Motivator",
+      "weakness": "Lacks Game Sense",
+      "img": "https://bassienl.nl/images/Venten.png",
+      "steam_url": "https://steamcommunity.com/id/6_66/"
+    },
+    {
+      "role": "vip",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "VlamLars",
+      "rating": "59",
+      "rank": "Gold Nova 1",
+      "faceit": "3",
+      "quality": "Sexy Skins",
+      "weakness": "Hit Or Miss",
+      "steam": "https://steamcommunity.com/profiles/76561198142800150",
+      "img": "https://bassienl.nl/images/VlamLars.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198142800150"
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -307,7 +344,7 @@
       "name": "Floz",
       "rank": "Global Elite",
       "faceit": "9",
-      "quality": "Black Bars GOAT",
+      "quality": "16:10 GOAT",
       "weakness": "Tilts",
       "img": "https://bassienl.nl/images/Floz.png",
       "steam_url": "https://steamcommunity.com/id/floz15"
@@ -337,28 +374,16 @@
       "steam_url": "https://steamcommunity.com/id/uytgvollnh775443/"
     },
     {
-      "role": "subscriber",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "name": "Joris",
-      "rating": "60",
-      "steam": "https://steamcommunity.com/id/TheyCallMeNotSiroj",
-      "faceit": "1",
-      "quality": "Map Positioning",
-      "rank": "Master Guardian",
-      "img": "https://avatars.akamai.steamstatic.com/91f58d12cca637d16c96a40082eee695210c2529_full.jpg",
-      "weakness": "Audio Issue"
-    },
-    {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "62",
+      "rating": "99",
       "role": "subscriber",
-      "name": "Mr. Wutru",
-      "rank": "Master Guardian Elite",
+      "name": "PokéBeard",
+      "rank": "Master Guardian 2",
       "faceit": "2",
-      "quality": "Funny Guy",
-      "weakness": "Panic Player",
-      "img": "https://bassienl.nl/images/Wutru.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198294277766"
+      "quality": "Lurker",
+      "weakness": "Foot Shooter",
+      "img": "https://bassienl.nl/images/Pokebeard.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198052742880"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -409,31 +434,6 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198858973202"
     },
     {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "40",
-      "role": "subscriber",
-      "name": "Venten",
-      "rank": "Silver IV",
-      "faceit": "1",
-      "quality": "Team Motivator",
-      "weakness": "Lacks Game Sense",
-      "img": "https://bassienl.nl/images/Venten.png",
-      "steam_url": "https://steamcommunity.com/id/6_66/"
-    },
-    {
-      "role": "subscriber",
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "name": "VlamLars",
-      "rating": "59",
-      "rank": "Gold Nova 1",
-      "faceit": "3",
-      "quality": "Sexy Skins",
-      "weakness": "Hit Or Miss",
-      "steam": "https://steamcommunity.com/profiles/76561198142800150",
-      "img": "https://bassienl.nl/images/VlamLars.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198142800150"
-    },
-    {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "rating": "72",
       "role": "subscriber",
@@ -463,7 +463,7 @@
       "role": "member",
       "name": "Ansel",
       "rank": "Supreme Master First Class",
-      "faceit": "6",
+      "faceit": "7",
       "quality": "Trade Fragger",
       "weakness": "Salty Motherfucker ",
       "img": "https://bassienl.nl/images/Ansel.png",
@@ -474,7 +474,7 @@
       "rating": "74",
       "role": "member",
       "name": "Memeka",
-      "rank": "Legendary Eagle Master",
+      "rank": "Supreme Master First Class",
       "faceit": "3",
       "quality": "Teambank",
       "weakness": "Inconcistent",

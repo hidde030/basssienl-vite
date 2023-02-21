@@ -55,7 +55,7 @@ app.get("/images/:imageName", (req, res) => {
   readStream.pipe(res);
 });
 
-app.post("/api/images", upload.single("image"), (req, res) => {
+app.post("/api/images", auth, upload.single("image"), (req, res) => {
   console.log(req.file);
 
   res.send("Image uploaded successfully.");
