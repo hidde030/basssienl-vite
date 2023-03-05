@@ -15,7 +15,7 @@
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "72",
-      "role": "vip",
+      "role": "subscriber",
       "name": "Bartmen",
       "rank": "Legendary Eagle",
       "faceit": "3",
@@ -109,7 +109,7 @@
       "steam_url": "https://steamcommunity.com/id/Jdgamezzznl/"
     },
     {
-      "role": "vip",
+      "role": "subscriber",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Joris",
       "rating": "60",
@@ -152,7 +152,7 @@
       "rank": "Gold Nova 2",
       "faceit": "3",
       "quality": "Team Player",
-      "weakness": "Pink Skin Lover",
+      "weakness": "Easy Toys",
       "img": "https://bassienl.nl/images/Aniek.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198144680147"
     },
@@ -229,6 +229,18 @@
       "steam_url": "https://steamcommunity.com/id/TAPED_"
     },
     {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "69",
+      "role": "vip",
+      "name": "TrickedBrandon",
+      "rank": "Master Guardian Elite",
+      "faceit": "3",
+      "quality": "Good Personality",
+      "weakness": "Impulse Buyer",
+      "img": "https://bassienl.nl/images/TrickedBrandon.png",
+      "steam_url": "https://steamcommunity.com/id/TrickBrandon"
+    },
+    {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "rating": "68",
       "role": "vip",
@@ -243,7 +255,7 @@
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "40",
-      "role": "vip",
+      "role": "subscriber",
       "name": "Venten",
       "rank": "Silver IV",
       "faceit": "1",
@@ -253,7 +265,7 @@
       "steam_url": "https://steamcommunity.com/id/6_66/"
     },
     {
-      "role": "vip",
+      "role": "subscriber",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "VlamLars",
       "rating": "59",
@@ -316,7 +328,7 @@
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "77",
-      "role": "subscriber",
+      "role": "vip",
       "name": "DokterPanda",
       "rank": "Legendary Eagle",
       "faceit": "4",
@@ -343,7 +355,7 @@
       "role": "subscriber",
       "name": "Floz",
       "rank": "Global Elite",
-      "faceit": "9",
+      "faceit": "10",
       "quality": "Dogshit Player",
       "weakness": "Tilts",
       "img": "https://bassienl.nl/images/Floz.png",
@@ -363,6 +375,32 @@
       "steam_url": "https://steamcommunity.com/id/ghostgaming_of"
     },
     {
+      "role": "subscriber",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Googlium",
+      "rating": "94",
+      "rank": "Global Elite",
+      "faceit": "10",
+      "weakness": "Knows Everything",
+      "quality": "Too Much Trolling",
+      "steam": "https://steamcommunity.com/id/Googlium",
+      "img": "https://bassienl.nl/images/Googlium.png",
+      "steam_url": "https://steamcommunity.com/id/Googlium"
+    },
+    {
+      "role": "vip",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Heinekenbier1997",
+      "rating": "46",
+      "rank": "Silver Elite Master",
+      "faceit": "3",
+      "weakness": "Outfragged Beard",
+      "quality": "Tastes Disgusting",
+      "steam": "https://steamcommunity.com/profiles/76561198046354504",
+      "img": "https://bassienl.nl/images/Heinekenbier.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198046354504"
+    },
+    {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "81",
       "role": "subscriber",
@@ -373,6 +411,18 @@
       "weakness": "Inconcistent",
       "img": "https://bassienl.nl/images/iParanormal.png",
       "steam_url": "https://steamcommunity.com/id/IPaRaNoMaL"
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "93",
+      "role": "subscriber",
+      "name": "j0di",
+      "rank": "Global Elite",
+      "faceit": "10",
+      "quality": "Fragger",
+      "weakness": "Can Be Quiet",
+      "img": "https://bassienl.nl/images/j0di.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198015712590"
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -520,7 +570,7 @@
       "steam_url": "https://steamcommunity.com/id/ThebestNSK"
     },
     {
-      "role": "member",
+      "role": "vip",
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "name": "Peekske",
       "rating": "44",
