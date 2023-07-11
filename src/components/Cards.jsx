@@ -26,19 +26,19 @@ export default function GridCards() {
       });
   }, []);
   return (
-    <div className="container mx-auto lg:pt-20 pb-6">
-      <form className=" flex justify-end py-2">
+    <div className="container mx-auto lg:pt-10 pt-4 pb-6 px-4 md:px-0">
+      <form className=" flex justify-end py-2 ">
         <label htmlFor="sort" className="text-white mr-3">
-          Sort by:
+          Sorteer op:
         </label>
         <select
           id="sort"
           value={sortCriteria}
           onChange={(e) => setSortCriteria(e.target.value)}>
-          <option value="name">Name</option>
+          <option value="name">Naam</option>
           <option value="faceit">Faceit</option>
           <option value="rating">Rating</option>
-          <option value="nationality">Nationality</option>
+          <option value="nationality">Nationaliteit</option>
         </select>
       </form>
 

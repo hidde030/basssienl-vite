@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import "./styles/style.scss";
 import UserList from "./admin/UserList";
 import Discord from "./pages/Discord";
+import GiveAway from "./pages/GiveAway";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="/about" element={<OverOns />} />
         <Route path="/thanks" element={<Thanks />} />
+        <Route path="/giveaway" element={<GiveAway />} />
         <Route path="/info" element={<Info />} />
         <Route path="/discord" element={<Discord />} />
         <Route path="/admin" element={<UserList />} />
