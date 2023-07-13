@@ -159,7 +159,13 @@ app.put("/api/giveaway/:name", auth, (req, res) => {
     giveawayUsers.push(obj);
     res.status(200).send(giveawayUsers);
 });
+app.delete("/api/giveaway/:name", auth, (req, res) => {
+    let obj = giveawayUsers?.find((o) => o.name === req.params.name);
+    let index = giveawayUsers.indexOf(obj);
+    giveawayUsers.splice(index, 1);
+    res.status(200).send(giveawayUsers);
 
+});
 
 //what can express do?
 app.listen(port, () => {
