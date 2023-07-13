@@ -32,13 +32,21 @@ export default function GridCards() {
           Sorteer op:
         </label>
         <select
-          id="sort"
-          value={sortCriteria}
-          onChange={(e) => setSortCriteria(e.target.value)}>
+            id="sort"
+            value={sortCriteria}
+            onChange={(e) => {
+              if (e.target.value === "reload") {
+                window.location.reload();
+              } else {
+                setSortCriteria(e.target.value);
+              }
+            }}
+        >
           <option value="name">Naam</option>
           <option value="faceit">Faceit</option>
           <option value="rating">Rating</option>
           <option value="nationality">Nationaliteit</option>
+          <option value="reload">Rol</option> {/* New option */}
         </select>
       </form>
 
