@@ -4,38 +4,38 @@ const admins = [
   {
     nationality:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-    rating: "1",
+    rating: "94",
     role: "creator",
     name: "Bart",
     rank: "Global Elite",
     faceit: "10",
     quality: "God Aim",
     weakness: "Full Monkey",
-    img: "https://bassienl.hostmajority.com/images/Bart.png",
+    img: "https://bassienl.nl/images/Bart.png",
     steam_url: "https://steamcommunity.com/id/BartiBlyat/",
   },
   {
     nationality:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-    rating: "1",
+    rating: "90",
     role: "creator",
     name: "Hidde",
     rank: "Global Elite",
     faceit: "7",
     quality: "Monkey Peek",
     weakness: "Communication",
-    img: "https://bassienl.hostmajority.com/images/Hidde.png",
+    img: "https://bassienl.nl/images/Hidde.png",
     steam_url: "https://steamcommunity.com/id/hiddebackup1234",
   },
 ];
 
 export default function Creator() {
   return (
-    <div className="container mx-auto md:px-64  lg:pt-10 pb-6">
+    <div className="container mx-auto md:px-52 lg:px-64  lg:pt-10 pb-6">
       <h1 className="text-center text-4xl font-bold text-white mb-24">
         This project has been made possible by:
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2   place-items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-2   place-items-center ">
         {admins.map(function (object, i) {
           return (
             <Card
@@ -60,7 +60,7 @@ export default function Creator() {
 
 export function Card(props) {
   return (
-    <div className={`${props.role}`}>
+    <div className={`${props.role} mb-6 w-5/6 md:w-full lg:5/6 lg:px-3`}>
       <div className={`card-item rounded-lg shadow-lg  `}>
         <div className="image-bg relative pb-48 overflow-hidden bg-card_purple rounded-t-sm">
           {/* if rating  */}
@@ -72,7 +72,7 @@ export function Card(props) {
           />
           <img className="absolute card-flag" src={props.nationality} alt="flag" />
         </div>
-        <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-lg relative card-body">
+        <div className="px-6 py-4 pl-8 bg-card_bg rounded-b-sm relative card-body">
           <div className="flex items-center justify-between absolute">
             <a href={props.steam_url} rel="noreferrer">
               <img src={steam} alt="logo steam" className="h-10 cursor-pointer" />
