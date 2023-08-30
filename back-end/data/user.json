@@ -37,16 +37,17 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198353451953"
     },
     {
+      "role": "vip",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "53",
-      "role": "member",
-      "name": "Crazy_frisian",
-      "rank": "Gold Nova 2",
-      "faceit": "1",
-      "quality": "Random Deagle God",
-      "weakness": "Inaudible",
-      "img": "https://bassienl.nl/images/CrazyFrisian.png",
-      "steam_url": "https://steamcommunity.com/id/crazy_frisian"
+      "name": "Daap",
+      "rating": "70",
+      "rank": "Master Guardian Elite",
+      "faceit": "3",
+      "quality": "Kindness",
+      "weakness": "Quiet",
+      "steam": "https://steamcommunity.com/id/Daan420",
+      "steam_url": "https://steamcommunity.com/id/Daan420",
+      "img": "https://bassienl.nl/images/Daap.png"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -254,19 +255,6 @@
       "steam_url": "https://steamcommunity.com/id/Casissss"
     },
     {
-      "role": "vip",
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "name": "Daap",
-      "rating": "70",
-      "rank": "Master Guardian Elite",
-      "faceit": "3",
-      "quality": "Kindness",
-      "weakness": "Quiet",
-      "steam": "https://steamcommunity.com/id/Daan420",
-      "steam_url": "https://steamcommunity.com/id/Daan420",
-      "img": "https://bassienl.nl/images/Daap.png"
-    },
-    {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "77",
       "role": "subscriber",
@@ -366,6 +354,18 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198015712590"
     },
     {
+      "role": "subscriber",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Jandirk",
+      "rating": "60",
+      "rank": "Master Guardian 1",
+      "faceit": "3",
+      "quality": "Free Clutches",
+      "weakness": "Not From The Netherlands...",
+      "img": "https://bassienl.nl/images/Jandirk.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198215815997"
+    },
+    {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "78",
       "role": "subscriber",
@@ -400,6 +400,18 @@
       "rank": "Master Guardian",
       "img": "https://avatars.akamai.steamstatic.com/91f58d12cca637d16c96a40082eee695210c2529_full.jpg",
       "weakness": "Audio Issue"
+    },
+    {
+      "role": "subscriber",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "KappaBassie",
+      "rating": "58",
+      "rank": "Master Guardian",
+      "faceit": "3",
+      "quality": "Friendly",
+      "weakness": "Acts as a Silver",
+      "img": "https://bassienl.nl/images/KappaBassie.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198285847131"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -499,6 +511,30 @@
       "steam_url": "https://steamcommunity.com/profiles/76561199377967000"
     },
     {
+      "role": "member",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Br*ndon",
+      "rating": "94",
+      "rank": "Global Elite",
+      "faceit": "10",
+      "quality": "Consistant Aim",
+      "weakness": "Plays Valorant",
+      "img": "https://bassienl.nl/images/Brandon.png",
+      "steam_url": " https://steamcommunity.com/id/EnjoyMyFriend"
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "53",
+      "role": "member",
+      "name": "Crazy_frisian",
+      "rank": "Gold Nova 2",
+      "faceit": "1",
+      "quality": "Random Deagle God",
+      "weakness": "Inaudible",
+      "img": "https://bassienl.nl/images/CrazyFrisian.png",
+      "steam_url": "https://steamcommunity.com/id/crazy_frisian"
+    },
+    {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "74",
       "role": "member",
@@ -595,6 +631,18 @@
       "steam_url": "https://steamcommunity.com/id/SlachtHuis"
     },
     {
+      "role": "member",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "SldNick",
+      "rating": "90",
+      "rank": "Global Elite",
+      "faceit": "10",
+      "quality": "Clutchmeister",
+      "weakness": "Inconcistent",
+      "img": "https://bassienl.nl/images/sld-Nick.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198123427417"
+    },
+    {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "47",
       "role": "member",
@@ -641,30 +689,6 @@
       "weakness": "Lacks Game Sense",
       "img": "https://bassienl.nl/images/Venten.png",
       "steam_url": "https://steamcommunity.com/id/6_66/"
-    },
-    {
-      "role": "subscriber",
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "name": "KappaBassie",
-      "rating": "58",
-      "rank": "Master Guardian",
-      "faceit": "3",
-      "quality": "Friendly",
-      "weakness": "Acts as a Silver",
-      "img": "https://bassienl.nl/images/KappaBassie.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198285847131"
-    },
-    {
-      "role": "subscriber",
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "name": "Jandirk",
-      "rating": "60",
-      "rank": "Master Guardian 1",
-      "faceit": "3",
-      "quality": "Free Clutches",
-      "weakness": "Not From The Netherlands...",
-      "img": "https://bassienl.nl/images/Jandirk.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198215815997"
     }
   ]
 }
