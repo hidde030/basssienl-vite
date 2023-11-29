@@ -114,7 +114,6 @@ app.put("/api/update", auth, (req, res) => {
   let jsonData = require(file)
   //   get object by name
   let obj = jsonData.data?.find((o) => o.name === req.body.name)
-  console.log(obj)
   obj.rating = req.body.rating
   obj.nationality = req.body.nationality
   obj.role = req.body.role
@@ -125,6 +124,7 @@ app.put("/api/update", auth, (req, res) => {
   obj.weakness = req.body.weakness
   obj.img = req.body.img
   obj.steam_url = req.body.steam_url
+  obj.giveaway = req.body.giveaway
 
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
     if (err) {
