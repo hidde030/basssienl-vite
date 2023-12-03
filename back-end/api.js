@@ -121,7 +121,6 @@ app.put("/api/update", auth, (req, res) => {
   obj.rank = req.body.rank
   obj.faceit = req.body.faceit
   obj.quality = req.body.quality
-  obj.weakness = req.body.weakness
   obj.img = req.body.img
   obj.steam_url = req.body.steam_url
   obj.giveaway = req.body.giveaway
