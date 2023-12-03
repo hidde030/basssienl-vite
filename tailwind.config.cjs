@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors")
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -12,6 +14,10 @@ module.exports = {
       faceit: "#FFA500",
       admin: "#FF0000",
       discord: "#7289DA",
+      white: colors.white,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
     },
     screens: {
       sm: "640px",
@@ -23,4 +29,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}
