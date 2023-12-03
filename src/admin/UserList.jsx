@@ -1,23 +1,21 @@
-import React, { useState, useEffect } from "react";
-import Add from "./Add";
-import Admin from "./Admin";
-import UploadImage from "./UploadImage";
-import { useNavigate } from "react-router-dom";
-
-
+import React, { useState, useEffect } from "react"
+import Add from "./Add"
+import Admin from "./admin"
+import UploadImage from "./UploadImage"
+import { useNavigate } from "react-router-dom"
 
 function UserList() {
-  const navigateTo = useNavigate();
-  const [response, setResponse] = useState({});
-  const [selectedUser, setSelectedUser] = useState({});
-  const [showModal, setShowModal] = useState(false);
-  const [showAdd, setShowAdd] = useState(false);
-  const [showImage, setShowImage] = useState(false);
+  const navigateTo = useNavigate()
+  const [response, setResponse] = useState({})
+  const [selectedUser, setSelectedUser] = useState({})
+  const [showModal, setShowModal] = useState(false)
+  const [showAdd, setShowAdd] = useState(false)
+  const [showImage, setShowImage] = useState(false)
 
   useEffect(() => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
     fetch("https://bassienl.nl/api", {
       method: "GET",
@@ -27,21 +25,21 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data);
+        setResponse(data)
       })
 
       .catch((err) => {
-        console.log(err.message);
-      });
-  }, []);
+        console.log(err.message)
+      })
+  }, [])
   const handleSelect = (user) => {
-    setSelectedUser(user);
-    setShowModal(true);
-  };
+    setSelectedUser(user)
+    setShowModal(true)
+  }
   const sortCards = () => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
     fetch("https://bassienl.nl/api/sort", {
       method: "GET",
@@ -51,13 +49,13 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data);
-      });
-  };
+        setResponse(data)
+      })
+  }
   function deleteGiveawayUser(name) {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
     fetch(`https://bassienl.nl/api/giveaway/${name}`, {
       method: "DELETE",
@@ -66,8 +64,7 @@ function UserList() {
       },
     })
 
-    window.location.reload();
-
+    window.location.reload()
   }
   const setGiveawayUser = (name) => {
     fetch(`https://bassienl.nl/api/giveaway/${name}`, {
@@ -78,15 +75,15 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data);
-      });
+        setResponse(data)
+      })
     //reload window
-    window.location.reload();
-  };
+    window.location.reload()
+  }
   const deleteCard = (name) => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
     fetch(`https://bassienl.nl/api/delete/${name}`, {
       method: "DELETE",
@@ -96,9 +93,9 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data);
-      });
-  };
+        setResponse(data)
+      })
+  }
 
   return (
     <div className="container mx-auto bg-admin bg-opacity-10">
@@ -149,17 +146,17 @@ function UserList() {
             <button
               className="bg-card_purple text-white font-bold py-2  my-2 mx-0.5 rounded break-keep  "
               onClick={() => {
-                setGiveawayUser(user.name);
+                setGiveawayUser(user.name)
               }}>
               add person to giveaway
             </button>
 
             <button
-                className="bg-faceit text-white font-bold py-2  my-2 mx-0.5   rounded break-keep  "
-                onClick={() => {
-                  deleteGiveawayUser(user.name);
-                }}>
-              delete from  giveaway
+              className="bg-faceit text-white font-bold py-2  my-2 mx-0.5   rounded break-keep  "
+              onClick={() => {
+                deleteGiveawayUser(user.name)
+              }}>
+              delete from giveaway
             </button>
             <button
               className="bg-[#FF0000] text-white font-bold py-2 px-4 my-2 mx-0.5   rounded "
@@ -171,7 +168,7 @@ function UserList() {
       </ul>
       {showModal && <Admin selectedUser={selectedUser} setShowModal={setShowModal} />}
     </div>
-  );
+  )
 }
 
-export default UserList;
+export default UserList

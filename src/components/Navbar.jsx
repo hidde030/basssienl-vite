@@ -1,6 +1,6 @@
-import React from "react";
-import Logo from "../img/logo.png";
-import { Link } from "react-router-dom";
+import React from "react"
+import Logo from "../img/logo.png"
+import { Link } from "react-router-dom"
 
 function Navbar() {
   return (
@@ -36,9 +36,9 @@ function Navbar() {
             info
           </a>
           <a
-            href="/thanks"
+            href="/giveaway"
             className="text-white mr-4 hover:text-card_purple  py-2 md:py-0 ">
-            special thanks
+            giveaway
           </a>
           {/* <a
             href="/giveaway"
@@ -48,7 +48,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

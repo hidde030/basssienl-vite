@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 function Admin({ selectedUser, setShowModal }) {
-  const navigateTo = useNavigate();
+  const navigateTo = useNavigate()
 
-  const [formData, setFormData] = useState({ ...selectedUser });
+  const [formData, setFormData] = useState({ ...selectedUser })
   const handleChange = (event) => {
-    setFormData({ ...formData, [event.target.name]: event.target.value });
-  };
+    setFormData({ ...formData, [event.target.name]: event.target.value })
+  }
   const handleSave = async (event) => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
     try {
       const response = await fetch("https://bassienl.nl/api/update", {
@@ -22,22 +22,22 @@ function Admin({ selectedUser, setShowModal }) {
         },
 
         body: JSON.stringify(formData),
-      });
-      const data = await response.json();
-      console.log(data);
+      })
+      const data = await response.json()
+      console.log(data)
       if (response.ok) {
         // handle success
-        console.log("Data saved successfully");
+        console.log("Data saved successfully")
       } else {
         // handle error
-        console.log("Error in saving data");
+        console.log("Error in saving data")
       }
     } catch (error) {
       // handle error
-      console.log(error);
+      console.log(error)
     }
-    setShowModal(false);
-  };
+    setShowModal(false)
+  }
 
   return (
     <div className="fixed inset-0 top-12 grid text-center bg-card_bg ">
@@ -52,7 +52,7 @@ function Admin({ selectedUser, setShowModal }) {
               class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               type="text"
               name="name"
-              value={formData.name}
+              defaultValue={formData.name}
               onChange={handleChange}
             />
           </div>
@@ -134,18 +134,6 @@ function Admin({ selectedUser, setShowModal }) {
               onChange={handleChange}
             />
           </div>
-          <div className="relative mb-2">
-            <label className="text-white" htmlFor="weakness">
-              Weakness:
-            </label>
-            <input
-              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              type="text"
-              name="weakness"
-              value={formData.weakness}
-              onChange={handleChange}
-            />
-          </div>
 
           <div className="relative mb-2">
             <label className="text-white" htmlFor="img">
@@ -186,7 +174,7 @@ function Admin({ selectedUser, setShowModal }) {
         </form>
       </div>
     </div>
-  );
+  )
 }
 
-export default Admin;
+export default Admin

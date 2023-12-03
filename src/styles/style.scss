@@ -11,21 +11,21 @@ $owner: #5d29b0;
 $admin: #ff0000;
 $moderator: #b3640b;
 $vip: radial-gradient(
-                ellipse farthest-corner at right bottom,
-                #fedb37 0%,
-                #fdb931 8%,
-                #9f7928 30%,
-                #8a6e2f 40%,
-                transparent 80%
-),
-radial-gradient(
-                ellipse farthest-corner at left top,
-                #ffffff 0%,
-                #ffffac 8%,
-                #d1b464 25%,
-                #5d4a1f 62.5%,
-                #5d4a1f 100%
-);
+    ellipse farthest-corner at right bottom,
+    #fedb37 0%,
+    #fdb931 8%,
+    #9f7928 30%,
+    #8a6e2f 40%,
+    transparent 80%
+  ),
+  radial-gradient(
+    ellipse farthest-corner at left top,
+    #ffffff 0%,
+    #ffffac 8%,
+    #d1b464 25%,
+    #5d4a1f 62.5%,
+    #5d4a1f 100%
+  );
 $subscriber: #1f8645;
 $member: #2372f3;
 $shadow: rgba(0, 0, 0, 0.1);
@@ -38,7 +38,8 @@ body {
 
 // body as image background
 body {
-  background: url("https://wallpaperaccess.com/full/1642299.jpg") no-repeat center center fixed;
+  background: url("https://wallpaperaccess.com/full/1642299.jpg") no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,7 +53,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-.is-giveaway{
+.is-giveaway {
   overflow: auto;
   position: relative;
   height: 100vh;
@@ -67,308 +68,321 @@ body {
     z-index: -10;
     // darker filter
     filter: brightness(0.1) saturate(0.5) blur(4px);
-    background: url("https://news-bulletin.com/wp-content/uploads/2022/12/Giveaway.jpg") no-repeat center center fixed;
+    background: url("https://news-bulletin.com/wp-content/uploads/2022/12/Giveaway.jpg")
+      no-repeat center center fixed;
     object-fit: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
- }
-    //background: url("https://news-bulletin.com/wp-content/uploads/2022/12/Giveaway.jpg") no-repeat center center fixed; blur on bg
-
+  }
 }
 
 // .mySwiper class hover effect disabled
 .mySwiper {
-
-// remove  swiper-button-next and swiper-button-prev
-.swiper-button-next,
-.swiper-button-prev {
+  // remove  swiper-button-next and swiper-button-prev
+  .swiper-button-next,
+  .swiper-button-prev {
     opacity: 0;
     visibility: hidden;
-}
+  }
   .card-item {
     &:hover {
-        -webkit-transform: none;
-        transform: none;
+      -webkit-transform: none;
+      transform: none;
     }
   }
 }
 
-  .card-item {
-    position: relative;
+.card-item {
+  position: relative;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 5px 30px $gold;
+
+  &:after {
+    content: "";
     border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 60px $gold;
+    opacity: 0;
     -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 5px 30px $gold;
-
-    &:after {
-      content: "";
-      border-radius: 5px;
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      box-shadow: 0 5px 60px $gold;
-      opacity: 0;
-      -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-    // media query mobile devices
-    @media (min-width: 767px) {
-      &:hover {
-        &:after {
-          opacity: 1;
-        }
-      }
-      &:hover {
-        -webkit-transform: scale(1.05, 1.05);
-        transform: scale(1.05, 1.05);
-      }
-    }
   }
 
+  // media query mobile devices
+  @media (min-width: 767px) {
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+    &:hover {
+      -webkit-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
+
+.card-item {
+  p {
+    margin-bottom: 2vmin;
+  }
+}
+
+// de homostraat
+.owner {
   .card-item {
-    p {
-      margin-bottom: 2vmin;
-    }
-  }
-
-  // de homostraat
-  .owner {
-    .card-item {
-      border: 5px solid $owner;
-    }
-
-    .image-bg {
-      background-color: $owner;
-    }
-  }
-
-  .creator {
-    .card-item {
-      border: 2px solid $owner;
-    }
-
-    .image-bg {
-      background: $owner;
-    }
-
-    .card-item {
-      box-shadow: 0 5px 30px $owner !important;
-
-      &:after {
-        box-shadow: 0 5px 60px $owner !important;
-      }
-    }
-  }
-
-  .admin {
-    .card-item {
-      border: 2px solid $gold;
-    }
-
-    .image-bg {
-      background-color: $admin;
-    }
-  }
-
-  .vip {
-    .card-item {
-      border: 2px solid $gold;
-    }
-
-    .image-bg {
-      background: $vip;
-    }
-  }
-
-  .moderator {
-    .card-item {
-      border: 2px solid orange;
-    }
-
-    .image-bg {
-      background-color: $moderator;
-    }
-
-    .card-item {
-      box-shadow: 0 5px 30px $moderator !important;
-
-      &:after {
-        box-shadow: 0 5px 60px $moderator !important;
-      }
-    }
-  }
-
-  .subscriber {
-    .image-bg {
-      background-color: $subscriber;
-    }
-
-    .card-item {
-      border: 2px solid $subscriber;
-    }
-
-    .card-item {
-      box-shadow: 0 5px 30px $subscriber !important;
-
-      &:after {
-        box-shadow: 0 5px 60px $subscriber !important;
-      }
-    }
-  }
-
-  .member {
-    .card-item {
-      border: 2px solid $member;
-    }
-
-    .image-bg {
-      background-color: $member;
-    }
-
-    .card-item {
-      box-shadow: 0 5px 30px $member !important;
-
-      &:after {
-        box-shadow: 0 5px 60px $member !important;
-      }
-    }
-  }
-
-  // END MAIN CARDS
-
-  .kruis {
-    position: relative;
-
-    &:before {
-      content: "";
-      width: 1rem;
-      height: 1rem;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-      background: url("../img/kruis.svg") no-repeat center center;
-      position: absolute;
-      top: 0;
-      left: -20px;
-      bottom: 0;
-      margin: auto 0;
-    }
-  }
-
-  .match {
-    position: relative;
-
-    &:before {
-      content: "";
-      width: 1rem;
-      height: 1rem;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-      background: url("../img/match.svg") no-repeat center center;
-      position: absolute;
-      top: 0;
-      left: -20px;
-      bottom: 0;
-      margin: auto 0;
-    }
-  }
-
-  .check {
-    position: relative;
-
-    &:before {
-      content: "";
-      width: 1rem;
-      height: 1rem;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-      background: url("../img/check.svg") no-repeat center center;
-      position: absolute;
-      top: 0;
-      left: -20px;
-      bottom: 0;
-      margin: auto 0;
-    }
-  }
-
-  .faceit {
-    position: relative;
-
-    &:before {
-      content: "";
-      width: 1rem;
-      height: 1rem;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-      background: url("../img/faceit.svg") no-repeat center center;
-      position: absolute;
-      top: 0;
-      left: -20px;
-      bottom: 0;
-      margin: auto 0;
-    }
-  }
-  .card-img {
-    border-radius: 50%;
-    margin: 0 auto;
-    width: 5cm;
-  }
-  .card-body {
-    min-height: 24vh;
+    border: 5px solid $owner;
   }
 
   .image-bg {
-    .rating {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 0.5rem;
-      width: 3.5rem;
-      height: 2rem;
-      text-align: center;
-      margin: 0.5rem;
-      font-size: 12px;
-      font-family: "Courier New", Courier, monospace;
-    }
+    background-color: $owner;
+  }
+}
 
-    .card-flag {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: white;
-      padding: 0.5rem;
-      width: 4rem;
+.creator {
+  .card-item {
+    border: 2px solid $owner;
+  }
+
+  .image-bg {
+    background: $owner;
+  }
+
+  .card-item {
+    box-shadow: 0 5px 30px $owner !important;
+
+    &:after {
+      box-shadow: 0 5px 60px $owner !important;
     }
   }
+}
 
-  .text-member {
-    color: $member;
-  }
-  .text-owner {
-    color: $owner;
-  }
-  .text-admin {
-    color: $admin;
-  }
-  .text-moderator {
-    color: $moderator;
-  }
-  .text-vip {
-    color: $gold;
-  }
-  .text-subscriber {
-    color: $subscriber;
-  }
-  .text-member {
-    color: $member;
+.admin {
+  .card-item {
+    border: 2px solid $gold;
   }
 
-  .logosteam:hover {
-    filter: brightness(0.5);
+  .image-bg {
+    background-color: $admin;
   }
+}
+
+.vip {
+  .card-item {
+    border: 2px solid $gold;
+  }
+
+  .image-bg {
+    background: $vip;
+  }
+}
+
+.moderator {
+  .card-item {
+    border: 2px solid orange;
+  }
+
+  .image-bg {
+    background-color: $moderator;
+  }
+
+  .card-item {
+    box-shadow: 0 5px 30px $moderator !important;
+
+    &:after {
+      box-shadow: 0 5px 60px $moderator !important;
+    }
+  }
+}
+
+.subscriber {
+  .image-bg {
+    background-color: $subscriber;
+  }
+
+  .card-item {
+    border: 2px solid $subscriber;
+  }
+
+  .card-item {
+    box-shadow: 0 5px 30px $subscriber !important;
+
+    &:after {
+      box-shadow: 0 5px 60px $subscriber !important;
+    }
+  }
+}
+
+.member {
+  .card-item {
+    border: 2px solid $member;
+  }
+
+  .image-bg {
+    background-color: $member;
+  }
+
+  .card-item {
+    box-shadow: 0 5px 30px $member !important;
+
+    &:after {
+      box-shadow: 0 5px 60px $member !important;
+    }
+  }
+}
+
+// END MAIN CARDS
+.hours {
+  position: relative;
+  &::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background: url("../img/clock.svg") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+.kruis {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background: url("../img/kruis.svg") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+
+.match {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background: url("../img/match.svg") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+
+.check {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background: url("../img/check.svg") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+
+.faceit {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background: url("../img/faceit.svg") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+.card-img {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 5cm;
+}
+.card-body {
+  min-height: 24vh;
+}
+
+.image-bg {
+  .rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem;
+    width: 3.5rem;
+    height: 2rem;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 12px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .card-flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 0.5rem;
+    width: 4rem;
+  }
+}
+
+.text-member {
+  color: $member;
+}
+.text-owner {
+  color: $owner;
+}
+.text-admin {
+  color: $admin;
+}
+.text-moderator {
+  color: $moderator;
+}
+.text-vip {
+  color: $gold;
+}
+.text-subscriber {
+  color: $subscriber;
+}
+.text-member {
+  color: $member;
+}
+
+.logosteam:hover {
+  filter: brightness(0.5);
+}

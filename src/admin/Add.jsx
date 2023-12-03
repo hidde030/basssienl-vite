@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Add({ setShowAdd }) {
-  const navigateTo = useNavigate();
+  const navigateTo = useNavigate()
 
   const [newUser, setNewUser] = useState({
     role: "vip",
     nationality:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-  });
+  })
 
   const handleAdd = async (event) => {
-    event.preventDefault();
-    const auth = sessionStorage.getItem("login");
+    event.preventDefault()
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
     try {
       const res = await fetch("https://bassienl.nl/api/add", {
@@ -24,21 +24,19 @@ export default function Add({ setShowAdd }) {
           Authorization: sessionStorage.getItem("auth"),
         },
         body: JSON.stringify(newUser),
-      });
-      const data = await res.json();
-      console.log(data);
+      })
+      const data = await res.json()
       if (res.ok) {
-        setNewUser(newUser);
-
-        console.log("Data added successfully");
+        setNewUser(newUser)
+        console.log("Data added successfully")
       } else {
-        console.log("Error in adding data");
+        console.log("Error in adding data")
       }
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
-    setShowAdd(false);
-  };
+    setShowAdd(false)
+  }
   return (
     <form onSubmit={handleAdd} className="bg-white p-6 rounded-lg">
       <div className="mb-4">
@@ -47,7 +45,7 @@ export default function Add({ setShowAdd }) {
           className="border border-gray-400 p-2 rounded-lg w-full"
           type="text"
           name="name"
-          value={newUser.name}
+          defaultValue={newUser.name}
           onChange={(e) => setNewUser({ ...newUser, name: e.target.value })}
         />
       </div>
@@ -58,15 +56,15 @@ export default function Add({ setShowAdd }) {
         <select
           className="border border-gray-400 p-2 rounded-lg w-full"
           name="role"
-          value={newUser.nationality}
+          defaultValue={newUser.nationality}
           onChange={(e) => setNewUser({ ...newUser, nationality: e.target.value })}>
-          <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png">
+          <option defaultValue="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png">
             Nederlands
           </option>
-          <option value="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg">
+          <option defaultValue="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg">
             Engels
           </option>
-          <option value="https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png">
+          <option defaultValue="https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png">
             Belgie
           </option>
         </select>
@@ -80,7 +78,7 @@ export default function Add({ setShowAdd }) {
           min={1}
           max={100}
           name="rating"
-          value={newUser.rating}
+          defaultValue={newUser.rating}
           onChange={(e) => setNewUser({ ...newUser, rating: e.target.value })}
         />
       </div>
@@ -91,13 +89,13 @@ export default function Add({ setShowAdd }) {
         <select
           className="border border-gray-400 p-2 rounded-lg w-full"
           name="role"
-          value={newUser.role}
+          defaultValue={newUser.role}
           onChange={(e) => setNewUser({ ...newUser, role: e.target.value })}>
-          <option selected value="vip">
+          <option selected defaultValue="vip">
             vip
           </option>
-          <option value="subscriber">subscriber</option>
-          <option value="member">member</option>
+          <option defaultValue="subscriber">subscriber</option>
+          <option defaultValue="member">member</option>
         </select>
       </div>
       <div className="mb-4">
@@ -106,7 +104,7 @@ export default function Add({ setShowAdd }) {
           className="border border-gray-400 p-2 rounded-lg w-full"
           type="text"
           name="rank"
-          value={newUser.rank}
+          defaultValue={newUser.rank}
           onChange={(e) => setNewUser({ ...newUser, rank: e.target.value })}
         />
       </div>
@@ -119,7 +117,7 @@ export default function Add({ setShowAdd }) {
           name="faceit"
           min={1}
           max={10}
-          value={newUser.faceit}
+          defaultValue={newUser.faceit}
           onChange={(e) => setNewUser({ ...newUser, faceit: e.target.value })}
         />
       </div>
@@ -130,18 +128,8 @@ export default function Add({ setShowAdd }) {
           className="border border-gray-400 p-2 rounded-lg w-full"
           type="text"
           name="quality"
-          value={newUser.quality}
+          defaultValue={newUser.quality}
           onChange={(e) => setNewUser({ ...newUser, quality: e.target.value })}
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block text-gray-700 font-medium mb-2">Weakness:</label>
-        <input
-          className="border border-gray-400 p-2 rounded-lg w-full"
-          type="text"
-          name="weakness"
-          value={newUser.weakness}
-          onChange={(e) => setNewUser({ ...newUser, weakness: e.target.value })}
         />
       </div>
       <div className="mb-4">
@@ -150,7 +138,7 @@ export default function Add({ setShowAdd }) {
           className="border border-gray-400 p-2 rounded-lg w-full"
           type="file"
           name="img"
-          value={newUser.img}
+          defaultValue={newUser.img}
           onChange={(e) => setNewUser({ ...newUser, img: e.target.files[0] })}
         />
       </div>
@@ -160,7 +148,7 @@ export default function Add({ setShowAdd }) {
           className="border border-gray-400 p-2 rounded-lg w-full"
           type="text"
           name="steam"
-          value={newUser.steam}
+          defaultValue={newUser.steam}
           onChange={(e) => setNewUser({ ...newUser, steam: e.target.value })}
         />
       </div>
@@ -171,5 +159,5 @@ export default function Add({ setShowAdd }) {
         </button>
       </div>
     </form>
-  );
+  )
 }
