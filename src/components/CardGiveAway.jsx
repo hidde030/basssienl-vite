@@ -52,7 +52,7 @@ export default function GiveAway({ props }) {
               </li>
               <li className="flex items-center">
                 <span className="text-white font-light">
-                  <span className="font-medium kruis">Weakness</span>: {props.weakness}
+                  <span className="font-medium hours">CS:GO</span>: {props.hours}
                 </span>
               </li>
             </ul>

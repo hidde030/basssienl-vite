@@ -46,7 +46,7 @@ export default function giveAway() {
             </h2>
             <p className="mb-3">
               In de eerste stream van het nieuwe jaar geven we een knife weg! Je maakt
-              kans op een knife van €150 maar ook is er 1% kans op een knife van €630+! De
+              kans op een knife van €150 maar ook is er 1% kans op een knife van €250+! De
               hele maand november en december kan je tickets verzamelen door channelpoints
               te sparen op twitch. Deze krijg je door te lurken en mee te gaan met raids.
               Uitcashen kan tijdens de live streams, Maximaal 5 per persoon per stream! Je
@@ -55,7 +55,7 @@ export default function giveAway() {
             </p>
             <h3 className="text-2xl">Knives Prijzenpot</h3>
             <ul className="list-disc list-inside ">
-              <li>1% Bayonet doppler FN</li>
+              <li>1% Huntsman knife Case Hardened MW</li>
               <li>9% Nomad knife Stained BS</li>
               <li>30% Falchion knife Crimson web FT</li>
               <li>30% Falchion knife Damascus steel FT</li>
