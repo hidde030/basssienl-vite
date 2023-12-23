@@ -42,7 +42,7 @@ export default function giveAway() {
           <div className="p-12 md:w-1/2 flex flex-col items-start">
             {/* BASSIENL */}
             <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-              Januari knife giveaway
+              Januari Knife Giveaway
             </h2>
             <p className="mb-3">
               In de eerste stream van het nieuwe jaar geven we een knife weg! Je maakt
