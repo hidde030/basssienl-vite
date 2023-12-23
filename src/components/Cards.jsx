@@ -145,7 +145,7 @@ export function Card(props) {
             </li>
             <li className="flex items-center">
               <span className="text-white font-light">
-                <span className="font-medium hours">Hours</span>: {props.hours}
+                <span className="font-medium hours">CS:GO</span>: {props.hours}
               </span>
             </li>
           </ul>

@@ -9,6 +9,16 @@ import "swiper/css/scrollbar"
 import { useEffect, useState } from "react"
 
 export default function giveAway() {
+  const winners = [
+    " giveaway_1.png",
+    " giveaway_2.png",
+    " giveaway_3.png",
+    " giveaway_4.png",
+    "giveaway_5.png",
+    "giveaway_6.png",
+    "giveaway_7.png",
+  ]
+
   const [props, setProps] = useState([])
   useEffect(() => {
     fetch("https://bassienl.nl/api/giveaway", {
@@ -20,6 +30,9 @@ export default function giveAway() {
       .then((data) => {
         setProps(data)
       })
+      .catch((error) => {
+        console.error("Error:", error)
+      })
   }, [])
 
   return (
@@ -28,8 +41,8 @@ export default function giveAway() {
         <div className="flex flex-wrap -m-12">
           <div className="p-12 md:w-1/2 flex flex-col items-start">
             {/* BASSIENL */}
-            <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-              January knife giveaway
+            <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              Januari knife giveaway
             </h2>
             <p className="mb-3">
               In de eerste stream van het nieuwe jaar geven we een knife weg! Je maakt
@@ -48,7 +61,6 @@ export default function giveAway() {
               <li>30% Falchion knife Damascus steel FT</li>
               <li>30% Stattrak Paracord knife stained FT</li>
             </ul>
-            {/* styled tailwind button */}
             <div className="flex pt-4">
               <a
                 target="_blank"
@@ -64,18 +76,66 @@ export default function giveAway() {
                 Knives wheel
               </a>
             </div>
-            {/* <h3 className="text-2xl pt-4"> Thanks for watching en may the best win!</h3> */}
-            <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"></div>
           </div>
-
           <div className="p-12 md:w-1/2 flex flex-col items-start">
             <div className=" w-full">
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">
+                Previous Winners
+              </h2>
+              <Swiper
+                className={"winners"}
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={100}
+                slidesPerView={1}
+                navigation
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  // when window width is >= 768px
+                  768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                  },
+                  // when window width is >= 1024px
+                  1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                  },
+                }}
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}>
+                {winners.map((slideContent, index) => (
+                  <SwiperSlide key={index} virtualIndex={index}>
+                    <img
+                      src={`https://bassienl.nl/images/${slideContent.trim()}`}
+                      className="object-cover object-center rounded"
+                      alt="hero"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+          <div className="py-12 md:w-1/2 flex flex-col items-start justify-between  ">
+            <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              Current Giveaway
+            </h2>
+
+            <img
+              src="https://bassienl.nl/images/giveaway_8.png"
+              className="object-center rounded h-full w-full cover-fill "
+              alt="hero"
+            />
+          </div>
+          <div className="p-12 md:w-1/2 flex flex-col items-start">
+            <div className=" w-full">
+              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">
                 Previous Giveaways
               </h2>
               <Swiper
                 className={"mySwiper"}
-                // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={100}
                 slidesPerView={1}
