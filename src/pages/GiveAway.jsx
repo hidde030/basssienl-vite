@@ -39,7 +39,7 @@ export default function giveAway() {
     <section className="text-gray-600 body-font overflow-hidden text-white bg-gray bg-opacity-30 rounded  ">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-12">
-          <div className="p-12 md:w-1/2 flex flex-col items-start">
+          <div className="py-12 md:w-1/2 flex flex-col items-start">
             {/* BASSIENL */}
             <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
               Januari Knife Giveaway
