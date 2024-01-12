@@ -10,10 +10,10 @@ import { useEffect, useState } from "react"
 
 export default function giveAway() {
   const winners = [
-    " giveaway_1.png",
-    " giveaway_2.png",
-    " giveaway_3.png",
-    " giveaway_4.png",
+    "giveaway_1.png",
+    "giveaway_2.png",
+    "giveaway_3.png",
+    "giveaway_4.png",
     "giveaway_5.png",
     "giveaway_6.png",
     "giveaway_7.png",
