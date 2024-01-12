@@ -130,7 +130,7 @@ export function Card(props) {
           <ul className="flex flex-col ">
             <li className="flex items-center">
               <span className="text-white font-light ">
-                <span className="font-medium match">Matchmaking</span>: {props.rank}
+                <span className="font-medium match">Premier Rating</span>: {props.rank}
               </span>
             </li>
             <li className="flex items-center">
