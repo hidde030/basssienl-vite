@@ -17,6 +17,8 @@ export default function giveAway() {
     "giveaway_5.png",
     "giveaway_6.png",
     "giveaway_7.png",
+    "giveaway_8.png",
+    "giveaway_9.png",
   ]
 
   const [props, setProps] = useState([])
@@ -72,7 +74,7 @@ export default function giveAway() {
               <a
                 target="_blank"
                 class="bg-card_bg  text-white font-bold py-2 px-4 rounded ml-4 "
-                href="https://wheelofnames.com/6bp-vds">
+                href="https://wheelofnames.com/26k-mjs">
                 Knives wheel
               </a>
             </div>
