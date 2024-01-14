@@ -45,18 +45,20 @@ export default function giveAway() {
           <div className="py-12 md:w-1/2 flex flex-col items-start">
             {/* BASSIENL */}
             <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-              Free Knife Giveaway
+              May Knife Giveaway
             </h2>
             <p className="mb-3">
               De maanden Januari, Februari, Maart EN April kan je tickets verzamelen door
-              channelpoints te sparen op twitch. Ook geeft BassieNL Random Bonus tickets
-              weg! Deze krijg je door te lurken en mee te gaan met raids. Uitcashen kan
-              tijdens de live streams, Maximaal 5 per persoon per stream! Je hoeft niet
-              aanwezig te zijn tijdens de giveaway stream en ook non subs maken kans.
+              channelpoints te sparen op Twitch.
+              <b>Ook geeft BassieNL Random Bonus tickets weg!</b>
+              Deze krijg je door te lurken en mee te gaan met raids. Uitcashen kan tijdens
+              de live streams, Maximaal 5 per persoon per stream! Je hoeft niet aanwezig
+              te zijn tijdens de giveaway stream en ook non subs maken kans. Mits actief
+              community member!
             </p>
             <h3 className="text-2xl">Knives Prijzenpot</h3>
             <ul className="list-disc list-inside ">
-              <li>5% Huntsman knife Lore FT</li>
+              <li>5% Huntsman Knife Lore FT T</li>
               <li>20% Bowie knife autotronic FT</li>
               <li>75% Ursus knife safari mesh MW</li>
             </ul>
@@ -71,10 +73,11 @@ export default function giveAway() {
               <a
                 target="_blank"
                 class="bg-card_bg  text-white font-bold py-2 px-4 rounded ml-4 "
-                href="https://wheelofnames.com/26k-mjs">
+                href="https://wheelofnames.com/dyh-62k">
                 Knives wheel
               </a>
             </div>
+            <h2 className="mt-3">Thanks for watching en may the best win!</h2>
           </div>
           <div className="p-12 md:w-1/2 flex flex-col items-start">
             <div className=" w-full">

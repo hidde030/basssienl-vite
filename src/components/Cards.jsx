@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react"
 import steam from "../img/steam.svg"
+import Stat from "./cs-stats/Stat"
 
 export default function GridCards() {
   const [response, setResponse] = useState({})
@@ -27,6 +28,7 @@ export default function GridCards() {
         setResponse(data)
       })
   }, [])
+  console.log(response)
   return (
     <div className="container mx-auto lg:pt-10 pt-4 pb-6 px-4 md:px-0">
       <form className="flex justify-end py-2 items-center ">
@@ -96,6 +98,7 @@ export function Card(props) {
       ref.current.scrollIntoView({ behavior: "smooth" })
     }
   }, [])
+
   return (
     <a ref={ref} href={`#${props.name}`} className={`${props.role}`}>
       <div className={`card-item sbg-white rounded-lg shadow-lg  `}>
@@ -129,8 +132,9 @@ export function Card(props) {
           </div>
           <ul className="flex flex-col ">
             <li className="flex items-center">
-              <span className="text-white font-light ">
-                <span className="font-medium match">Premier Rating</span>: {props.rank}
+              <span className="text-white font-light flex items-center ">
+                <span className="font-medium">Premier Rating</span>:{" "}
+                <Stat rank={props.rank} />
               </span>
             </li>
             <li className="flex items-center">
