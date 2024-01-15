@@ -58,7 +58,7 @@ export default function giveAway() {
             </p>
             <h3 className="text-2xl">Knives Prijzenpot</h3>
             <ul className="list-disc list-inside ">
-              <li>5% Huntsman Knife Lore FT T</li>
+              <li>5% Huntsman Knife Lore FT</li>
               <li>20% Bowie knife autotronic FT</li>
               <li>75% Ursus knife safari mesh MW</li>
             </ul>
