@@ -20,7 +20,7 @@ export default function giveAway() {
     "giveaway_9.png",
     "giveaway_10.png",
     "giveaway_11.png",
-  ]
+  ].reverse()
 
   const [props, setProps] = useState([])
   useEffect(() => {
