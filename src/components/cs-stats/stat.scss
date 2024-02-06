@@ -1,0 +1,69 @@
+.rank {
+  height: 40px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs2rating.sm {
+  padding: 0.3rem 2rem;
+}
+
+.cs2rating.noBg {
+  width: 100% !important;
+  padding: 0 !important;
+}
+.c2rating {
+  width: 70px;
+  height: 24px;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 0 black;
+  font-weight: bold;
+  margin: auto;
+}
+// TODO SET CORRECT RATING COLORS
+// 9 and below - classname common
+// 5,000 to 9,000 -  classname uncommon
+// 10,000 to 14,999 -  classname rare
+// 15,000 to 19,999 - classname mythical
+// 20,000 to 24,999 - classname legendary
+// 25,000 to 29,999 - classname ancient
+// 30,000 and above - classname divine
+.ancient {
+  color: #eb4b4b;
+  background: url("../../img/rating/rating.ancient.png") no-repeat;
+}
+
+.legendary {
+  color: #d22ce6;
+  background: url("../../img/rating/rating.legendary.png") no-repeat;
+}
+
+.unusual {
+  color: #fed700;
+  background: url("../../img/rating/rating.unusual.png") no-repeat;
+}
+
+.mythical {
+  color: #8846ff;
+  background: url("../../img/rating/rating.mythical.png") no-repeat;
+}
+
+.rare {
+  color: #4b69ff;
+  background: url("../../img/rating/rating.rare.png") no-repeat;
+}
+
+.uncommon {
+  color: #5e98d7;
+  background: url("../../img/rating/rating.uncommon.png") no-repeat;
+}
+
+.common {
+  color: #b1c3d9;
+  background: url("../../img/rating/rating.common.png") no-repeat;
+}

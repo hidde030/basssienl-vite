@@ -10,14 +10,17 @@ import { useEffect, useState } from "react"
 
 export default function giveAway() {
   const winners = [
-    " giveaway_1.png",
-    " giveaway_2.png",
-    " giveaway_3.png",
-    " giveaway_4.png",
+    "giveaway_1.png",
+    "giveaway_2.png",
+    "giveaway_3.png",
+    "giveaway_4.png",
     "giveaway_5.png",
     "giveaway_6.png",
     "giveaway_7.png",
-  ]
+    "giveaway_9.png",
+    "giveaway_10.png",
+    "giveaway_11.png",
+  ].reverse()
 
   const [props, setProps] = useState([])
   useEffect(() => {
@@ -42,24 +45,22 @@ export default function giveAway() {
           <div className="py-12 md:w-1/2 flex flex-col items-start">
             {/* BASSIENL */}
             <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-              Januari Knife Giveaway
+              May Knife Giveaway
             </h2>
             <p className="mb-3">
-              In de eerste stream van het nieuwe jaar geven we een knife weg! Je maakt
-              kans op een knife van €150 maar ook is er 1% kans op een knife van €250+! De
-              hele maand november en december kan je tickets verzamelen door channelpoints
-              te sparen op twitch. Deze krijg je door te lurken en mee te gaan met raids.
-              Uitcashen kan tijdens de live streams, Maximaal 5 per persoon per stream! Je
-              hoeft niet aanwezig te zijn tijdens de giveaway stream en ook non subs maken
-              kans.
+              De maanden Januari, Februari, Maart EN April kan je tickets verzamelen door
+              channelpoints te sparen op Twitch.
+              <b>Ook geeft BassieNL Random Bonus tickets weg!</b>
+              Deze krijg je door te lurken en mee te gaan met raids. Uitcashen kan tijdens
+              de live streams, Maximaal 5 per persoon per stream! Je hoeft niet aanwezig
+              te zijn tijdens de giveaway stream en ook non subs maken kans. Mits actief
+              community member!
             </p>
             <h3 className="text-2xl">Knives Prijzenpot</h3>
             <ul className="list-disc list-inside ">
-              <li>1% Huntsman knife Case Hardened MW</li>
-              <li>9% Nomad knife Stained BS</li>
-              <li>30% Falchion knife Crimson web FT</li>
-              <li>30% Falchion knife Damascus steel FT</li>
-              <li>30% Stattrak Paracord knife stained FT</li>
+              <li>5% Huntsman Knife Lore FT</li>
+              <li>20% Bowie knife autotronic FT</li>
+              <li>75% Ursus knife safari mesh MW</li>
             </ul>
             <div className="flex pt-4">
               <a
@@ -72,10 +73,11 @@ export default function giveAway() {
               <a
                 target="_blank"
                 class="bg-card_bg  text-white font-bold py-2 px-4 rounded ml-4 "
-                href="https://wheelofnames.com/6bp-vds">
+                href="https://wheelofnames.com/dyh-62k">
                 Knives wheel
               </a>
             </div>
+            <h2 className="mt-3">Thanks for watching en may the best win!</h2>
           </div>
           <div className="p-12 md:w-1/2 flex flex-col items-start">
             <div className=" w-full">
@@ -118,7 +120,7 @@ export default function giveAway() {
               </Swiper>
             </div>
           </div>
-          <div className="py-12 md:w-1/2 flex flex-col items-start justify-between  ">
+          {/* <div className="py-12 md:w-1/2 flex flex-col items-start justify-between  ">
             <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
               Current Giveaway
             </h2>
@@ -128,8 +130,8 @@ export default function giveAway() {
               className="object-center rounded h-full w-full cover-fill "
               alt="hero"
             />
-          </div>
-          <div className="p-12 md:w-1/2 flex flex-col items-start">
+          </div> */}
+          {/* <div className="p-12 md:w-1/2 flex flex-col items-start">
             <div className=" w-full">
               <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">
                 Previous Giveaways
@@ -149,7 +151,7 @@ export default function giveAway() {
                 ))}
               </Swiper>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
