@@ -1,12 +1,12 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from "swiper/react"
-import CardGiveAway from "../components/CardGiveAway"
+import { Swiper, SwiperSlide } from "swiper/react";
+import CardGiveAway from "../components/CardGiveAway";
 // Import Swiper styles
-import "swiper/css"
-import "swiper/css/scrollbar"
-import { useEffect, useState } from "react"
+import "swiper/css";
+import "swiper/css/scrollbar";
+import { useEffect, useState } from "react";
 
 export default function giveAway() {
   const winners = [
@@ -20,9 +20,9 @@ export default function giveAway() {
     "giveaway_9.png",
     "giveaway_10.png",
     "giveaway_11.png",
-  ].reverse()
+  ].reverse();
 
-  const [props, setProps] = useState([])
+  const [props, setProps] = useState([]);
   useEffect(() => {
     fetch("https://bassienl.nl/api/giveaway", {
       headers: {
@@ -31,12 +31,12 @@ export default function giveAway() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setProps(data)
+        setProps(data);
       })
       .catch((error) => {
-        console.error("Error:", error)
-      })
-  }, [])
+        console.error("Error:", error);
+      });
+  }, []);
 
   return (
     <section className="text-gray-600 body-font overflow-hidden text-white bg-gray bg-opacity-30 rounded  ">
@@ -60,7 +60,7 @@ export default function giveAway() {
             <ul className="list-disc list-inside ">
               <li>5% Huntsman Knife Lore FT</li>
               <li>20% Bowie knife autotronic FT</li>
-              <li>75% Ursus knife safari mesh MW</li>
+              <li>75% Ursus knife safari mesh FT</li>
             </ul>
             <div className="flex pt-4">
               <a
@@ -155,5 +155,5 @@ export default function giveAway() {
         </div>
       </div>
     </section>
-  )
+  );
 }

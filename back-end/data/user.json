@@ -18,7 +18,7 @@
       "rating": "68",
       "role": "vip",
       "name": "BassieNL",
-      "rank": "18.000",
+      "rank": "15.000",
       "faceit": "3",
       "quality": "Wallbanger",
       "hours": "2.869",
@@ -250,7 +250,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "77",
+      "rating": "1",
       "role": "subscriber",
       "name": "DokterPanda",
       "rank": "17.000",
@@ -525,6 +525,19 @@
       "giveaway": false
     },
     {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "47",
+      "role": "subscriber",
+      "name": "V1king",
+      "rank": "9.000",
+      "faceit": "5",
+      "quality": "quality trolling",
+      "hours": "3.100",
+      "img": "https://bassienl.nl/images/viking.jpg",
+      "steam_url": "https://steamcommunity.com/id/jurreV",
+      "giveaway": false
+    },
+    {
       "role": "subscriber",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Visje In Het Water",
@@ -720,20 +733,6 @@
       "img": "https://bassienl.nl/images/Spanjaard.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198304043231/",
       "giveaway": false
-    },
-    {
-        "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-        "rating": "47",
-        "role": "subscriber",
-        "name": "V1king",
-        "rank": "9.000",
-        "faceit": "5",
-        "quality": "quality trolling",
-        "hours": "3.100",
-        "img": "https://bassienl.nl/images/viking.jpg",
-        "steam_url": "https://steamcommunity.com/id/jurreV",
-        "giveaway": false
     }
-   
   ]
 }
