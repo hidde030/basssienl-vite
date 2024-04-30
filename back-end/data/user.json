@@ -5,7 +5,7 @@
       "rating": "94",
       "role": "vip",
       "name": "Bart",
-      "rank": "24.000",
+      "rank": "25.000",
       "faceit": "10",
       "quality": "God Aim",
       "hours": "5.695",
@@ -41,11 +41,24 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "55",
+      "role": "vip",
+      "name": "DJ Geerlings",
+      "rank": "10.000",
+      "faceit": "3",
+      "quality": "Mr. Nice Guy",
+      "hours": "277",
+      "img": "https://bassienl.nl/images/DJGeerlings.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198317636282",
+      "giveaway": false
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "86",
       "role": "vip",
       "name": "Erik2304",
-      "rank": "20.000",
-      "faceit": "6",
+      "rank": "21.000",
+      "faceit": "10",
       "quality": "Big Brain",
       "hours": "1.769",
       "img": "https://bassienl.nl/images/Erik.png",
@@ -436,6 +449,19 @@
     {
       "role": "subscriber",
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
+      "name": "MrPepper",
+      "rating": "91",
+      "rank": "24000",
+      "faceit": "10",
+      "steam": "https://steamcommunity.com/profiles/76561198269057803",
+      "quality": "Fragger",
+      "hours": "4.545",
+      "img": "https://bassienl.nl/images/MrPepper.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198269057803"
+    },
+    {
+      "role": "subscriber",
+      "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "name": "Peekske",
       "rating": "50",
       "rank": "15.000",
@@ -483,6 +509,19 @@
       "hours": "No Data",
       "img": "https://bassienl.nl/images/Rens.png",
       "steam_url": "https://steamcommunity.com/id/5zyk",
+      "giveaway": false
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "71",
+      "role": "subscriber",
+      "name": "Safari",
+      "rank": "14.000",
+      "faceit": "3",
+      "quality": "Inconsistent Player",
+      "hours": "563",
+      "img": "https://bassienl.nl/images/Safari.png",
+      "steam_url": "https://steamcommunity.com/id/NameIsSaFaRI/",
       "giveaway": false
     },
     {
@@ -606,19 +645,6 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "90",
-      "role": "member",
-      "name": "FabioCCC",
-      "rank": "22.000",
-      "faceit": "10",
-      "quality": "Soon",
-      "hours": "Soon",
-      "img": "https://bassienl.nl/images/FabioCCC.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198320016124",
-      "giveaway": false
-    },
-    {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "rating": "81",
       "role": "member",
       "name": "HawKxQ",
@@ -654,6 +680,19 @@
       "hours": "2.041",
       "img": "https://bassienl.nl/images/Loepert.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198156574365",
+      "giveaway": false
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "86",
+      "role": "member",
+      "name": "Marijn",
+      "rank": "19.000",
+      "faceit": "5",
+      "quality": "Strong Awper",
+      "hours": "3270",
+      "img": "https://bassienl.nl/images/Marijn.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561199081863413/",
       "giveaway": false
     },
     {
