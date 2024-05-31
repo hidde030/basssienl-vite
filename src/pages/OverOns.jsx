@@ -1,19 +1,19 @@
-import React from "react";
-import bassie from "../img/logo.png";
+import React from "react"
+import bassie from "../img/logo.png"
 function OverOns() {
   return (
     <div>
-      <section class="text-gray-600 body-font overflow-hidden text-white bg-gray bg-opacity-30 rounded  ">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-12">
-            <div class="p-12 md:w-1/2 flex flex-col items-start">
+      <section className="text-gray-600 body-font overflow-hidden text-white bg-gray bg-opacity-30 rounded  ">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-12">
+            <div className="p-12 md:w-1/2 flex flex-col items-start">
               {/* BASSIENL */}
-              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
                 BassieNL
               </h2>
               <h3 className="text-2xl">Who am I</h3>
               <p className="mb-3">
-                My name is BassieNL, my real name is Aeilko (pronounced Elko). I am a 30
+                My name is BassieNL, my real name is Aeilko (pronounced Elko). I am a 32
                 year old guy who likes to entertain people with my gaming “skills” and my
                 sense of humour! I work with physically and mentally disabled people for a
                 living and do that with a lot of joy!
@@ -40,27 +40,29 @@ function OverOns() {
                 we do a charity stream almost every year! The biggest banger we made was
                 for KIKA, we streamed for 35 hrs and made almost €4.000,-!
               </p>
-              <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"></div>
-              <a href="" class="inline-flex items-center">
+              <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"></div>
+              <a href="" className="inline-flex items-center">
                 <img
                   alt="blog"
                   src={bassie}
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                  className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Aeilko Folkers</span>
-                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">
+                <span className="flex-grow flex flex-col pl-4">
+                  <span className="title-font font-medium text-gray-900">
+                    Aeilko Folkers
+                  </span>
+                  <span className="text-gray-400 text-xs tracking-widest mt-0.5">
                     STREAMER
                   </span>
                 </span>
               </a>
             </div>
             {/* Hostmajority */}
-            <div class="p-12 md:w-1/2 flex flex-col items-start">
-              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+            <div className="p-12 md:w-1/2 flex flex-col items-start">
+              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
                 HostMajority
               </h2>
-              <p class="leading-relaxed mb-8">
+              <p className="leading-relaxed mb-8">
                 This website has been developed with love by HostMajority, we're a game
                 hosting company with website development experience. We host games like,
                 Minecraft, ARK Survival Evolved and most famous Counter Strike Global
@@ -93,16 +95,18 @@ function OverOns() {
                 of by Stan. If Stan doesn't know the correct answer the ticket will be
                 send to the rest of the HostMajority team.
               </p>
-              <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"></div>
-              <a class="inline-flex items-center">
+              <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"></div>
+              <a className="inline-flex items-center">
                 <img
                   alt="blog"
                   src="https://bassienl.nl/images/Hm_logo.png"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-contain object-center"
+                  className="w-12 h-12 rounded-full flex-shrink-0 object-contain object-center"
                 />
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">HostMajority</span>
-                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">
+                <span className="flex-grow flex flex-col pl-4">
+                  <span className="title-font font-medium text-gray-900">
+                    HostMajority
+                  </span>
+                  <span className="text-gray-400 text-xs tracking-widest mt-0.5">
                     COMPANY
                   </span>
                 </span>
@@ -112,6 +116,6 @@ function OverOns() {
         </div>
       </section>
     </div>
-  );
+  )
 }
-export { OverOns };
+export { OverOns }
