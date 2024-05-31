@@ -52,17 +52,24 @@ export default function giveAway() {
               <p className="mb-3">
                 In de maand december geven we een volledige geel/gouden inventory weg! Er
                 worden 10 skins weggegeven aan de winnaar van deze giveaway. Met als
-                hoofdprijs een knife/glove combo. De giveaway is 100% gratis en iedereen
-                kan deelnemen. Hoe? Cash inventory tickets uit door te lurken en
+                hoofdprijs een knife/glove combo. De giveaway is <b>100% gratis</b> en
+                iedereen kan deelnemen.
+                <br /> <br /> Hoe? Cash <u>inventory tickets</u> uit door te lurken en
                 bassiecash te verzamelen op twitch! Onder de twitch chat staat een
                 bassiecash icoontje die je kan aanklikken en dit geeft je 1 ticket! (de
                 link onder deze uitleg laat de huidige tickets zien die je uitgecashed
-                hebt!) Giveaway is alleen voor actieve members! Giveaway hunters delete
-                ik! Wat is een actieve member? Laat jezelf geregeld zien in de
-                twitch/discord chat of speel af en toe een potje mee en je bent actief.
-                Bonus: Omdat dit pas in december is zijn er 3 GRATIS bonus giveaways in de
-                maanden juli, sept en okt! (deze giveaways hebben de subscribers wel 8x
-                meer luck!)
+                hebt!)
+                <br /> <br />{" "}
+                <i>
+                  Giveaway is <b> alleen voor actieve members! </b>Giveaway hunters delete
+                  ik!
+                </i>{" "}
+                Wat is een actieve member? Laat jezelf geregeld zien in de twitch/discord
+                chat of speel af en toe een potje mee en je bent actief.
+                <br /> <br />
+                <b>Bonus:</b> Omdat dit pas in december is zijn er 3 GRATIS bonus
+                giveaways in de maanden juli, sept en okt!{" "}
+                <i>(deze giveaways hebben de subscribers wel 8x meer luck!)</i>
               </p>
 
               <div className="flex pt-4">
@@ -160,32 +167,43 @@ export default function giveAway() {
               </h2>
               <p className="mb-3">
                 In de maand december geven we een volledige geel/gouden inventory weg!
-                Aangezien er enorm gesupport wordt bij mijn streams en jullie mij door
-                mindere periodes heen helpen wil ik graag de mensen die de stream
-                supporten extra terug bedanken zonder dat ze het zelf doorhebben!
+                Aangezien er enorm gesupport wordt bij mijn streams en{" "}
+                <u>jullie mij door mindere periodes heen helpen</u> wil ik graag de mensen
+                die de stream supporten extra terug bedanken zonder dat ze het zelf
+                doorhebben!
+              </p>
+              <b className="mb-3">
                 Supporters zijn de mensen die zelf Subscriben, Giften, Bits doneren, skins
-                doneren en gewoon doneren. Voor deze categorie heb ik een extra giveaway
-                achter de schermen lopen die op de zelfde dag als de December giveaway
-                wordt gedropt! Alleen de admins weten meer info over deze giveaway en
-                letten er op dat ik dit eerlijk bij hou! Voor de supporters is dus alleen
-                duidelijk dat ze een extra prijs weten, maar niet hoeveel kans ze maken en
-                hoe ze winnen.
+                doneren en gewoon doneren.
+              </b>
+              <p className="mb-3">
+                Voor deze categorie heb ik een extra giveaway achter de schermen lopen die
+                op de zelfde dag als de December giveaway wordt gedropt! Alleen de admins
+                weten meer info over deze giveaway en letten er op dat ik dit eerlijk bij
+                hou!
+              </p>
+              <p className="mb-3">
+                Voor de supporters is dus alleen duidelijk dat ze een extra prijs weten,
+                maar niet hoeveel kans ze maken en hoe ze winnen.
               </p>
               <h3 className="text-2xl mb-3">
                 De prijzen voor de supporters zijn (ook goud/geel)
               </h3>
               <ul className="list-disc list-inside ">
-                <li>1e prijs: MW AK Fuel Injector</li>
-                <li>2e prijs: FN Tiger Tooth Shadow Daggers</li>
-                <li>3e prijs: MW Chantico’s Fire m4</li>
+                <li>
+                  <b> 1e prijs:</b> MW AK Fuel Injector
+                </li>
+                <li>
+                  <b>2e prijs:</b> FN Tiger Tooth Shadow Daggers
+                </li>
+                <li>
+                  <b>3e prijs:</b> MW Chantico’s Fire m4
+                </li>
               </ul>
               <h2>Alle 3 zijn in potentie door 1 supporter te winnen!</h2>
             </div>
-            <div className="p-12 md:w-1/2 flex flex-col items-start">
+            <div className="p-4 md:w-1/2 flex flex-col items-start mt-8">
               <div className=" w-full">
-                <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">
-                  &nbsp;
-                </h2>
                 <img
                   src="https://cdn.discordapp.com/attachments/1154753678578827306/1246028221426962513/Giveaway_12.png?ex=665ae5b6&is=66599436&hm=e0cbab86cd46c7c75f2a1be34c2670285d90447943e45f7e4f53dad64da34fc1&"
                   alt=""
