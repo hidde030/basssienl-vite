@@ -1,33 +1,31 @@
 const express = require("express");
 const path = require("path");
-const app = express();
 const fs = require("fs");
 const cors = require("cors");
 const basicAuth = require("basic-auth");
 const multer = require("multer");
-const { json } = require("body-parser");
+
+const app = express();
+const port = process.env.PORT || 3000;
+const file = "./data/user.json";
+
 const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "uploads/");
-  },
-  filename: function (req, file, cb) {
-    cb(null, `${file.originalname}`);
-  },
+  destination: (req, file, cb) => cb(null, "uploads/"),
+  filename: (req, file, cb) => cb(null, file.originalname),
 });
 
-const upload = multer({ storage: storage });
-const port = process.env.PORT || 3000;
+const upload = multer({ storage });
 const corsOptions = {
   origin: "*",
-  credentials: true, //access-control-allow-credentials:true
+  credentials: true,
   optionSuccessStatus: 200,
 };
+
 const roleOrder = ["vip", "subscriber", "member"];
+
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "dist")));
-// const username = "bassienl";
-// const password = "B@ssi3NL";
 
 const auth = (req, res, next) => {
   const user = basicAuth(req);
@@ -39,137 +37,153 @@ const auth = (req, res, next) => {
   }
 };
 
-// app.get("/*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "dist", "index.html"), function (err) {
-//     if (err) {
-//       res.status(500).send(err);
-//     }
-//   });
-// });
+// Authentication route
 app.post("/api/auth", auth, (req, res) => {
   res.status(200).send("AUTHENTICATED");
   // redirect to the main page
   res.redirect("/admin");
 });
-const file = "./data/user.json";
+
+// Fetch all data
 app.get("/api", (req, res) => {
-  let jsonData = require(file);
+  const jsonData = require(file);
   res.status(200).send(jsonData);
 });
 
-// app.use('/images', express.static('images'))
+// Serve images
 app.get("/images/:imageName", (req, res) => {
   const imageName = req.params.imageName;
   const readStream = fs.createReadStream(`images/${imageName}`);
   readStream.pipe(res);
 });
 
+// Upload images
 app.post("/api/images", auth, upload.single("image"), (req, res) => {
   console.log(req.file);
-
   res.send("Image uploaded successfully.");
 });
 
+// Sort data
 app.get("/api/sort", auth, (req, res) => {
-  let jsonData = require(file);
+  const jsonData = require(file);
   jsonData.data.sort((a, b) => {
-    let roleA = roleOrder.indexOf(a.role);
-    let roleB = roleOrder.indexOf(b.role);
-    if (roleA !== roleB) {
-      return roleA - roleB;
-    }
-    return a.name.localeCompare(b.name);
+    const roleA = roleOrder.indexOf(a.role);
+    const roleB = roleOrder.indexOf(b.role);
+    return roleA !== roleB ? roleA - roleB : a.name.localeCompare(b.name);
   });
 
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
     if (err) {
       res.status(500).send(err);
-      return;
+    } else {
+      res.status(200).send(jsonData).sendmessage("JSON file has been sorted.");
     }
-    //send json file
-    res.status(200).send(jsonData).sendmessage("JSON file has been sorted.");
   });
 });
-//delete route
+
+// Delete entry
 app.delete("/api/delete/:name", auth, (req, res) => {
-  let jsonData = require(file);
-  let obj = jsonData.data?.find((o) => o.name === req.params.name);
-  let index = jsonData.data.indexOf(obj);
+  const jsonData = require(file);
+  const index = jsonData.data.findIndex((o) => o.name === req.params.name);
+
+  if (index === -1) {
+    return res.status(404).send("User not found");
+  }
+
   jsonData.data.splice(index, 1);
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
     if (err) {
       res.status(500).send(err);
-      return;
+    } else {
+      res.status(200).send(jsonData).sendmessage("User has been deleted.");
     }
-    res.status(200).send(jsonData).sendmessage("JSON file has been deleted.");
   });
 });
 
+// Add new entry
 app.post("/api/add", auth, (req, res) => {
-  let jsonData = require(file);
+  const jsonData = require(file);
   jsonData.data.push(req.body);
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
     if (err) {
       res.status(500).send(err);
-      return;
+    } else {
+      res.status(200).send(jsonData).sendmessage("User has been added.");
     }
-    res.status(200).send(jsonData).sendmessage("JSON file has been added.");
   });
 });
 
+// Update entry
 app.put("/api/update", auth, (req, res) => {
-  // Read the JSON file
-  let jsonData = require(file);
-  //   get object by name
-  let obj = jsonData.data?.find((o) => o.name === req.body.name);
-  obj.rating = req.body.rating;
-  obj.nationality = req.body.nationality;
-  obj.role = req.body.role;
-  obj.name = req.body.name;
-  obj.rank = req.body.rank;
-  obj.faceit = req.body.faceit;
-  obj.quality = req.body.quality;
-  obj.img = req.body.img;
-  obj.steam_url = req.body.steam_url;
-  obj.giveaway = req.body.giveaway;
+  const jsonData = require(file);
+  const obj = jsonData.data.find((o) => o.name === req.body.name);
 
+  if (!obj) {
+    return res.status(404).send("User not found");
+  }
+
+  Object.assign(obj, req.body);
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
     if (err) {
       res.status(500).send(err);
-      return;
+    } else {
+      res.status(200).send(jsonData).sendmessage("User has been updated.");
     }
-
-    res.status(200).send(jsonData).sendmessage("JSON file has been updated.");
   });
 });
 
+// Get giveaway users
 app.get("/api/giveaway", (req, res) => {
-  let jsonData = require(file);
-  let giveawayUsers = jsonData.data.filter((user) => user.giveaway === true);
+  const jsonData = require(file);
+  const giveawayUsers = jsonData.data.filter((user) => user.giveaway === true);
   res.status(200).send(giveawayUsers);
 });
 
+// Update giveaway status
 app.put("/api/giveaway/:name", auth, (req, res) => {
-  let jsonData = require(file);
-  let obj = jsonData.data?.find((o) => o.name === req.params.name);
+  const jsonData = require(file);
+  const obj = jsonData.data.find((o) => o.name === req.params.name);
+
+  if (!obj) {
+    return res.status(404).send("User not found");
+  }
+
   obj.giveaway = req.body.giveaway;
   fs.writeFile(file, JSON.stringify(jsonData), (err) => {
     if (err) {
       res.status(500).send(err);
-      return;
+    } else {
+      res
+        .status(200)
+        .send(jsonData)
+        .sendmessage("User giveaway status has been updated.");
     }
-    res.status(200).send(jsonData).sendmessage("JSON file has been updated.");
   });
 });
+
+// Delete giveaway user
 app.delete("/api/giveaway/:name", auth, (req, res) => {
-  let jsonData = require(file);
-  let obj = jsonData.data?.find((o) => o.name === req.params.name);
-  let index = jsonData.data.indexOf(obj);
+  const jsonData = require(file);
+  const index = jsonData.data.findIndex((o) => o.name === req.params.name);
+
+  if (index === -1) {
+    return res.status(404).send("User not found");
+  }
+
   jsonData.data.splice(index, 1);
-  res.status(200).send(jsonData).sendmessage("JSON file has been deleted.");
+  res.status(200).send(jsonData).sendmessage("User giveaway status has been deleted.");
 });
 
-//what can express do?
+// Fallback route for client-side routing
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"), (err) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
+// Start server
 app.listen(port, () => {
-  console.log("Server is running on port 3000");
+  console.log(`Server is running on port ${port}`);
 });
