@@ -39,13 +39,13 @@ const auth = (req, res, next) => {
   }
 };
 
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "dist", "index.html"), function (err) {
-    if (err) {
-      res.status(500).send(err);
-    }
-  });
-});
+// app.get("/*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "dist", "index.html"), function (err) {
+//     if (err) {
+//       res.status(500).send(err);
+//     }
+//   });
+// });
 app.post("/api/auth", auth, (req, res) => {
   res.status(200).send("AUTHENTICATED");
   // redirect to the main page
