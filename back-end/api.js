@@ -39,10 +39,6 @@ const auth = (req, res, next) => {
   }
 };
 
-// Handles any requests that don't match the ones above
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
 app.post("/api/auth", auth, (req, res) => {
   res.status(200).send("AUTHENTICATED");
   // redirect to the main page
