@@ -204,10 +204,7 @@ export default function giveAway() {
             </div>
             <div className="p-4 md:w-1/2 flex flex-col items-start mt-8">
               <div className=" w-full">
-                <img
-                  src="https://cdn.discordapp.com/attachments/1154753678578827306/1246028221426962513/Giveaway_12.png?ex=665ae5b6&is=66599436&hm=e0cbab86cd46c7c75f2a1be34c2670285d90447943e45f7e4f53dad64da34fc1&"
-                  alt=""
-                />
+                <img src="https://bassienl.nl/images/secret.png" alt="Secret giveaway" />
               </div>
             </div>
           </div>
