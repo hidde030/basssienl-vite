@@ -4,6 +4,7 @@ const fs = require("fs");
 const cors = require("cors");
 const basicAuth = require("basic-auth");
 const multer = require("multer");
+const nocache = require("nocache");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -24,6 +25,7 @@ const corsOptions = {
 const roleOrder = ["vip", "subscriber", "member"];
 
 app.use(express.json());
+app.use(nocache());
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "dist")));
 
