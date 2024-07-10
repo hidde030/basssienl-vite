@@ -146,7 +146,6 @@ app.put("/api/active/:name", auth, (req, res) => {
   const jsonData = require(file);
   const obj = jsonData.data.find((o) => o.name === req.params.name);
 
-  console.log(obj);
   if (!obj) {
     return res.status(404).send("User not found");
   }

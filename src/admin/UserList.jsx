@@ -76,11 +76,7 @@ function UserList() {
       headers: {
         Authorization: sessionStorage.getItem("auth"),
       },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setResponse(data);
-      });
+    });
   };
   const deleteCard = (name) => {
     const auth = sessionStorage.getItem("login");
