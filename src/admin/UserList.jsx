@@ -61,6 +61,7 @@ function UserList() {
       method: "PUT",
       body: JSON.stringify({ active: false }),
       headers: {
+        "Content-Type": "application/json",
         Authorization: sessionStorage.getItem("auth"),
       },
     });
@@ -72,8 +73,10 @@ function UserList() {
     }
     fetch(`https://bassienl.nl/api/active/${name}`, {
       method: "PUT",
+
       body: JSON.stringify({ active: true }),
       headers: {
+        "Content-Type": "application/json",
         Authorization: sessionStorage.getItem("auth"),
       },
     });

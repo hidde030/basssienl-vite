@@ -149,10 +149,12 @@ app.put("/api/active/:name", auth, (req, res) => {
   if (!obj) {
     return res.status(404).send("User not found");
   }
+
   obj.active = req.body.active;
 
-  fs.writeFile(file, JSON.stringify(jsonData), (err) => {
+  fs.writeFile(file, JSON.stringify(jsonData, null, 2), (err) => {
     if (err) {
+      console.error("Error writing file:", err);
       res.status(500).send(err);
     } else {
       res.status(200).send(jsonData);
