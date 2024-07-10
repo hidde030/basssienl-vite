@@ -64,8 +64,6 @@ function UserList() {
         Authorization: sessionStorage.getItem("auth"),
       },
     });
-
-    window.location.reload();
   }
   const setActive = (name) => {
     fetch(`https://bassienl.nl/api/active/${name}`, {
@@ -79,8 +77,6 @@ function UserList() {
       .then((data) => {
         setResponse(data);
       });
-    //reload window
-    window.location.reload();
   };
   const deleteCard = (name) => {
     const auth = sessionStorage.getItem("login");
