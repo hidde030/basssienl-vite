@@ -11,7 +11,8 @@
       "hours": "5.695",
       "img": "https://bassienl.nl/images/Bart.png",
       "steam_url": "https://steamcommunity.com/id/BartiBlyat/",
-      "giveaway": true
+      "giveaway": true,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -24,7 +25,22 @@
       "hours": "2.869",
       "img": "https://bassienl.nl/images/Bassie.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198051804263",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "74",
+      "role": "vip",
+      "name": "Boer Kwartel",
+      "rank": "15.000",
+      "faceit": "3",
+      "quality": "Teambank",
+      "hours": "2.092",
+      "img": "https://bassienl.nl/images/Memeka.png",
+      "steam_url": "https://steamcommunity.com/id/Memeka",
+      "giveaway": true,
+      "active": true
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -37,7 +53,8 @@
       "hours": "2.088",
       "img": "https://bassienl.nl/images/Brent.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198353451953",
-      "giveaway": true
+      "giveaway": true,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -50,7 +67,8 @@
       "hours": "277",
       "img": "https://bassienl.nl/images/DJGeerlings.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198317636282",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -63,7 +81,8 @@
       "hours": "1.769",
       "img": "https://bassienl.nl/images/Erik.png",
       "steam_url": "https://steamcommunity.com/id/ErikErik2304",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -76,7 +95,8 @@
       "hours": "2.415",
       "img": "https://bassienl.nl/images/HeyMathijs.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198371533418",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -89,7 +109,8 @@
       "hours": "5.036",
       "img": "https://bassienl.nl/images/Hidde.png",
       "steam_url": "https://steamcommunity.com/id/hiddebackup1234",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -102,7 +123,22 @@
       "hours": "1.983",
       "img": "https://bassienl.nl/images/JDGames.png",
       "steam_url": "https://steamcommunity.com/id/Jdgamezzznl/",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
+    },
+    {
+      "role": "vip",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "Joris",
+      "rating": "60",
+      "rank": "11.000",
+      "faceit": "1",
+      "quality": "Map Positioning",
+      "hours": "2.232",
+      "steam": "https://steamcommunity.com/profiles/76561198072112329",
+      "img": "https://avatars.akamai.steamstatic.com/91f58d12cca637d16c96a40082eee695210c2529_full.jpg",
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -115,7 +151,8 @@
       "hours": "2.948",
       "img": "https://bassienl.nl/images/LouisB.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198306292659",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -128,7 +165,8 @@
       "hours": "971",
       "img": "https://bassienl.nl/images/Aniek.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198144680147",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -141,7 +179,8 @@
       "hours": "1.693",
       "img": "https://bassienl.nl/images/Omweg.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198872159853",
-      "giveaway": true
+      "giveaway": true,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -154,7 +193,8 @@
       "hours": "2.321",
       "img": "https://bassienl.nl/images/Pokebeard.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198052742880",
-      "giveaway": true
+      "giveaway": true,
+      "active": true
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -167,7 +207,22 @@
       "hours": "2.767",
       "img": "https://bassienl.nl/images/s1cko.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198295473717",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
+    },
+    {
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "rating": "47",
+      "role": "vip",
+      "name": "Spanjaard073",
+      "rank": "9.000",
+      "faceit": "3",
+      "quality": "Mr. Nice Guy",
+      "hours": "1.676",
+      "img": "https://bassienl.nl/images/Spanjaard.png",
+      "steam_url": "https://steamcommunity.com/profiles/76561198304043231/",
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -180,7 +235,8 @@
       "hours": "1.656",
       "img": "https://bassienl.nl/images/Strafe.png",
       "steam_url": "https://steamcommunity.com/profiles/76561199180917353",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -193,7 +249,8 @@
       "hours": "1.236",
       "img": "https://bassienl.nl/images/Untz.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198320044318",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "vip",
@@ -207,7 +264,8 @@
       "steam": "https://steamcommunity.com/profiles/76561198142800150",
       "img": "https://bassienl.nl/images/VlamLars.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198142800150",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -220,7 +278,8 @@
       "hours": "2.917",
       "img": "https://bassienl.nl/images/Bartmen.png",
       "steam_url": "https://steamcommunity.com/id/bartmen20",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -233,7 +292,8 @@
       "hours": "1.403",
       "img": "https://bassienl.nl/images/Bert.png",
       "steam_url": "https://steamcommunity.com/id/bertvc_",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -246,7 +306,8 @@
       "hours": "4,759",
       "img": "https://bassienl.nl/images/Brainz.png",
       "steam_url": "https://steamcommunity.com/id/BrAiNZzZKiLLeR",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -259,7 +320,8 @@
       "hours": "5.500",
       "img": "https://bassienl.nl/images/Casis.png",
       "steam_url": "https://steamcommunity.com/id/Casissss",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -272,7 +334,8 @@
       "hours": "2.385",
       "img": "https://bassienl.nl/images/Panda.png",
       "steam_url": "https://steamcommunity.com/id/Pizzaboontje",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -285,7 +348,8 @@
       "hours": "1.877",
       "img": "https://bassienl.nl/images/Floz.png",
       "steam_url": "https://steamcommunity.com/id/floz15",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -299,7 +363,8 @@
       "steam": "https://steamcommunity.com/id/ghostgaming_of",
       "img": "https://bassienl.nl/images/Ghost.png",
       "steam_url": "https://steamcommunity.com/id/ghostgaming_of",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -313,7 +378,8 @@
       "steam": "https://steamcommunity.com/id/Googlium",
       "img": "https://bassienl.nl/images/Googlium.png",
       "steam_url": "https://steamcommunity.com/id/Googlium",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -327,7 +393,8 @@
       "steam": "https://steamcommunity.com/profiles/76561198046354504",
       "img": "https://bassienl.nl/images/Heinekenbier.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198046354504",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -340,7 +407,8 @@
       "hours": "4.219",
       "img": "https://bassienl.nl/images/iParanormal.png",
       "steam_url": "https://steamcommunity.com/id/IPaRaNoMaL",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -353,7 +421,8 @@
       "hours": "7.699",
       "img": "https://bassienl.nl/images/j0di.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198015712590",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -366,7 +435,8 @@
       "hours": "1.354",
       "img": "https://bassienl.nl/images/Jandirk.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198215815997",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -379,7 +449,8 @@
       "hours": "1.163",
       "img": "https://bassienl.nl/images/JN.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198190248067",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -392,20 +463,8 @@
       "hours": "2.300",
       "img": "https://bassienl.nl/images/Jon.png",
       "steam_url": "https://steamcommunity.com/id/uytgvollnh775443/",
-      "giveaway": false
-    },
-    {
-      "role": "subscriber",
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "name": "Joris",
-      "rating": "60",
-      "rank": "11.000",
-      "faceit": "1",
-      "quality": "Map Positioning",
-      "hours": "2.232",
-      "steam": "https://steamcommunity.com/profiles/76561198072112329",
-      "img": "https://avatars.akamai.steamstatic.com/91f58d12cca637d16c96a40082eee695210c2529_full.jpg",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -418,7 +477,8 @@
       "hours": "1.819",
       "img": "https://bassienl.nl/images/KappaBassie.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198285847131",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -431,7 +491,8 @@
       "hours": "Soon",
       "img": "https://bassienl.nl/images/MalsePiraat.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198135002017",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -444,7 +505,8 @@
       "hours": "1.545",
       "img": "https://bassienl.nl/images/Wutru.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198294277766",
-      "giveaway": true
+      "giveaway": true,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -470,7 +532,8 @@
       "hours": "1.068",
       "img": "https://bassienl.nl/images/Peekske.png",
       "steam_url": "https://steamcommunity.com/profiles/76561199197976294",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -483,7 +546,8 @@
       "hours": "2.461",
       "img": "https://bassienl.nl/images/Pomo.png",
       "steam_url": "https://steamcommunity.com/id/pomotv",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -496,7 +560,8 @@
       "hours": "2.000",
       "img": "https://bassienl.nl/images/Rezta.png",
       "steam_url": "https://steamcommunity.com/id/rezta",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -509,7 +574,8 @@
       "hours": "No Data",
       "img": "https://bassienl.nl/images/Rens.png",
       "steam_url": "https://steamcommunity.com/id/5zyk",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -522,7 +588,8 @@
       "hours": "563",
       "img": "https://bassienl.nl/images/Safari.png",
       "steam_url": "https://steamcommunity.com/id/NameIsSaFaRI/",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -535,7 +602,8 @@
       "hours": "3.530",
       "img": "https://bassienl.nl/images/sld-Nick.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198123427417",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -548,7 +616,8 @@
       "hours": "2.211",
       "img": "https://bassienl.nl/images/Sourwolf.png",
       "steam_url": "https://steamcommunity.com/id/irauhl/",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -561,7 +630,8 @@
       "hours": "1.053",
       "img": "https://bassienl.nl/images/Timo.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198858973202",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -574,7 +644,8 @@
       "hours": "3.100",
       "img": "https://bassienl.nl/images/viking.jpg",
       "steam_url": "https://steamcommunity.com/id/jurreV",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "subscriber",
@@ -588,7 +659,8 @@
       "steam": "https://steamcommunity.com/profiles/76561198283160779",
       "img": "https://bassienl.nl/images/Visje.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198283160779",
-      "giveaway": true
+      "giveaway": true,
+      "active": true
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -601,20 +673,8 @@
       "hours": "4.100",
       "img": "https://bassienl.nl/images/Vrogd.png",
       "steam_url": "https://steamcommunity.com/id/VroGD",
-      "giveaway": false
-    },
-    {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "74",
-      "role": "member",
-      "name": "Boer Kwartel",
-      "rank": "15.000",
-      "faceit": "3",
-      "quality": "Teambank",
-      "hours": "2.092",
-      "img": "https://bassienl.nl/images/Memeka.png",
-      "steam_url": "https://steamcommunity.com/id/Memeka",
-      "giveaway": true
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "member",
@@ -627,7 +687,8 @@
       "hours": "3.029",
       "img": "https://bassienl.nl/images/Brandon.png",
       "steam_url": " https://steamcommunity.com/id/EnjoyMyFriend",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "role": "member",
@@ -641,7 +702,8 @@
       "steam": "https://steamcommunity.com/id/Daan420",
       "steam_url": "https://steamcommunity.com/id/Daan420",
       "img": "https://bassienl.nl/images/Daap.png",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -654,7 +716,8 @@
       "hours": "6.543",
       "img": "https://bassienl.nl/images/HawKxQ.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198059347714",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -667,7 +730,8 @@
       "hours": "651",
       "img": "https://bassienl.nl/images/KreqHex.png",
       "steam_url": "https://steamcommunity.com/id/765611980169290",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -680,7 +744,8 @@
       "hours": "2.041",
       "img": "https://bassienl.nl/images/Loepert.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198156574365",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -693,7 +758,8 @@
       "hours": "3270",
       "img": "https://bassienl.nl/images/Marijn.png",
       "steam_url": "https://steamcommunity.com/profiles/76561199081863413/",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -706,7 +772,8 @@
       "hours": "4.097",
       "img": "https://bassienl.nl/images/nPow.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198267326721",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -719,7 +786,8 @@
       "hours": "6.763.5",
       "img": "https://bassienl.nl/images/P(90)ino.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198886835346",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -732,7 +800,8 @@
       "hours": "5.777",
       "img": "https://bassienl.nl/images/Penthius.png",
       "steam_url": "https://steamcommunity.com/id/Penthius",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -745,7 +814,8 @@
       "hours": "500",
       "img": "https://bassienl.nl/images/RwinaDoffo.png",
       "steam_url": "https://steamcommunity.com/id/765611980169290",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -758,20 +828,8 @@
       "hours": "3.448",
       "img": "https://bassienl.nl/images/Slacht.png",
       "steam_url": "https://steamcommunity.com/id/SlachtHuis",
-      "giveaway": false
-    },
-    {
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "47",
-      "role": "member",
-      "name": "Spanjaard073",
-      "rank": "9.000",
-      "faceit": "3",
-      "quality": "Mr. Nice Guy",
-      "hours": "1.676",
-      "img": "https://bassienl.nl/images/Spanjaard.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198304043231/",
-      "giveaway": false
+      "giveaway": false,
+      "active": true
     }
   ]
 }
