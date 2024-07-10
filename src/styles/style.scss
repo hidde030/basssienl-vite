@@ -243,16 +243,17 @@ body {
   position: relative;
   &::before {
     content: "";
+
     width: 1rem;
     height: 1rem;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    background: url("../img/clock.svg") no-repeat center center;
+    background: url("../img/cs2.webp") no-repeat center center;
     position: absolute;
     top: 0;
     left: -20px;
     bottom: 0;
     margin: auto 0;
+    background-size: contain;
+    object-fit: contain;
   }
 }
 .kruis {

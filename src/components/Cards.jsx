@@ -1,34 +1,34 @@
-import React, { useRef, useEffect, useState } from "react"
-import steam from "../img/steam.svg"
-import Stat from "./cs-stats/Stat"
+import React, { useRef, useEffect, useState } from "react";
+import steam from "../img/steam.svg";
+import Stat from "./cs-stats/Stat";
 
 export default function GridCards() {
-  const [response, setResponse] = useState({})
-  const [sortCriteria, setSortCriteria] = useState("")
+  const [response, setResponse] = useState({});
+  const [sortCriteria, setSortCriteria] = useState("");
 
   const sortBy = (data, sortCriteria) => {
     switch (sortCriteria) {
       case "name":
-        return data.sort((a, b) => a.name.localeCompare(b.name))
+        return data.sort((a, b) => a.name.localeCompare(b.name));
       case "faceit":
-        return data.sort((a, b) => b.faceit - a.faceit)
+        return data.sort((a, b) => b.faceit - a.faceit);
       case "rating":
-        return data.sort((a, b) => b.rating - a.rating)
+        return data.sort((a, b) => b.rating - a.rating);
       case "nationality":
-        return data.sort((a, b) => a.nationality.localeCompare(b.nationality))
+        return data.sort((a, b) => a.nationality.localeCompare(b.nationality));
 
       default:
-        return data
+        return data;
     }
-  }
+  };
   useEffect(() => {
     fetch("https://bassienl.nl/api")
       .then((res) => res.json())
       .then((data) => {
-        setResponse(data)
-      })
-  }, [])
-  console.log(response)
+        setResponse(data);
+      });
+  }, []);
+
   return (
     <div className="container mx-auto lg:pt-10 pt-4 pb-6 px-4 md:px-0">
       <form className="flex justify-end py-2 items-center ">
@@ -41,9 +41,9 @@ export default function GridCards() {
             value={sortCriteria}
             onChange={(e) => {
               if (e.target.value === "reload") {
-                window.location.reload()
+                window.location.reload();
               } else {
-                setSortCriteria(e.target.value)
+                setSortCriteria(e.target.value);
               }
             }}
             className="appearance-none bg-white border border-gray-300 py-2 px-4 pr-8 rounded shadow leading-tight focus:outline-none focus:border-blue-500">
@@ -80,24 +80,25 @@ export default function GridCards() {
                 hours={object.hours}
                 img={object.img}
                 steam_url={object.steam_url}
+                active={object.active}
                 key={i}
               />
-            )
+            );
           })}
       </div>
     </div>
-  )
+  );
 }
 
 export function Card(props) {
   // scroll into view with anchor tag in url
-  const ref = useRef(null)
+  const ref = useRef(null);
   useEffect(() => {
-    const hash = window.location.hash
+    const hash = window.location.hash;
     if (hash === `#${props.name}`) {
-      ref.current.scrollIntoView({ behavior: "smooth" })
+      ref.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [])
+  }, []);
 
   return (
     <a ref={ref} href={`#${props.name}`} className={`${props.role}`}>
@@ -147,14 +148,20 @@ export function Card(props) {
                 <span className="font-medium check">Quality</span>: {props.quality}
               </span>
             </li>
-            <li className="flex items-center">
+            <li className="flex justify-between pr-10">
               <span className="text-white font-light">
-                <span className="font-medium hours">CS:GO</span>: {props.hours}
+                <span className="font-medium hours">CS2</span>: {props.hours}
+              </span>
+              <span
+                className={`inline-block px-2 py-1 text-xs font-semibold rounded-full ${
+                  props.active ? "bg-emerald-400 text-white" : "bg-admin text-white"
+                }`}>
+                {props.active ? "Active" : "Inactive"}
               </span>
             </li>
           </ul>
         </div>
       </div>
     </a>
-  )
+  );
 }

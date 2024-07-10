@@ -139,6 +139,26 @@ app.get("/api/giveaway", (req, res) => {
   res.status(200).send(giveawayUsers);
 });
 
+// Update active status
+app.put("/api/active/:name", auth, (req, res) => {
+  const jsonData = require(file);
+  const obj = jsonData.data.find((o) => o.name === req.params.name);
+  if (!obj) {
+    return res.status(404).send("User not found");
+  }
+  obj.active = req.body.active;
+  fs.writeFile(file, JSON.stringify(jsonData), (err) => {
+    if (err) {
+      res.status(500).send(err);
+    } else {
+      res
+        .status(200)
+        .send(jsonData)
+        .sendmessage("User giveaway status has been updated.");
+    }
+  });
+});
+
 // Update giveaway status
 app.put("/api/giveaway/:name", auth, (req, res) => {
   const jsonData = require(file);

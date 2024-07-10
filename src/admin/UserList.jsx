@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react"
-import Add from "./Add"
-import Admin from "./admin"
-import UploadImage from "./UploadImage"
-import { useNavigate } from "react-router-dom"
+import React, { useState, useEffect } from "react";
+import Add from "./Add";
+import Admin from "./admin";
+import UploadImage from "./UploadImage";
+import { useNavigate } from "react-router-dom";
 
 function UserList() {
-  const navigateTo = useNavigate()
-  const [response, setResponse] = useState({})
-  const [selectedUser, setSelectedUser] = useState({})
-  const [showModal, setShowModal] = useState(false)
-  const [showAdd, setShowAdd] = useState(false)
-  const [showImage, setShowImage] = useState(false)
+  const navigateTo = useNavigate();
+  const [response, setResponse] = useState({});
+  const [selectedUser, setSelectedUser] = useState({});
+  const [showModal, setShowModal] = useState(false);
+  const [showAdd, setShowAdd] = useState(false);
+  const [showImage, setShowImage] = useState(false);
 
   useEffect(() => {
-    const auth = sessionStorage.getItem("login")
+    const auth = sessionStorage.getItem("login");
     if (!auth) {
-      navigateTo("/login")
+      navigateTo("/login");
     }
     fetch("https://bassienl.nl/api", {
       method: "GET",
@@ -25,21 +25,21 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data)
+        setResponse(data);
       })
 
       .catch((err) => {
-        console.log(err.message)
-      })
-  }, [])
+        console.log(err.message);
+      });
+  }, []);
   const handleSelect = (user) => {
-    setSelectedUser(user)
-    setShowModal(true)
-  }
+    setSelectedUser(user);
+    setShowModal(true);
+  };
   const sortCards = () => {
-    const auth = sessionStorage.getItem("login")
+    const auth = sessionStorage.getItem("login");
     if (!auth) {
-      navigateTo("/login")
+      navigateTo("/login");
     }
     fetch("https://bassienl.nl/api/sort", {
       method: "GET",
@@ -49,41 +49,43 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data)
-      })
-  }
-  function deleteGiveawayUser(name) {
-    const auth = sessionStorage.getItem("login")
+        setResponse(data);
+      });
+  };
+  function setNonActive(name) {
+    const auth = sessionStorage.getItem("login");
     if (!auth) {
-      navigateTo("/login")
+      navigateTo("/login");
     }
-    fetch(`https://bassienl.nl/api/giveaway/${name}`, {
-      method: "DELETE",
+    fetch(`https://bassienl.nl/api/active/${name}`, {
+      method: "PUT",
+      body: JSON.stringify({ active: false }),
       headers: {
         Authorization: sessionStorage.getItem("auth"),
       },
-    })
+    });
 
-    window.location.reload()
+    window.location.reload();
   }
-  const setGiveawayUser = (name) => {
-    fetch(`https://bassienl.nl/api/giveaway/${name}`, {
+  const setActive = (name) => {
+    fetch(`https://bassienl.nl/api/active/${name}`, {
       method: "PUT",
+      body: JSON.stringify({ active: true }),
       headers: {
         Authorization: sessionStorage.getItem("auth"),
       },
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data)
-      })
+        setResponse(data);
+      });
     //reload window
-    window.location.reload()
-  }
+    window.location.reload();
+  };
   const deleteCard = (name) => {
-    const auth = sessionStorage.getItem("login")
+    const auth = sessionStorage.getItem("login");
     if (!auth) {
-      navigateTo("/login")
+      navigateTo("/login");
     }
     fetch(`https://bassienl.nl/api/delete/${name}`, {
       method: "DELETE",
@@ -93,9 +95,9 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data)
-      })
-  }
+        setResponse(data);
+      });
+  };
 
   return (
     <div className="container mx-auto bg-admin bg-opacity-10">
@@ -144,19 +146,19 @@ function UserList() {
             {/*on hover add person to giveway i want a new button with delete */}
 
             <button
-              className="bg-card_purple text-white font-bold py-2  my-2 mx-0.5 rounded break-keep  "
+              className="bg-emerald-700 text-white font-bold py-2  my-2 mx-0.5 rounded  "
               onClick={() => {
-                setGiveawayUser(user.name)
+                setActive(user.name);
               }}>
-              add person to giveaway
+              set active
             </button>
 
             <button
               className="bg-faceit text-white font-bold py-2  my-2 mx-0.5   rounded break-keep  "
               onClick={() => {
-                deleteGiveawayUser(user.name)
+                setNonActive(user.name);
               }}>
-              delete from giveaway
+              set nonactive
             </button>
             <button
               className="bg-[#FF0000] text-white font-bold py-2 px-4 my-2 mx-0.5   rounded "
@@ -168,7 +170,7 @@ function UserList() {
       </ul>
       {showModal && <Admin selectedUser={selectedUser} setShowModal={setShowModal} />}
     </div>
-  )
+  );
 }
 
-export default UserList
+export default UserList;
