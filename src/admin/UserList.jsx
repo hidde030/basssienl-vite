@@ -66,6 +66,10 @@ function UserList() {
     });
   }
   const setActive = (name) => {
+    const auth = sessionStorage.getItem("login");
+    if (!auth) {
+      navigateTo("/login");
+    }
     fetch(`https://bassienl.nl/api/active/${name}`, {
       method: "PUT",
       body: JSON.stringify({ active: true }),
