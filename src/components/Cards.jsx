@@ -21,12 +21,16 @@ export default function GridCards() {
         return data;
     }
   };
-  useEffect(() => {
-    fetch("https://bassienl.nl/api")
+  const fetchData = () => {
+    fetch("https://bassienl.nl/api?_=" + new Date().getTime())
       .then((res) => res.json())
       .then((data) => {
         setResponse(data);
       });
+  };
+
+  useEffect(() => {
+    fetchData();
   }, []);
 
   return (
@@ -98,7 +102,7 @@ export function Card(props) {
     if (hash === `#${props.name}`) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, []);
+  }, [props.name]);
 
   return (
     <a ref={ref} href={`#${props.name}`} className={`${props.role}`}>
