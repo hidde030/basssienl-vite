@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(nocache());
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "dist")));
-
+app.set("etag", false);
 const auth = (req, res, next) => {
   const user = basicAuth(req);
   if (!user || user.name !== "bassienl" || user.pass !== "B@ssi3NL") {
@@ -38,6 +38,10 @@ const auth = (req, res, next) => {
     next();
   }
 };
+app.use((req, res, next) => {
+  res.set("Cache-Control", "no-store");
+  next();
+});
 
 // Authentication route
 app.post("/api/auth", auth, (req, res) => {
