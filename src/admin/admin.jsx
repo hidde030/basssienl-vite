@@ -43,13 +43,13 @@ function Admin({ selectedUser, setShowModal }) {
     <div className="fixed inset-0 top-12 grid text-center bg-card_bg ">
       <div className=" mx-auto container">
         <form className="flex flex-col" onSubmit={handleSave}>
-          <div class="relative mb-2">
+          <div className="relative mb-2">
             <label className="text-white" htmlFor="name">
               Name:
             </label>
             <input
               disabled
-              class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               type="text"
               name="name"
               defaultValue={formData.name}
@@ -91,7 +91,7 @@ function Admin({ selectedUser, setShowModal }) {
             </label>
 
             <input
-              class="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="block appearance-none w-full bg-primary-grey border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               type="text"
               name="rating"
               value={formData.rating}
