@@ -1,36 +1,39 @@
-import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
+import React, { useState } from "react"
+import { Navigate } from "react-router-dom"
 
 const Login = () => {
   //add to body a classname
-  document.body.classList.add("is-login");
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  document.body.classList.add("is-login")
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? import.meta.env.VITE_API_URL_DEV
+      : import.meta.env.VITE_API_URL_PROD
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
     try {
-      const response = await fetch("https://bassienl.nl/api/auth", {
+      const response = await fetch(`${API_URL}/api/auth`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: "Basic " + btoa(`${username}:${password}`),
         },
         body: JSON.stringify({ username, password }),
-      });
+      })
       if (response.ok) {
-        setIsLoggedIn(true);
+        setIsLoggedIn(true)
         //save the auth header to session storage
-        sessionStorage.setItem("auth", "Basic " + btoa(`${username}:${password}`));
-        sessionStorage.setItem("login", "true");
+        sessionStorage.setItem("auth", "Basic " + btoa(`${username}:${password}`))
+        sessionStorage.setItem("login", "true")
       } else {
-        throw new Error("Invalid credentials");
+        throw new Error("Invalid credentials")
       }
     } catch (error) {
-      console.error(error);
+      console.error(error)
     }
-  };
+  }
 
   return (
     <div>
@@ -95,7 +98,7 @@ const Login = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

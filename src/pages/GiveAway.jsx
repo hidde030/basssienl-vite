@@ -9,6 +9,11 @@ import "swiper/css/scrollbar"
 import { useEffect, useState } from "react"
 
 export default function giveAway() {
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? import.meta.env.VITE_API_URL_DEV
+      : import.meta.env.VITE_API_URL_PROD
+
   const winners = [
     "giveaway_1.png",
     "giveaway_2.png",
@@ -25,7 +30,7 @@ export default function giveAway() {
 
   const [props, setProps] = useState([])
   useEffect(() => {
-    fetch("https://bassienl.nl/api/giveaway", {
+    fetch(`${API_URL}/giveaway`, {
       headers: {
         "Content-Type": "application/json",
       },

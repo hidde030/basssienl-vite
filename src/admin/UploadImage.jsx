@@ -1,29 +1,32 @@
-import { useState } from "react";
+import { useState } from "react"
 
 export default function UploadImage({ setShowImage }) {
-  const [file, setFile] = useState();
-  const [description, setDescription] = useState("");
-  const [imageName, setImageName] = useState();
+  const [file, setFile] = useState()
+  const [description, setDescription] = useState("")
+  const [imageName, setImageName] = useState()
 
   const submit = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    const formData = new FormData();
-    formData.append("image", file);
-    formData.append("description", description);
-    console.log(formData);
+    const formData = new FormData()
+    formData.append("image", file)
+    formData.append("description", description)
+    const API_URL =
+      process.env.NODE_ENV === "development"
+        ? import.meta.env.VITE_API_URL_DEV
+        : import.meta.env.VITE_API_URL_PROD
 
     // const result = await axios.post("/api/images", formData, {
     //   headers: { "Content-Type": "multipart/form-data" },
     // });
-    const result = await fetch("https://bassienl.nl/api/images", {
+    const result = await fetch(`${API_URL}/images`, {
       method: "POST",
       body: formData,
-    });
+    })
 
-    setImageName(result.data.imageName);
-    setShowImage(false);
-  };
+    setImageName(result.data.imageName)
+    setShowImage(false)
+  }
 
   return (
     <div className=" fixed inset-0 top-12 grid text-center bg-card_bg ">
@@ -39,5 +42,5 @@ export default function UploadImage({ setShowImage }) {
         </form>
       </div>
     </div>
-  );
+  )
 }

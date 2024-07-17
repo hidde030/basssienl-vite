@@ -3,6 +3,10 @@ import { useNavigate } from "react-router-dom"
 
 export default function Add({ setShowAdd }) {
   const navigateTo = useNavigate()
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? import.meta.env.VITE_API_URL_DEV
+      : import.meta.env.VITE_API_URL_PROD
 
   const [newUser, setNewUser] = useState({
     role: "vip",
@@ -17,7 +21,7 @@ export default function Add({ setShowAdd }) {
       navigateTo("/login")
     }
     try {
-      const res = await fetch("https://bassienl.nl/api/add", {
+      const res = await fetch(`${API_URL}/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

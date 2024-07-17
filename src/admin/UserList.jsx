@@ -1,23 +1,26 @@
-import React, { useState, useEffect } from "react";
-import Add from "./Add";
-import Admin from "./admin";
-import UploadImage from "./UploadImage";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react"
+import Add from "./Add"
+import Admin from "./admin"
+import UploadImage from "./UploadImage"
+import { useNavigate } from "react-router-dom"
 
 function UserList() {
-  const navigateTo = useNavigate();
-  const [response, setResponse] = useState({});
-  const [selectedUser, setSelectedUser] = useState({});
-  const [showModal, setShowModal] = useState(false);
-  const [showAdd, setShowAdd] = useState(false);
-  const [showImage, setShowImage] = useState(false);
-
+  const navigateTo = useNavigate()
+  const [response, setResponse] = useState({})
+  const [selectedUser, setSelectedUser] = useState({})
+  const [showModal, setShowModal] = useState(false)
+  const [showAdd, setShowAdd] = useState(false)
+  const [showImage, setShowImage] = useState(false)
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? import.meta.env.VITE_API_URL_DEV
+      : import.meta.env.VITE_API_URL_PROD
   useEffect(() => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
-    fetch("https://bassienl.nl/api", {
+    fetch(`${API_URL}`, {
       method: "GET",
       headers: {
         Authorization: sessionStorage.getItem("auth"),
@@ -25,23 +28,23 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data);
+        setResponse(data)
       })
 
       .catch((err) => {
-        console.log(err.message);
-      });
-  }, []);
+        console.log(err.message)
+      })
+  }, [])
   const handleSelect = (user) => {
-    setSelectedUser(user);
-    setShowModal(true);
-  };
+    setSelectedUser(user)
+    setShowModal(true)
+  }
   const sortCards = () => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
-    fetch("https://bassienl.nl/api/sort", {
+    fetch(`${API_URL}/sort`, {
       method: "GET",
       headers: {
         Authorization: sessionStorage.getItem("auth"),
@@ -49,29 +52,29 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data);
-      });
-  };
+        setResponse(data)
+      })
+  }
   function setNonActive(name) {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
-    fetch(`https://bassienl.nl/api/active/${name}`, {
+    fetch(`${API_URL}/active/${name}`, {
       method: "PUT",
       body: JSON.stringify({ active: false }),
       headers: {
         "Content-Type": "application/json",
         Authorization: sessionStorage.getItem("auth"),
       },
-    });
+    })
   }
   const setActive = (name) => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
-    fetch(`https://bassienl.nl/api/active/${name}`, {
+    fetch(`${API_URL}/active/${name}`, {
       method: "PUT",
 
       body: JSON.stringify({ active: true }),
@@ -79,14 +82,14 @@ function UserList() {
         "Content-Type": "application/json",
         Authorization: sessionStorage.getItem("auth"),
       },
-    });
-  };
+    })
+  }
   const deleteCard = (name) => {
-    const auth = sessionStorage.getItem("login");
+    const auth = sessionStorage.getItem("login")
     if (!auth) {
-      navigateTo("/login");
+      navigateTo("/login")
     }
-    fetch(`https://bassienl.nl/api/delete/${name}`, {
+    fetch(`${API_URL}/delete/${name}`, {
       method: "DELETE",
       headers: {
         Authorization: sessionStorage.getItem("auth"),
@@ -94,9 +97,9 @@ function UserList() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setResponse(data);
-      });
-  };
+        setResponse(data)
+      })
+  }
 
   return (
     <div className="container mx-auto bg-admin bg-opacity-10">
@@ -147,7 +150,7 @@ function UserList() {
             <button
               className="bg-emerald-700 text-white font-bold py-2  my-2 mx-0.5 rounded  "
               onClick={() => {
-                setActive(user.name);
+                setActive(user.name)
               }}>
               set active
             </button>
@@ -155,7 +158,7 @@ function UserList() {
             <button
               className="bg-faceit text-white font-bold py-2  my-2 mx-0.5   rounded break-keep  "
               onClick={() => {
-                setNonActive(user.name);
+                setNonActive(user.name)
               }}>
               set nonactive
             </button>
@@ -169,7 +172,7 @@ function UserList() {
       </ul>
       {showModal && <Admin selectedUser={selectedUser} setShowModal={setShowModal} />}
     </div>
-  );
+  )
 }
 
-export default UserList;
+export default UserList

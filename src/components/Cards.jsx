@@ -1,37 +1,40 @@
-import React, { useRef, useEffect, useState } from "react";
-import steam from "../img/steam.svg";
-import Stat from "./cs-stats/Stat";
+import React, { useRef, useEffect, useState } from "react"
+import steam from "../img/steam.svg"
+import Stat from "./cs-stats/Stat"
 
 export default function GridCards() {
-  const [response, setResponse] = useState({});
-  const [sortCriteria, setSortCriteria] = useState("");
-
+  const [response, setResponse] = useState({})
+  const [sortCriteria, setSortCriteria] = useState("")
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? import.meta.env.VITE_API_URL_DEV
+      : import.meta.env.VITE_API_URL_PROD
   const sortBy = (data, sortCriteria) => {
     switch (sortCriteria) {
       case "name":
-        return data.sort((a, b) => a.name.localeCompare(b.name));
+        return data.sort((a, b) => a.name.localeCompare(b.name))
       case "faceit":
-        return data.sort((a, b) => b.faceit - a.faceit);
+        return data.sort((a, b) => b.faceit - a.faceit)
       case "rating":
-        return data.sort((a, b) => b.rating - a.rating);
+        return data.sort((a, b) => b.rating - a.rating)
       case "nationality":
-        return data.sort((a, b) => a.nationality.localeCompare(b.nationality));
+        return data.sort((a, b) => a.nationality.localeCompare(b.nationality))
 
       default:
-        return data;
+        return data
     }
-  };
+  }
   const fetchData = () => {
-    fetch("https://bassienl.nl/api?_=" + new Date().getTime())
+    fetch(`${API_URL}?_=` + new Date().getTime())
       .then((res) => res.json())
       .then((data) => {
-        setResponse(data);
-      });
-  };
+        setResponse(data)
+      })
+  }
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    fetchData()
+  }, [])
 
   return (
     <div className="container mx-auto lg:pt-10 pt-4 pb-6 px-4 md:px-0">
@@ -45,9 +48,9 @@ export default function GridCards() {
             value={sortCriteria}
             onChange={(e) => {
               if (e.target.value === "reload") {
-                window.location.reload();
+                window.location.reload()
               } else {
-                setSortCriteria(e.target.value);
+                setSortCriteria(e.target.value)
               }
             }}
             className="appearance-none bg-white border border-gray-300 py-2 px-4 pr-8 rounded shadow leading-tight focus:outline-none focus:border-blue-500">
@@ -87,22 +90,22 @@ export default function GridCards() {
                 active={object.active}
                 key={i}
               />
-            );
+            )
           })}
       </div>
     </div>
-  );
+  )
 }
 
 export function Card(props) {
   // scroll into view with anchor tag in url
-  const ref = useRef(null);
+  const ref = useRef(null)
   useEffect(() => {
-    const hash = window.location.hash;
+    const hash = window.location.hash
     if (hash === `#${props.name}`) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
+      ref.current.scrollIntoView({ behavior: "smooth" })
     }
-  }, [props.name]);
+  }, [props.name])
 
   return (
     <a ref={ref} href={`#${props.name}`} className={`${props.role}`}>
@@ -167,5 +170,5 @@ export function Card(props) {
         </div>
       </div>
     </a>
-  );
+  )
 }

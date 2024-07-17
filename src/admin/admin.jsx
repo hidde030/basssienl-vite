@@ -3,6 +3,10 @@ import { useNavigate } from "react-router-dom"
 
 function Admin({ selectedUser, setShowModal }) {
   const navigateTo = useNavigate()
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? import.meta.env.VITE_API_URL_DEV
+      : import.meta.env.VITE_API_URL_PROD
 
   const [formData, setFormData] = useState({ ...selectedUser })
   const handleChange = (event) => {
@@ -14,7 +18,7 @@ function Admin({ selectedUser, setShowModal }) {
       navigateTo("/login")
     }
     try {
-      const response = await fetch("https://bassienl.nl/api/update", {
+      const response = await fetch(`${API_URL}/update`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
