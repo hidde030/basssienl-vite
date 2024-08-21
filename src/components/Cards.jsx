@@ -19,6 +19,8 @@ export default function GridCards() {
         return data.sort((a, b) => b.faceit - a.faceit)
       case "rating":
         return data.sort((a, b) => b.rating - a.rating)
+      case "counter":
+        return data.sort((a, b) => b.counter - a.counter)
       case "nationality":
         return data.sort((a, b) => a.nationality.localeCompare(b.nationality))
 
@@ -57,6 +59,7 @@ export default function GridCards() {
             }}
             className="appearance-none bg-white border border-gray-300 py-2 px-4 pr-8 rounded shadow leading-tight focus:outline-none focus:border-blue-500">
             <option value="name">Naam</option>
+            <option value="counter">Games gespeeld</option>
             <option value="faceit">Faceit</option>
             <option value="rating">Rating</option>
             <option value="nationality">Nationaliteit</option>
@@ -88,6 +91,7 @@ export default function GridCards() {
                 quality={object.quality}
                 hours={object.hours}
                 img={object.img}
+                counter={object.counter}
                 steam_url={object.steam_url}
                 active={object.active}
                 key={i}
@@ -158,7 +162,7 @@ export function Card(props) {
             </li>
             <li className="flex items-center">
               <span className="text-white font-light">
-                <span className="font-medium games">Games played</span>: {props.quality}
+                <span className="font-medium games">Games played</span>: {props.counter}
               </span>
             </li>
             <li className="flex justify-between pr-10">

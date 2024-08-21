@@ -128,7 +128,7 @@ function UserList() {
         {response.data?.map((user) => (
           <div className="flex" key={user.name}>
             <li
-              className="px-6 py-2 border-b border-gray w-full text-white"
+              className="px-6 py-2 border-b border-gray w-1/3 text-white"
               onClick={() => handleSelect(user)}>
               {/* username and image */}
               <div className="flex items-center">
