@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react"
 import steam from "../img/steam.svg"
 import Stat from "./cs-stats/Stat"
+import premier from "../img/premier.png"
 
 export default function GridCards() {
   const [response, setResponse] = useState({})
@@ -9,6 +10,7 @@ export default function GridCards() {
     process.env.NODE_ENV === "development"
       ? import.meta.env.VITE_API_URL_DEV
       : import.meta.env.VITE_API_URL_PROD
+
   const sortBy = (data, sortCriteria) => {
     switch (sortCriteria) {
       case "name":
@@ -17,6 +19,8 @@ export default function GridCards() {
         return data.sort((a, b) => b.faceit - a.faceit)
       case "rating":
         return data.sort((a, b) => b.rating - a.rating)
+      case "counter":
+        return data.sort((a, b) => b.counter - a.counter)
       case "nationality":
         return data.sort((a, b) => a.nationality.localeCompare(b.nationality))
 
@@ -55,6 +59,7 @@ export default function GridCards() {
             }}
             className="appearance-none bg-white border border-gray-300 py-2 px-4 pr-8 rounded shadow leading-tight focus:outline-none focus:border-blue-500">
             <option value="name">Naam</option>
+            <option value="counter">Games gespeeld</option>
             <option value="faceit">Faceit</option>
             <option value="rating">Rating</option>
             <option value="nationality">Nationaliteit</option>
@@ -86,6 +91,7 @@ export default function GridCards() {
                 quality={object.quality}
                 hours={object.hours}
                 img={object.img}
+                counter={object.counter}
                 steam_url={object.steam_url}
                 active={object.active}
                 key={i}
@@ -113,7 +119,7 @@ export function Card(props) {
         <div className="image-bg relative pb-48 overflow-hidden bg-card_purple rounded-t-sm">
           <span className="rating">{props.rating}</span>
           <img
-            className="absolute inset-0  w-full h-full  scale-[0.8]  card-img"
+            className="absolute inset-0  w-full h-full  scale-[0.8]  card-img object-cover"
             src={props.img}
             alt="Sunset in the mountains"
           />
@@ -141,7 +147,11 @@ export function Card(props) {
           <ul className="flex flex-col ">
             <li className="flex items-center">
               <span className="text-white font-light flex items-center ">
-                <span className="font-medium">Premier Rating</span>:{" "}
+                <img
+                  src={premier}
+                  alt="premier image"
+                  className="w-full h-12 card-img object-cover"
+                />
                 <Stat rank={props.rank} />
               </span>
             </li>
@@ -152,7 +162,7 @@ export function Card(props) {
             </li>
             <li className="flex items-center">
               <span className="text-white font-light">
-                <span className="font-medium check">Quality</span>: {props.quality}
+                <span className="font-medium games">Games played</span>: {props.counter}
               </span>
             </li>
             <li className="flex justify-between pr-10">

@@ -166,6 +166,42 @@ app.put("/api/active/:name", auth, (req, res) => {
   })
 })
 
+app.post("/api/counter/increment/:name", auth, (req, res) => {
+  const jsonData = require(file)
+  const obj = jsonData.data.find((o) => o.name === req.params.name)
+  if (!obj) {
+    return res.status(404).send("User not found")
+  }
+  // incremnt count by 1
+  obj.counter += 1
+
+  fs.writeFile(file, JSON.stringify(jsonData, null, 2), (err) => {
+    if (err) {
+      res.status(500).send(err)
+    }
+    res.status(200).send(obj)
+  })
+})
+app.post("/api/counter/decrement/:name", auth, (req, res) => {
+  const jsonData = require(file)
+  const obj = jsonData.data.find((o) => o.name === req.params.name)
+  if (!obj) {
+    return res.status(404).send("User not found")
+  }
+  if (obj.counter > 0) {
+    obj.counter -= 1
+  } else {
+    res.status(400).send("Counter can't be negative")
+  }
+
+  fs.writeFile(file, JSON.stringify(jsonData, null, 2), (err) => {
+    if (err) {
+      res.status(500).send(err)
+    }
+    res.status(200).send(obj)
+  })
+})
+
 // Update giveaway status
 app.put("/api/giveaway/:name", auth, (req, res) => {
   const jsonData = require(file)
