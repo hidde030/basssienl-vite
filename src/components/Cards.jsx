@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react"
 import steam from "../img/steam.svg"
 import Stat from "./cs-stats/Stat"
+import premier from "../img/premier.png"
 
 export default function GridCards() {
   const [response, setResponse] = useState({})
@@ -9,6 +10,7 @@ export default function GridCards() {
     process.env.NODE_ENV === "development"
       ? import.meta.env.VITE_API_URL_DEV
       : import.meta.env.VITE_API_URL_PROD
+
   const sortBy = (data, sortCriteria) => {
     switch (sortCriteria) {
       case "name":
@@ -113,7 +115,7 @@ export function Card(props) {
         <div className="image-bg relative pb-48 overflow-hidden bg-card_purple rounded-t-sm">
           <span className="rating">{props.rating}</span>
           <img
-            className="absolute inset-0  w-full h-full  scale-[0.8]  card-img"
+            className="absolute inset-0  w-full h-full  scale-[0.8]  card-img object-cover"
             src={props.img}
             alt="Sunset in the mountains"
           />
@@ -141,7 +143,11 @@ export function Card(props) {
           <ul className="flex flex-col ">
             <li className="flex items-center">
               <span className="text-white font-light flex items-center ">
-                <span className="font-medium">Premier Rating</span>:{" "}
+                <img
+                  src={premier}
+                  alt="premier image"
+                  className="w-full h-12 card-img object-cover"
+                />
                 <Stat rank={props.rank} />
               </span>
             </li>
@@ -152,7 +158,7 @@ export function Card(props) {
             </li>
             <li className="flex items-center">
               <span className="text-white font-light">
-                <span className="font-medium check">Quality</span>: {props.quality}
+                <span className="font-medium games">Games played</span>: {props.quality}
               </span>
             </li>
             <li className="flex justify-between pr-10">

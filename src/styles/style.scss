@@ -309,6 +309,40 @@ body {
     margin: auto 0;
   }
 }
+.games {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background: url("../img/games.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+.premier {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 20rem;
+    height: 20rem;
+    background: url("../img/premier.png") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
 
 .faceit {
   position: relative;
