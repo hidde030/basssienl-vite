@@ -3,6 +3,7 @@ import Add from "./Add"
 import Admin from "./admin"
 import UploadImage from "./UploadImage"
 import { useNavigate } from "react-router-dom"
+import AdminCounter from "./AdminCounter"
 
 function UserList() {
   const navigateTo = useNavigate()
@@ -166,6 +167,8 @@ function UserList() {
               onClick={() => deleteCard(user.name)}>
               Delete
             </button>
+
+            <AdminCounter user={user} />
           </div>
         ))}
       </ul>
