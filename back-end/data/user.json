@@ -2,7 +2,7 @@
   "data": [
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "94",
+      "rating": "95",
       "role": "vip",
       "name": "Bart",
       "rank": "25.000",
@@ -17,7 +17,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "68",
+      "rating": "66",
       "role": "vip",
       "name": "BassieNL",
       "rank": "15.000",
@@ -63,7 +63,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "55",
+      "rating": "53",
       "role": "vip",
       "name": "DJ Geerlings",
       "rank": "10.000",
@@ -78,7 +78,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "86",
+      "rating": "89",
       "role": "vip",
       "name": "Erik2304",
       "rank": "21.000",
@@ -108,7 +108,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "90",
+      "rating": "87",
       "role": "vip",
       "name": "Hidde",
       "rank": "20.000",
@@ -123,7 +123,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "52",
+      "rating": "58",
       "role": "vip",
       "name": "JD_Gamer_NL",
       "rank": "13.000",
@@ -140,7 +140,7 @@
       "role": "vip",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Joris",
-      "rating": "60",
+      "rating": "55",
       "rank": "11.000",
       "faceit": "1",
       "quality": "Map Positioning",
@@ -153,7 +153,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "70",
+      "rating": "65",
       "role": "vip",
       "name": "LouisB",
       "rank": "14.000",
@@ -168,7 +168,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "57",
+      "rating": "52",
       "role": "vip",
       "name": "Niekje",
       "rank": "12.000",
@@ -198,18 +198,18 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "60",
+      "rating": "56",
       "role": "vip",
       "name": "PokéBeard",
       "rank": "14.000",
-      "faceit": "2",
+      "faceit": "3",
       "quality": "Lurker",
       "hours": "2.321",
       "img": "https://bassienl.nl/images/Pokebeard.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198052742880",
       "giveaway": true,
       "active": true,
-      "counter": 3
+      "counter": 0
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -275,7 +275,7 @@
       "role": "vip",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "VlamLars",
-      "rating": "59",
+      "rating": "65",
       "rank": "16.000",
       "faceit": "3",
       "quality": "Sexy Skins",
@@ -321,20 +321,20 @@
       "role": "subscriber",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Boyd",
-      "rating": "58",
+      "rating": "55",
       "rank": "8.000",
       "faceit": "3",
       "quality": "Irritant zijn",
       "img": "https://bassienl.nl/images/boyd.jpg",
       "active": true,
-      "counter": 1,
+      "counter": 0,
       "hours": "579",
       "steam": "https://steamcommunity.com/profiles/76561198312880284",
       "steam_url": "https://steamcommunity.com/profiles/76561198312880284"
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "88",
+      "rating": "89",
       "role": "subscriber",
       "name": "BrAiNZ",
       "rank": "18.000",
@@ -398,11 +398,14 @@
       "rating": "80",
       "rank": "20.000",
       "faceit": "10",
-      "steam": "https://steamcommunity.com/profiles/76561197966391318"
+      "steam": "https://steamcommunity.com/profiles/76561197966391318",
+      "img": "https://bassienl.nl/images/Enmatic.png",
+      "active": true,
+      "counter": 0
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "90",
+      "rating": "87",
       "role": "subscriber",
       "name": "Floz",
       "rank": "18.000",
@@ -492,7 +495,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "78",
+      "rating": "73",
       "role": "subscriber",
       "name": "JN",
       "rank": "20.000",
@@ -507,10 +510,10 @@
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
-      "rating": "87",
+      "rating": "85",
       "role": "subscriber",
       "name": "Jon",
-      "rank": "20.000",
+      "rank": "18.000",
       "faceit": "6",
       "quality": "Outplayer",
       "hours": "2.300",
@@ -537,7 +540,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "68",
+      "rating": "60",
       "role": "subscriber",
       "name": "MalsePiraat",
       "rank": "10.000",
@@ -584,14 +587,15 @@
       "role": "subscriber",
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "name": "MrPepper",
-      "rating": "94",
+      "rating": "92",
       "rank": "25.000",
       "faceit": "10",
       "steam": "https://steamcommunity.com/profiles/76561198269057803",
       "quality": "Fragger",
       "hours": "4.545",
       "img": "https://bassienl.nl/images/MrPepper.png",
-      "steam_url": "https://steamcommunity.com/profiles/76561198269057803"
+      "steam_url": "https://steamcommunity.com/profiles/76561198269057803",
+      "counter": 0
     },
     {
       "role": "subscriber",
@@ -601,15 +605,17 @@
       "rank": "16.000",
       "faceit": "4",
       "steam": "https://steamcommunity.com/id/sickmanibbor",
-      "active": true
+      "active": true,
+      "img": "https://bassienl.nl/images/Naat16.png",
+      "counter": 0
     },
     {
       "role": "subscriber",
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "name": "Peekske",
-      "rating": "50",
-      "rank": "15.000",
-      "faceit": "2",
+      "rating": "70",
+      "rank": "12.000",
+      "faceit": "6",
       "quality": "Clutching Versus Bad Players",
       "hours": "1.068",
       "img": "https://bassienl.nl/images/Peekske.png",
@@ -620,7 +626,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "90",
+      "rating": "94",
       "role": "subscriber",
       "name": "PoMoTV",
       "rank": "22.000",
@@ -650,7 +656,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "92",
+      "rating": "93",
       "role": "subscriber",
       "name": "Rwina Ruud",
       "rank": "20.000",
@@ -710,17 +716,17 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "75",
+      "rating": "87",
       "role": "subscriber",
       "name": "TimoRoggel",
       "rank": "18.000",
-      "faceit": "4",
+      "faceit": "8",
       "quality": "The Laser",
       "hours": "1.053",
       "img": "https://bassienl.nl/images/Timo.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198858973202",
       "giveaway": false,
-      "active": false,
+      "active": true,
       "counter": 0
     },
     {
@@ -773,7 +779,7 @@
       "role": "member",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Br*ndon",
-      "rating": "94",
+      "rating": "96",
       "rank": "25.000",
       "faceit": "10",
       "quality": "Consistant Aim",
@@ -847,15 +853,17 @@
       "role": "member",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Luke3k",
-      "rating": "92",
-      "rank": "22.000",
+      "rating": "94",
+      "rank": "27.000",
       "faceit": "10",
       "steam": "https://steamcommunity.com/id/luke140901",
-      "active": true
+      "active": true,
+      "img": "https://bassienl.nl/images/Luke3k.png",
+      "counter": 1
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "74",
+      "rating": "83",
       "role": "member",
       "name": "Memeka",
       "rank": "15.000",
@@ -873,7 +881,7 @@
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "steam": "https://steamcommunity.com/id/navvez",
       "name": "navvez",
-      "rating": "85",
+      "rating": "87",
       "faceit": "9",
       "quality": "Quiet fragger",
       "rank": "19.000",
@@ -905,7 +913,9 @@
       "rank": "20.000",
       "faceit": "10",
       "steam": "https://steamcommunity.com/id/OSCBGames",
-      "active": true
+      "active": true,
+      "img": "https://bassienl.nl/images/OSCB.png",
+      "counter": 0
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -938,7 +948,7 @@
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
-      "rating": "88",
+      "rating": "89",
       "role": "member",
       "name": "Penthius",
       "rank": "20.000",
@@ -968,23 +978,28 @@
     },
     {
       "role": "member",
-      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
       "name": "Siebe",
-      "rating": "93",
-      "rank": "22.000",
+      "rating": "94",
+      "rank": "25.000",
       "faceit": "10",
       "steam": "https://steamcommunity.com/profiles/76561198984516426",
-      "active": true
+      "active": true,
+      "img": "https://bassienl.nl/images/Flashi.png",
+      "counter": 0
     },
     {
       "role": "member",
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
       "name": "Skywalker",
-      "rating": "75",
-      "rank": "18.000",
-      "faceit": "5",
+      "rating": "89",
+      "rank": "22.000",
+      "faceit": "10",
       "steam": "https://steamcommunity.com/id/KNoWN4ME",
-      "active": true
+      "active": true,
+      "img": "https://bassienl.nl/images/Skywalker.png",
+      "steam_url": "https://steamcommunity.com/id/KNoWN4ME",
+      "counter": 0
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
