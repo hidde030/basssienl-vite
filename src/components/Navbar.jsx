@@ -1,10 +1,10 @@
-import React from "react"
-import Logo from "../img/logo.png"
-import { Link } from "react-router-dom"
+import React from "react";
+import Logo from "../img/logo.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="container mx-auto bg-gray-800 p-3 md:p-6">
+    <nav className="container mx-auto  p-3 md:p-6">
       <div className="flex items-center justify-between ">
         <Link
           to={"/"}
@@ -48,7 +48,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

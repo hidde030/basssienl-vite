@@ -1,18 +1,13 @@
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"
-
-import { Swiper, SwiperSlide } from "swiper/react"
-import CardGiveAway from "../components/CardGiveAway"
-// Import Swiper styles
-import "swiper/css"
-import "swiper/css/scrollbar"
-import { useEffect, useState } from "react"
-
+import "swiper/css";
+import "swiper/css/scrollbar";
+import { useEffect, useState } from "react";
+import DontDie from "../img/giveaway/Dont_Die._perfect.png";
+import Fortune from "../img/giveaway/Bassies_Fortune_4_levensperfect.png";
 export default function giveAway() {
   const API_URL =
     process.env.NODE_ENV === "development"
       ? import.meta.env.VITE_API_URL_DEV
-      : import.meta.env.VITE_API_URL_PROD
+      : import.meta.env.VITE_API_URL_PROD;
 
   const winners = [
     "giveaway_1.png",
@@ -26,9 +21,9 @@ export default function giveAway() {
     "giveaway_10.png",
     "giveaway_11.png",
     "giveaway_12.png",
-  ].reverse()
+  ].reverse();
 
-  const [props, setProps] = useState([])
+  const [props, setProps] = useState([]);
   useEffect(() => {
     fetch(`${API_URL}/giveaway`, {
       headers: {
@@ -37,184 +32,215 @@ export default function giveAway() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setProps(data)
+        setProps(data);
       })
       .catch((error) => {
-        console.error("Error:", error)
-      })
-  }, [])
+        console.error("Error:", error);
+      });
+  }, []);
 
   return (
     <>
-      <section className="text-gray-600 body-font overflow-hidden text-white bg-gray bg-opacity-30 rounded  ">
+      <section className=" body-font overflow-hidden text-white bg-gray-300 bg-opacity-30 rounded  ">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-12">
-            <div className="py-12 md:w-1/2 flex flex-col items-start">
-              {/* BASSIENL */}
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-                December giveaway
+            <div className="py-12 md:w-1/2 flex flex-col items-start bg-gray-900 rounded-xl p-6 ">
+              <h2 className="sm:text-3xl text-2xl title-font font-medium  mt-4 mb-4">
+                Giveaways uitleg
               </h2>
-              <p className="mb-3">
-                In de maand december geven we een volledige geel/gouden inventory weg! Er
-                worden 10 skins weggegeven aan de winnaar van deze giveaway. Met als
-                hoofdprijs een knife/glove combo. De giveaway is <b>100% gratis</b> en
-                iedereen kan deelnemen.
-                <br /> <br /> Hoe? Cash <u>inventory tickets</u> uit door te lurken en
-                bassiecash te verzamelen op twitch! Onder de twitch chat staat een
-                bassiecash icoontje die je kan aanklikken en dit geeft je 1 ticket! (de
-                link onder deze uitleg laat de huidige tickets zien die je uitgecashed
-                hebt!)
-                <br /> <br />{" "}
-                <i>
-                  Giveaway is <b> alleen voor actieve members! </b>Giveaway hunters delete
-                  ik!
-                </i>{" "}
-                Wat is een actieve member? Laat jezelf geregeld zien in de twitch/discord
-                chat of speel af en toe een potje mee en je bent actief.
-                <br /> <br />
-                <b>Bonus:</b> Omdat dit pas in december is zijn er 3 GRATIS bonus
-                giveaways in de maanden juli, sept en okt!{" "}
-                <i>(deze giveaways hebben de subscribers wel 8x meer luck!)</i>
-              </p>
+              <div className=" text-white p-6 rounded-xl shadow-lg  bg-gray-800">
+                <p className="text-lg font-semibold mb-4">
+                  🎉 Alle giveaways worden weggegeven via gratis games! 🎉
+                </p>
 
-              <div className="flex pt-4">
-                <a
-                  target="_blank"
-                  className="bg-card_bg  text-white font-bold py-2 px-4 rounded "
-                  href="https://docs.google.com/spreadsheets/d/1QAvPHMlY_nwfYDbXuX49wUqrU9iIr0Np9lAiXxKGe6c/edit#gid=0">
-                  Tickets
-                </a>
+                <p className="mb-4">
+                  Door actief mee te spelen en te lurken in de streams, kun je giveaway
+                  games verdienen.
+                </p>
+
+                <h3 className="text-xl font-bold text-blue-400 mb-2">
+                  🔹 Hoe werkt het?
+                </h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li>
+                    Alle giveaway games kosten{" "}
+                    <span className="font-bold text-yellow-400">kanaalpunten</span>.
+                  </li>
+                  <li>
+                    Voor elke <span className="font-bold text-yellow-400">25 games</span>{" "}
+                    die je meespeelt, ontvang je{" "}
+                    <span className="text-green-400 font-bold">
+                      1 gratis giveaway game
+                    </span>
+                    ! 🎁
+                  </li>
+                  <li>
+                    Meer details en uitleg vind je in het
+                    <a
+                      href="https://discord.com/channels/614357624191975424/1225832984830283786"
+                      className="text-blue-500 font-semibold hover:underline ml-1">
+                      #giveaways
+                    </a>{" "}
+                    topic op Discord.
+                  </li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-blue-400 mb-2">
+                  🎮 Beschikbare Giveaway Games
+                </h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li>
+                    Er zijn in totaal{" "}
+                    <span className="font-bold text-yellow-400">5 giveaway games</span> te
+                    cashen.
+                  </li>
+                  <li>
+                    Maximaal{" "}
+                    <span className="font-bold text-yellow-400">
+                      1 giveaway game per speler per stream
+                    </span>
+                    .
+                  </li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-blue-400 mb-2 ">
+                  🏆 Soorten Giveaway Games
+                </h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li>
+                    <span className="font-bold text-purple-400">Printstream Game:</span>{" "}
+                    Alleen <span className="text-yellow-400">printstream skins</span> te
+                    winnen.
+                  </li>
+                  <li>
+                    <span className="font-bold text-red-400">Don't Die Game:</span> Alle
+                    skins te winnen, inclusief{" "}
+                    <span className="text-green-400">knifes! 🔪</span>
+                  </li>
+                  <li>
+                    <span className="font-bold text-purple-400">Overige Games:</span>{" "}
+                    Random prijzen die rechtsonder op deze pagina worden weergegeven.
+                  </li>
+                </ul>
+
+                <p className="mt-6 text-center text-lg font-semibold text-green-400">
+                  🎊 Veel speelplezier! Hopelijk bevallen de spellen jullie goed! 🚀
+                </p>
               </div>
             </div>
-            <div className="p-12 md:w-1/2 flex flex-col items-start">
+            <div className="p-12 md:w-1/2 flex flex-col items-center justify-center">
               <div className=" w-full">
-                <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">
+                {/* <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">
                   Previous Winners
-                </h2>
-                <Swiper
-                  className={"winners"}
-                  modules={[Navigation, Pagination, Scrollbar, A11y]}
-                  spaceBetween={100}
-                  slidesPerView={1}
-                  navigation
-                  breakpoints={{
-                    640: {
-                      slidesPerView: 1,
-                      spaceBetween: 20,
-                    },
-                    // when window width is >= 768px
-                    768: {
-                      slidesPerView: 1,
-                      spaceBetween: 40,
-                    },
-                    // when window width is >= 1024px
-                    1024: {
-                      slidesPerView: 1,
-                      spaceBetween: 50,
-                    },
-                  }}
-                  pagination={{ clickable: true }}
-                  scrollbar={{ draggable: true }}>
-                  {winners.map((slideContent, index) => (
-                    <SwiperSlide key={index} virtualIndex={index}>
-                      <img
-                        src={`https://bassienl.nl/images/${slideContent.trim()}`}
-                        className="object-cover object-center rounded"
-                        alt="hero"
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                </h2> */}
+                <img
+                  src={DontDie}
+                  alt="giveaway"
+                  className="object-cover object-center rounded"
+                />
               </div>
             </div>
-            {/* <div className="py-12 md:w-1/2 flex flex-col items-start justify-between  ">
-            <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-              Current Giveaway
-            </h2>
-
-            <img
-              src="https://bassienl.nl/images/giveaway_8.png"
-              className="object-center rounded h-full w-full cover-fill "
-              alt="hero"
-            />
-          </div> */}
-            {/* <div className="p-12 md:w-1/2 flex flex-col items-start">
-            <div className=" w-full">
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4 text-center">
-                Previous Giveaways
-              </h2>
-              <Swiper
-                className={"mySwiper"}
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={100}
-                slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}>
-                {props.map((slideContent, index) => (
-                  <SwiperSlide key={index} virtualIndex={index}>
-                    <CardGiveAway props={slideContent} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </div> */}
           </div>
         </div>
       </section>
-      <section className="text-gray-600 body-font overflow-hidden text-white bg-gray bg-opacity-30 rounded  ">
+      <section className=" body-font overflow-hidden text-white bg-gray-300 bg-opacity-30 rounded  ">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-12 flex-row-reverse ">
-            <div className="py-12 md:w-1/2 flex flex-col items-start">
-              {/* BASSIENL */}
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-                December Secret giveaway
-              </h2>
-              <p className="mb-3">
-                In de maand december geven we een volledige geel/gouden inventory weg!
-                Aangezien er enorm gesupport wordt bij mijn streams en{" "}
-                <u>jullie mij door mindere periodes heen helpen</u> wil ik graag de mensen
-                die de stream supporten extra terug bedanken zonder dat ze het zelf
-                doorhebben!
-              </p>
-              <b className="mb-3">
-                Supporters zijn de mensen die zelf Subscriben, Giften, Bits doneren, skins
-                doneren en gewoon doneren.
-              </b>
-              <p className="mb-3">
-                Voor deze categorie heb ik een extra giveaway achter de schermen lopen die
-                op de zelfde dag als de December giveaway wordt gedropt! Alleen de admins
-                weten meer info over deze giveaway en letten er op dat ik dit eerlijk bij
-                hou!
-              </p>
-              <p className="mb-3">
-                Voor de supporters is dus alleen duidelijk dat ze een extra prijs weten,
-                maar niet hoeveel kans ze maken en hoe ze winnen.
-              </p>
-              <h3 className="text-2xl mb-3">
-                De prijzen voor de supporters zijn (ook goud/geel)
-              </h3>
-              <ul className="list-disc list-inside ">
-                <li>
-                  <b> 1e prijs:</b> MW AK Fuel Injector
-                </li>
-                <li>
-                  <b>2e prijs:</b> FN Tiger Tooth Shadow Daggers
-                </li>
-                <li>
-                  <b>3e prijs:</b> MW Chantico’s Fire m4
-                </li>
-              </ul>
-              <h2>Alle 3 zijn in potentie door 1 supporter te winnen!</h2>
+            <div className="py-12 md:w-1/2 flex flex-col items-center ">
+              <div className="bg-gray-900 text-white p-6 rounded-xl shadow-lg max-w-2xl mx-auto">
+                <h2 className="text-2xl font-bold  mb-4">🎁 Giveaways Prizepool</h2>
+
+                <p className="mb-4">
+                  De giveaways prizepool is verdeeld in{" "}
+                  <span className="font-semibold text-blue-400">3 tiers</span>:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li>
+                    <span className="font-bold text-red-400">Tier 3:</span> Goedkopere
+                    skins, relatief makkelijk te winnen.
+                  </li>
+                  <li>
+                    <span className="font-bold text-purple-400">Tier 2:</span> Skins
+                    tussen <span className="text-green-400 font-semibold">€20 - €50</span>
+                    .
+                  </li>
+                  <li>
+                    <span className="font-bold ">Tier 1:</span> De grote prijzenkist met
+                    skins van <span className="text-green-400 font-semibold">€50+</span>!
+                    💎
+                  </li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-blue-400 mb-2">
+                  🏆 Huidige Prijzenkast
+                </h3>
+
+                <div className="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+                  <h4 className="text-lg font-bold ">🔥 Tier 1 - High-End Skins</h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>
+                      <span className="font-bold text-red-400">Knifes:</span> Classic
+                      Knife Boreal Forest, Survival Knife Scorched, Bowie Knife Freehand,
+                      Navaja Knife Case Hardened
+                    </li>
+                    <li>
+                      <span className="font-bold text-green-400">Rifles & Pistols:</span>{" "}
+                      M4 Printstream, AK Redline, Glock Gamma Doppler Phase 3, M4
+                      Chantico’s Fire
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+                  <h4 className="text-lg font-bold text-purple-400">
+                    🎯 Tier 2 - Mid-Tier Skins (€20-€50)
+                  </h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>AK Leet Museo, Desert Eagle Night, P250 Whiteout, AK Asiimov</li>
+                    <li>AK The Empress, AK Wasteland Rebel, AWP Man O' War</li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+                  <h4 className="text-lg font-bold text-blue-400">
+                    ✨ Tier 3 - Easy Wins
+                  </h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>
+                      M4A4 In Living Color, AK Point Disarray, Desert Eagle Crimson Web
+                    </li>
+                    <li>
+                      XM Monster Melt, AK Emerald Printstripe, Unicorn Holo Stickers
+                    </li>
+                  </ul>
+                </div>
+
+                <p className="mt-4">
+                  🚀{" "}
+                  <span className="font-semibold text-green-400">
+                    Dit is slechts een deel van de prijzen!
+                  </span>{" "}
+                  Wil je alle prijzen zien? Vraag{" "}
+                  <span className="text-yellow-400 font-bold">BassieNL</span> tijdens een
+                  livestream om een van de kisten te openen en krijg een exclusief kijkje
+                  in de prijzenkast van dit jaar! 🎮
+                </p>
+
+                <p className="mt-4 text-center text-lg font-semibold text-green-400">
+                  🎊 De prijzen zullen in de loop van het jaar alleen maar groter worden!
+                  🚀
+                </p>
+              </div>
             </div>
-            <div className="p-4 md:w-1/2 flex flex-col items-start mt-8">
+            <div className="p-4 md:w-1/2 flex flex-col items-center justify-center mt-8">
               <div className=" w-full">
-                <img src="https://bassienl.nl/images/secret.png" alt="Secret giveaway" />
+                <img src={Fortune} alt="fortune" />
               </div>
             </div>
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }
