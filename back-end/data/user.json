@@ -13,7 +13,7 @@
       "steam_url": "https://steamcommunity.com/id/BartiBlyat/",
       "giveaway": true,
       "active": true,
-      "counter": 0
+      "counter": 2
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -28,7 +28,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198051804263",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 15
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -89,7 +89,7 @@
       "steam_url": "https://steamcommunity.com/id/ErikErik2304",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 1
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -145,11 +145,25 @@
       "faceit": "1",
       "quality": "Map Positioning",
       "hours": "2.232",
-      "steam": "https://steamcommunity.com/profiles/76561198072112329",
+      "steam_url": "https://steamcommunity.com/profiles/76561198072112329",
       "img": "https://avatars.akamai.steamstatic.com/91f58d12cca637d16c96a40082eee695210c2529_full.jpg",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 3
+    },
+    {
+      "role": "vip",
+      "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
+      "name": "LeNut",
+      "rating": "65",
+      "rank": "15000",
+      "faceit": "3",
+      "quality": "Random God",
+      "hours": "2.000",
+      "img": "https://innostudio.de/fileuploader/images/default-avatar.png",
+      "steam_url": "",
+      "active": true,
+      "counter": 5
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -194,7 +208,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198872159853",
       "giveaway": true,
       "active": true,
-      "counter": 0
+      "counter": 1
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -209,7 +223,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198052742880",
       "giveaway": true,
       "active": true,
-      "counter": 0
+      "counter": 1
     },
     {
       "nationality": "https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Europese20vlaggen20-20Vlag20Belgi%C3%AB20-2013143-1440x928.png",
@@ -224,7 +238,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198295473717",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 3
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -285,7 +299,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198142800150",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 5
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -327,7 +341,7 @@
       "quality": "Irritant zijn",
       "img": "https://bassienl.nl/images/boyd.jpg",
       "active": true,
-      "counter": 0,
+      "counter": 2,
       "hours": "579",
       "steam": "https://steamcommunity.com/profiles/76561198312880284",
       "steam_url": "https://steamcommunity.com/profiles/76561198312880284"
@@ -389,7 +403,7 @@
       "steam_url": "https://steamcommunity.com/id/Pizzaboontje",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 5
     },
     {
       "role": "subscriber",
@@ -416,7 +430,7 @@
       "steam_url": "https://steamcommunity.com/id/floz15",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 4
     },
     {
       "role": "subscriber",
@@ -476,7 +490,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198015712590",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 2
     },
     {
       "role": "subscriber",
@@ -595,7 +609,7 @@
       "hours": "4.545",
       "img": "https://bassienl.nl/images/MrPepper.png",
       "steam_url": "https://steamcommunity.com/profiles/76561198269057803",
-      "counter": 0
+      "counter": 2
     },
     {
       "role": "subscriber",
@@ -622,7 +636,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561199197976294",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 4
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -637,7 +651,7 @@
       "steam_url": "https://steamcommunity.com/id/pomotv",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 1
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -652,7 +666,7 @@
       "steam_url": "https://steamcommunity.com/id/rezta",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 2
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -682,7 +696,7 @@
       "steam_url": "https://steamcommunity.com/id/NameIsSaFaRI/",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 1
     },
     {
       "role": "subscriber",
@@ -697,7 +711,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198123427417",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 6
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -727,7 +741,7 @@
       "steam_url": "https://steamcommunity.com/profiles/76561198858973202",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 1
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -788,7 +802,7 @@
       "steam_url": " https://steamcommunity.com/id/EnjoyMyFriend",
       "giveaway": false,
       "active": false,
-      "counter": 0
+      "counter": 1
     },
     {
       "role": "member",
@@ -800,7 +814,7 @@
       "quality": "Relaxed guy",
       "steam": "https://steamcommunity.com/id/45t54t53534",
       "active": true,
-      "counter": 0,
+      "counter": 4,
       "steam_url": "https://steamcommunity.com/id/45t54t53534",
       "img": "https://bassienl.nl/images/Brug.png"
     },
@@ -859,7 +873,7 @@
       "steam": "https://steamcommunity.com/id/luke140901",
       "active": true,
       "img": "https://bassienl.nl/images/Luke3k.png",
-      "counter": 1
+      "counter": 2
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
@@ -874,7 +888,7 @@
       "steam_url": "https://steamcommunity.com/id/Memeka",
       "giveaway": true,
       "active": true,
-      "counter": 0
+      "counter": 1
     },
     {
       "role": "member",
@@ -886,7 +900,7 @@
       "quality": "Quiet fragger",
       "rank": "19.000",
       "active": true,
-      "counter": 0,
+      "counter": 9,
       "img": "https://bassienl.nl/images/Navvez.png",
       "steam_url": "https://steamcommunity.com/id/navvez"
     },
@@ -959,7 +973,7 @@
       "steam_url": "https://steamcommunity.com/id/Penthius",
       "giveaway": false,
       "active": true,
-      "counter": 0
+      "counter": 5
     },
     {
       "nationality": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png",
